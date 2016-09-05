@@ -1,8 +1,8 @@
 ﻿using System;
-
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
+using cameratest.Droid;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
