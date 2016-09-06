@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Plugin.Media;
 
 namespace cameratest
 {
@@ -12,6 +13,7 @@ namespace cameratest
         {
             InitializeComponent();
         }
+        
 
         void OnTranslate(object sender, EventArgs e)
         {
@@ -41,5 +43,10 @@ namespace cameratest
                     dialer.Dial(translatedNumber);
             }
         }
+        async void OnCallfeteli(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new feteli());
+        }
+
     }
 }

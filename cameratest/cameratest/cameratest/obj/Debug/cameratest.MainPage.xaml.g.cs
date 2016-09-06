@@ -26,11 +26,15 @@ namespace cameratest {
         private global::Xamarin.Forms.Button callButton;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button callHistoryButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
             phoneNumberText = this.FindByName<global::Xamarin.Forms.Entry>("phoneNumberText");
             translateButon = this.FindByName<global::Xamarin.Forms.Button>("translateButon");
             callButton = this.FindByName<global::Xamarin.Forms.Button>("callButton");
+            callHistoryButton = this.FindByName<global::Xamarin.Forms.Button>("callHistoryButton");
         }
     }
 }
