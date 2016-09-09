@@ -45,7 +45,8 @@
 
       <Label Text="Problembeschreibung" />
       <Editor x:Name="problembeschreibung" />
-      <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True"/>
+      <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True" Clicked="takePhoto"/>
+      <Image x:Name="image"/>
       <Button x:Name="sendReport" Text="Senden" IsEnabled="True"/>
     </StackLayout>
   </ContentPage.Content>
