@@ -9,18 +9,27 @@
                     WinPhone="20, 20, 20, 20" />
      </ContentPage.Padding>
     <ContentPage.Content>
+     
         <StackLayout VerticalOptions="FillAndExpand"
                      HorizontalOptions="FillAndExpand"
                      Orientation="Vertical"
                      Spacing="15">
-            <Label Text="Enter a Phoneword:" />
-            <Entry x:Name="phoneNumberText" Text="1-855-XAMARIN" />
-            
-            <Button x:Name="translateButon" Text="Translate" Clicked="OnTranslate" />
-            <Button x:Name="callButton" Text="Call" IsEnabled="false" Clicked="OnCall" />
+          
+            <StackLayout VerticalOptions="Fill"
+                  HorizontalOptions="Fill"
+                  Orientation="Horizontal"
+                  Spacing="15">
+              <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center"/>
+              <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End"/>
+            </StackLayout>
+          
+            <Label Text="Geben Sie Ihre Logindaten ein:" />
+            <Entry x:Name="eMail" Text="E-Mail" />
+            <Entry x:Name="password" Text="Passwort" />            
           <Button x:Name="callHistoryButton" Text="mach feteli siite" IsEnabled="True"
           Clicked="OnCallfeteli" />
-
+          <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="OnCallLogin" />
+          <Button x:Name="machRegistrierig" Text="Registrierung" IsEnabled="True" Clicked="OnCallRegistrierung" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

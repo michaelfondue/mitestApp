@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cameratest.BugReporting">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="20, 40, 20, 20"
+                Android="20, 20, 20, 20"
+                WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+
+      <StackLayout VerticalOptions="Fill"
+      HorizontalOptions="Fill"
+      Orientation="Horizontal"
+      Spacing="15">
+        <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center"/>
+        <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End"/>
+      </StackLayout>
+
+      <Label Text="Maschinennummer" />
+      <Entry x:Name="machineNumber" />
+
+      <Label Text="Art der Maschine" />
+      <Picker x:Name="machineType" SelectedIndex="{Binding machine}" HorizontalOptions="FillAndExpand">
+        <Picker.Items>
+          <x:String>Winding (wired)</x:String>
+          <x:String>Cutting</x:String>
+          <x:String>Andere</x:String>
+        </Picker.Items>
+      </Picker>
+
+      <Label Text="Art des Problems" />
+      <Picker x:Name="sortOfProblem" SelectedIndex="{Binding problem}" HorizontalOptions="FillAndExpand">
+        <Picker.Items>
+          <x:String>Frage</x:String>
+          <x:String>Ersatzteile</x:String>
+          <x:String>mc:breakdown</x:String>
+        </Picker.Items>
+      </Picker>
+
+      <Label Text="Problembeschreibung" />
+      <Editor x:Name="problembeschreibung" />
+      <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True"/>
+      <Button x:Name="sendReport" Text="Senden" IsEnabled="True"/>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
