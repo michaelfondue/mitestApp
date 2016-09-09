@@ -29,9 +29,9 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.Collections.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.Threading.Tasks.dll
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.IO.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.Reflection.dll
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.IO.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.ObjectModel.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\System.Linq.Expressions.dll

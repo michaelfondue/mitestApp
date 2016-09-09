@@ -20,9 +20,17 @@ namespace cameratest {
         private global::Xamarin.Forms.Button takePic;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button choosePic;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Image image;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(feteli));
             takePic = this.FindByName<global::Xamarin.Forms.Button>("takePic");
+            choosePic = this.FindByName<global::Xamarin.Forms.Button>("choosePic");
+            image = this.FindByName<global::Xamarin.Forms.Image>("image");
         }
     }
 }

@@ -15,6 +15,8 @@
                  Orientation="Vertical"
                  Spacing="15">
       <Button x:Name="takePic" Text="Cheeese, mach Feteli" IsEnabled="True" Clicked="takePhoto" />
+      <Button x:Name="choosePic" Text="Oiidaa,nem Feteli" IsEnabled="True" Clicked="choosePhoto" />
+      <Image x:Name="image"/>
       <ListView ItemsSource="{x:Static local:App.PhoneNumbers}" />
     </StackLayout>
   </ContentPage.Content>
