@@ -58,7 +58,7 @@ namespace cameratest
                await DisplayAlert("File Location", pic.Path, "OK");
 
                 if (pic == null)
-                    return;
+                 return;
 
                 /* var chosenPic = new Image { Aspect = Aspect.AspectFit };
                  String picpath = pic.Path;
