@@ -48,7 +48,6 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamari
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.MainPage.xaml.g.cs
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.feteli.xaml.g.cs
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Login.xaml.g.cs
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Zwischenseite.xaml.g.cs
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.BugReporting.xaml.g.cs
@@ -56,10 +55,6 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\camera
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Settings.xaml.g.cs
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.pdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb

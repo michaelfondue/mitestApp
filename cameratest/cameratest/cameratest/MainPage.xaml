@@ -26,8 +26,6 @@
             <Label Text="Geben Sie Ihre Logindaten ein:" />
             <Entry x:Name="eMail" Text="E-Mail" />
             <Entry x:Name="password" Text="Passwort" />            
-          <Button x:Name="callHistoryButton" Text="mach feteli siite" IsEnabled="True"
-          Clicked="OnCallfeteli" />
           <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="OnCallLogin" />
           <Button x:Name="machRegistrierig" Text="Registrierung" IsEnabled="True" Clicked="OnCallRegistrierung" />
         </StackLayout>

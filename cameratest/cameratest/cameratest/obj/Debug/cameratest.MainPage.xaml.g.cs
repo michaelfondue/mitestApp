@@ -29,9 +29,6 @@ namespace cameratest {
         private global::Xamarin.Forms.Entry password;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button callHistoryButton;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button machLogin;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -44,7 +41,6 @@ namespace cameratest {
             settings = this.FindByName<global::Xamarin.Forms.Button>("settings");
             eMail = this.FindByName<global::Xamarin.Forms.Entry>("eMail");
             password = this.FindByName<global::Xamarin.Forms.Entry>("password");
-            callHistoryButton = this.FindByName<global::Xamarin.Forms.Button>("callHistoryButton");
             machLogin = this.FindByName<global::Xamarin.Forms.Button>("machLogin");
             machRegistrierig = this.FindByName<global::Xamarin.Forms.Button>("machRegistrierig");
         }

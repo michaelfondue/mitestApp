@@ -12,10 +12,6 @@ namespace cameratest
             InitializeComponent();
         }
 
-        async void OnCallfeteli(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new feteli());
-        }
         async void OnCallLogin(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Login());
