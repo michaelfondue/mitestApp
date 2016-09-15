@@ -2,5 +2,31 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.Settings">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+  <ContentPage.Content>
+  <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+
+    <StackLayout VerticalOptions="Fill"
+    HorizontalOptions="Fill"
+    Orientation="Horizontal"
+    Spacing="15">
+      <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center"/>
+    </StackLayout>
+
+    <Label Text="Wählen Sie eine Sprache:" />
+    <Picker x:Name="sortOfProblem" SelectedIndex="{Binding problem}" HorizontalOptions="FillAndExpand">
+      <Picker.Items>
+        <x:String>Deutsch</x:String>
+        <x:String>Englisch</x:String>
+        <x:String>Französisch</x:String>
+      </Picker.Items>
+    </Picker>
+    
+    <Button x:Name="changePassword" Text="Passwort ändern" IsEnabled="True" Clicked="wantToChangePassword" />
+    
+  </StackLayout>
+  </ContentPage.Content>
 </ContentPage>

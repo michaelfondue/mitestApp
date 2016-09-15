@@ -14,5 +14,15 @@ namespace cameratest
         {
             InitializeComponent();
         }
+
+        async void wantToChangePassword(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ChangePassword());
+
+        }
+        async void openSettings(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Settings());
+        }
     }
 }

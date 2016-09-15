@@ -9,6 +9,7 @@
                 WinPhone="20, 20, 20, 20" />
   </ContentPage.Padding>
   <ContentPage.Content>
+    <ScrollView>
     <StackLayout VerticalOptions="FillAndExpand"
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
@@ -19,7 +20,7 @@
       Orientation="Horizontal"
       Spacing="15">
         <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center"/>
-        <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End"/>
+        <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End" Clicked ="openSettings"/>
       </StackLayout>
       
       <Label Text="Name Ihrer Firma" />
@@ -34,5 +35,6 @@
       <Entry x:Name="passwordAgain" />
       <Button x:Name="register" Text="Registrieren" IsEnabled="True" Clicked="registered" />
     </StackLayout>
+    </ScrollView>
   </ContentPage.Content>
 </ContentPage>

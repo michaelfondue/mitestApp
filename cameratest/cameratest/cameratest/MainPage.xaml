@@ -19,8 +19,23 @@
                   HorizontalOptions="Fill"
                   Orientation="Horizontal"
                   Spacing="15">
-              <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center"/>
-              <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End"/>
+              
+              <!--<Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>-->
+
+          <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center" />
+                      <!--Grid.Row="0" Grid.Column="0"/>-->
+          <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End" Clicked="openSettings" />
+                      <!--Grid.Row="0" Grid.Column="1"/>-->
+              <!--</Grid>-->
+              
             </StackLayout>
           
             <Label Text="Geben Sie Ihre Logindaten ein:" />

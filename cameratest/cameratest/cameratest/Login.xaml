@@ -19,7 +19,7 @@
       Orientation="Horizontal"
       Spacing="15">
         <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center"/>
-        <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End"/>
+        <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End" Clicked="openSettings"/>
       </StackLayout>
 
       <Label Text="E-Mail" />

@@ -9,6 +9,7 @@
                 WinPhone="20, 20, 20, 20" />
   </ContentPage.Padding>
   <ContentPage.Content>
+    <ScrollView>
     <StackLayout VerticalOptions="FillAndExpand"
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
@@ -19,7 +20,7 @@
       Orientation="Horizontal"
       Spacing="15">
         <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center"/>
-        <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End"/>
+        <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End" Clicked="openSettings"/>
       </StackLayout>
 
       <Label Text="Maschinennummer" />
@@ -46,8 +47,26 @@
       <Label Text="Problembeschreibung" />
       <Editor x:Name="problembeschreibung" />
       <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True" Clicked="takePhoto"/>
-      <Image x:Name="image"/>
+      <!--<Image x:Name="image"/>-->
+
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions> 
+
+        <Image x:Name="image" Grid.Row="0" Grid.Column="0" />
+        <Image x:Name="image2" Grid.Row="0" Grid.Column="1" />
+        <Image x:Name="image3" Grid.Row="0" Grid.Column="2" />
+
+      </Grid>
+      
       <Button x:Name="sendReport" Text="Senden" IsEnabled="True"/>
     </StackLayout>
+    </ScrollView>
   </ContentPage.Content>
 </ContentPage>

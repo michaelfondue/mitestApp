@@ -18,7 +18,6 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Properties.Resources.resources
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csproj.GenerateResource.Cache
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.MainPage.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.feteli.xaml.g.cs
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.pdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Login.xaml.g.cs
@@ -26,8 +25,6 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.BugReporting.xaml.g.cs
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Registrierung.xaml.g.cs
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Settings.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Properties.Resources.resources
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csproj.GenerateResource.Cache
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csprojResolveAssemblyReference.cache
@@ -57,5 +54,6 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\camera
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.pdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.ChangePassword.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb

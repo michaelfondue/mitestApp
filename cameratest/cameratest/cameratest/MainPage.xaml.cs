@@ -20,6 +20,10 @@ namespace cameratest
         {
             await Navigation.PushAsync(new Registrierung());
         }
+        async void openSettings(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Settings());
+        }
 
     }
 }

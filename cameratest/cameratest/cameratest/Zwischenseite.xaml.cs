@@ -19,5 +19,9 @@ namespace cameratest
         {
             await Navigation.PushAsync(new BugReporting());
         }
-     }
+        async void openSettings(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Settings());
+        }
+    }
 }

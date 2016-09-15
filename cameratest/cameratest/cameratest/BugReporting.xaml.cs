@@ -47,5 +47,10 @@ namespace cameratest
 
             }
         }
+
+        async void openSettings(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Settings());
+        }
     }
 }

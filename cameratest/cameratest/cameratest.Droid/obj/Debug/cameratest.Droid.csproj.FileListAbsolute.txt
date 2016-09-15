@@ -89,7 +89,6 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.csprojResolveAssemblyReference.cache
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.pdb
@@ -182,4 +181,5 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.dll.mdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll.mdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.dll.mdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll.mdb

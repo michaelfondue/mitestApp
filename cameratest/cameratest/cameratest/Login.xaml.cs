@@ -26,5 +26,9 @@ namespace cameratest
             //    var file = await CrossMedia.Current.TakePhotoAsync(mediaOptions);
             //}
         }
+        async void openSettings(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Settings());
+        }
     }
 }

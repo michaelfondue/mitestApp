@@ -17,8 +17,20 @@ namespace cameratest {
     public partial class Settings : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button about;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Picker sortOfProblem;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button changePassword;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Settings));
+            about = this.FindByName<global::Xamarin.Forms.Button>("about");
+            sortOfProblem = this.FindByName<global::Xamarin.Forms.Picker>("sortOfProblem");
+            changePassword = this.FindByName<global::Xamarin.Forms.Button>("changePassword");
         }
     }
 }
