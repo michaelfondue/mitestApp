@@ -60,8 +60,8 @@
         </Grid.ColumnDefinitions> 
 
         <Image x:Name="image" Grid.Row="0" Grid.Column="0" />
-        <Image x:Name="image2" Grid.Row="0" Grid.Column="1" />
-        <Image x:Name="image3" Grid.Row="0" Grid.Column="2" />
+        <Image x:Name="image2" Grid.Row="1" Grid.Column="0" />
+        <Image x:Name="image3" Grid.Row="2" Grid.Column="0" />
 
       </Grid>
       

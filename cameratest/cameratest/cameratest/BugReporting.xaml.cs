@@ -18,6 +18,7 @@ namespace cameratest
         //{
         //    await Navigation.PushAsync(new BugReporting());
         //}
+        int numPic;
         async void takePhoto(object sender, EventArgs e)
         {
 
@@ -36,15 +37,42 @@ namespace cameratest
                 if (file == null)
                     return;
 
-                DisplayAlert("File Location", file.Path, "OK");
+                // DisplayAlert("File Location", file.Path, "OK");
+                //Aufüllen von Gridview bis 3 Bilder eingefügt sind.
 
-                image.Source = ImageSource.FromStream(() =>
+                if (numPic == 3) {
+                    DisplayAlert("Fehler", "Es sind bereits 3 Bilder ausgewählt", "OK");
+                    return;
+                } else if (numPic == 0) {
+                    numPic = 1;
+                    image.Source = ImageSource.FromStream(() =>
+                    {
+                        var stream = file.GetStream();
+                        file.Dispose();
+                        return stream;
+                    });
+                 
+                } else if (numPic == 1)
                 {
-                    var stream = file.GetStream();
-                    file.Dispose();
-                    return stream;
-                });
-
+                    numPic = 2;
+                    image2.Source = ImageSource.FromStream(() =>
+                    {
+                        var stream = file.GetStream();
+                        file.Dispose();
+                        return stream;
+                    });
+                    
+                } else if (numPic == 2)
+                {
+                    numPic = 3;
+                    image3.Source = ImageSource.FromStream(() =>
+                    {
+                        var stream = file.GetStream();
+                        file.Dispose();
+                        return stream;
+                    });
+                }
+           
             }
         }
 
