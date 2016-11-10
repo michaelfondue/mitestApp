@@ -51,8 +51,16 @@
           </Picker.Items>
         </Picker>
         <Label Text="Problembeschreibung" />
-     <Editor x:Name="problembeschreibung" />
-
+        
+        <ScrollView>
+          <StackLayout
+               VerticalOptions="FillAndExpand"
+               Orientation="Vertical">
+            
+            <Editor x:Name="problembeschreibung"  HeightRequest = "80"/>
+          </StackLayout>
+        </ScrollView>
+        
         <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True" Clicked="takePhoto"/>
         <!--<Image x:Name="image"/>-->
 
