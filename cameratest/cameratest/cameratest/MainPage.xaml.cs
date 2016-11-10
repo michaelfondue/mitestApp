@@ -12,9 +12,9 @@ namespace cameratest
             InitializeComponent();
         }
 
-        async void OnCallLogin(object sender, EventArgs e)
+        async void loggedIn(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Login());
+            await Navigation.PushAsync(new Zwischenseite());
         }
         async void OnCallRegistrierung(object sender, EventArgs e)
         {

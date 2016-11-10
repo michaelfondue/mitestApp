@@ -1,72 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="cameratest.BugReporting">
+             x:Class="cameratest.BugReporting"
+                BackgroundColor="White">
   <ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness"
                 iOS="20, 40, 20, 20"
-                Android="20, 20, 20, 20"
+                Android="20, 5, 20, 20"
                 WinPhone="20, 20, 20, 20" />
   </ContentPage.Padding>
   <ContentPage.Content>
-    <ScrollView>
-    <StackLayout VerticalOptions="FillAndExpand"
-                 HorizontalOptions="FillAndExpand"
-                 Orientation="Vertical"
-                 Spacing="15">
-
-      <StackLayout VerticalOptions="Fill"
-      HorizontalOptions="Fill"
-      Orientation="Horizontal"
-      Spacing="15">
-        <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center"/>
-        <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End" Clicked="openSettings"/>
-      </StackLayout>
-
-      <Label Text="Maschinennummer" />
-      <Entry x:Name="machineNumber" />
-
-      <Label Text="Art der Maschine" />
-      <Picker x:Name="machineType" SelectedIndex="{Binding machine}" HorizontalOptions="FillAndExpand">
-        <Picker.Items>
-          <x:String>Winding (wired)</x:String>
-          <x:String>Cutting</x:String>
-          <x:String>Andere</x:String>
-        </Picker.Items>
-      </Picker>
-
-      <Label Text="Art des Problems" />
-      <Picker x:Name="sortOfProblem" SelectedIndex="{Binding problem}" HorizontalOptions="FillAndExpand">
-        <Picker.Items>
-          <x:String>Frage</x:String>
-          <x:String>Ersatzteile</x:String>
-          <x:String>mc:breakdown</x:String>
-        </Picker.Items>
-      </Picker>
-
-      <Label Text="Problembeschreibung" />
-      <Editor x:Name="problembeschreibung" />
-      <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True" Clicked="takePhoto"/>
-      <!--<Image x:Name="image"/>-->
-
-      <Grid>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto" />
-          <ColumnDefinition Width="Auto" />
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions> 
-
-        <Image x:Name="image" Grid.Row="0" Grid.Column="0" />
-        <Image x:Name="image2" Grid.Row="1" Grid.Column="0" />
-        <Image x:Name="image3" Grid.Row="2" Grid.Column="0" />
-
-      </Grid>
+    <ScrollView Orientation="Vertical" 
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="FillAndExpand">
       
-      <Button x:Name="sendReport" Text="Senden" IsEnabled="True"/>
-    </StackLayout>
+      <StackLayout VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   Orientation="Vertical"
+                   Spacing="15">
+
+            <StackLayout HorizontalOptions = "End" 
+                         VerticalOptions="Fill"
+                          Orientation="Horizontal"
+                          Spacing="1">
+             
+                  <Button x:Name="about" IsEnabled="True" Image="info.png" BackgroundColor="White"/>
+                  <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>              
+            </StackLayout>
+
+        <Image Source="logo_hintergrund.jpg" />
+
+        <Label Text="Maschinennummer" />
+        <Entry x:Name="machineNumber" />
+
+        <Label Text="Art der Maschine" />
+        <Picker x:Name="machineType" Title="Bitte auswählen" SelectedIndex="{Binding machine}" HorizontalOptions="FillAndExpand">
+          <Picker.Items>
+            <x:String>Winding</x:String>
+            <x:String>Cutting</x:String>
+            <x:String>Andere</x:String>
+          </Picker.Items>
+        </Picker>
+
+        <Label Text="Art des Problems" />
+        <Picker x:Name="sortOfProblem" Title="Bitte auswählen" SelectedIndex="{Binding problem}" HorizontalOptions="FillAndExpand">
+          <Picker.Items>
+            <x:String>Frage</x:String>
+            <x:String>Ersatzteile</x:String>
+            <x:String>mc:breakdown</x:String>
+          </Picker.Items>
+        </Picker>
+        <Label Text="Problembeschreibung" />
+     <Editor x:Name="problembeschreibung" />
+
+        <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True" Clicked="takePhoto"/>
+        <!--<Image x:Name="image"/>-->
+
+      <StackLayout HorizontalOptions = "Start"
+                   VerticalOptions="FillAndExpand"
+                    Orientation="Horizontal"
+                    Spacing="0">
+        
+          <Image x:Name="image"  />
+          <Image x:Name="image2"  />
+          <Image x:Name="image3" />
+      
+      </StackLayout>
+      
+        <Button x:Name="sendReport" Text="Senden" IsEnabled="True"/>
+      </StackLayout>
     </ScrollView>
   </ContentPage.Content>
 </ContentPage>

@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="cameratest.MainPage">
+             x:Class="cameratest.MainPage"
+              BackgroundColor="White">
      <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness"
                     iOS="20, 40, 20, 20"
-                    Android="20, 20, 20, 20"
+                    Android="20, 5, 20, 20"
                     WinPhone="20, 20, 20, 20" />
      </ContentPage.Padding>
     <ContentPage.Content>
@@ -13,35 +14,23 @@
         <StackLayout VerticalOptions="FillAndExpand"
                      HorizontalOptions="FillAndExpand"
                      Orientation="Vertical"
-                     Spacing="15">
+                     Spacing="25">
           
-            <StackLayout VerticalOptions="Fill"
-                  HorizontalOptions="Fill"
-                  Orientation="Horizontal"
-                  Spacing="15">
-              
-              <!--<Grid>
-                <Grid.RowDefinitions>
-                  <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="Auto" />
-                  <ColumnDefinition Width="Auto" />
-                  <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>-->
-
-          <Button x:Name="about" Text="i" IsEnabled="True" HorizontalOptions = "Center" />
-                      <!--Grid.Row="0" Grid.Column="0"/>-->
-          <Button x:Name="settings" Text="settings" IsEnabled="True" HorizontalOptions = "End" Clicked="openSettings" />
-                      <!--Grid.Row="0" Grid.Column="1"/>-->
-              <!--</Grid>-->
-              
+            <StackLayout HorizontalOptions = "End" 
+                         VerticalOptions="Fill"
+                          Orientation="Horizontal"
+                          Spacing="1">
+             
+                  <Button x:Name="about" IsEnabled="True" Image="info.png" BackgroundColor="White"/>
+                  <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>              
             </StackLayout>
+
+            <Image Source="logo_hintergrund.jpg" />
           
             <Label Text="Geben Sie Ihre Logindaten ein:" />
-            <Entry x:Name="eMail" Text="E-Mail" />
-            <Entry x:Name="password" Text="Passwort" />            
-          <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="OnCallLogin" />
+            <Entry x:Name="eMail" Placeholder="E-Mail" />
+            <Entry x:Name="password" Placeholder="Passwort" IsPassword="true"/>            
+          <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="loggedIn" />
           <Button x:Name="machRegistrierig" Text="Registrierung" IsEnabled="True" Clicked="OnCallRegistrierung" />
         </StackLayout>
     </ContentPage.Content>

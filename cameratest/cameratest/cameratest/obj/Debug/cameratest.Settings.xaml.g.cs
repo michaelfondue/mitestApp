@@ -20,7 +20,10 @@ namespace cameratest {
         private global::Xamarin.Forms.Button about;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Picker sortOfProblem;
+        private global::Xamarin.Forms.Button settings;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Picker language;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button changePassword;
@@ -29,7 +32,8 @@ namespace cameratest {
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Settings));
             about = this.FindByName<global::Xamarin.Forms.Button>("about");
-            sortOfProblem = this.FindByName<global::Xamarin.Forms.Picker>("sortOfProblem");
+            settings = this.FindByName<global::Xamarin.Forms.Button>("settings");
+            language = this.FindByName<global::Xamarin.Forms.Picker>("language");
             changePassword = this.FindByName<global::Xamarin.Forms.Button>("changePassword");
         }
     }

@@ -24,6 +24,11 @@ namespace cameratest
 
             if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsTakePhotoSupported)
             {
+                if (numPic == 3)
+                {
+                    DisplayAlert("Fehler", "Es sind bereits 3 Bilder ausgewählt", "OK");
+                    return;
+                }
                 // Supply media options for saving our photo after it's taken.
                 var mediaOptions = new Plugin.Media.Abstractions.StoreCameraMediaOptions
                 {
@@ -40,10 +45,7 @@ namespace cameratest
                 // DisplayAlert("File Location", file.Path, "OK");
                 //Aufüllen von Gridview bis 3 Bilder eingefügt sind.
 
-                if (numPic == 3) {
-                    DisplayAlert("Fehler", "Es sind bereits 3 Bilder ausgewählt", "OK");
-                    return;
-                } else if (numPic == 0) {
+                  if (numPic == 0) {
                     numPic = 1;
                     image.Source = ImageSource.FromStream(() =>
                     {
