@@ -54,7 +54,9 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\camera
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.pdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.ChangePassword.xaml.g.cs
 c:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.ChangePassword.xaml.g.cs
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
