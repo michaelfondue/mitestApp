@@ -10,6 +10,8 @@ namespace cameratest
 {
     public partial class BugReporting : ContentPage
     {
+        int numPic;
+
         public BugReporting()
         {
             InitializeComponent();
@@ -18,7 +20,74 @@ namespace cameratest
         //{
         //    await Navigation.PushAsync(new BugReporting());
         //}
-        int numPic;
+        async void OnActionChoosePhoto(object sender, EventArgs e)
+        {
+            var action = await DisplayActionSheet("Wählen Sie ", "Cancel", null, "Galerie", "Kamera");
+            if (action == "Galerie")
+            {
+                pickPhoto(sender, e);
+            } 
+            else if (action == "Kamera") {
+                takePhoto(sender, e);
+            }
+            else if(action == "Cancel")
+            {
+                return;
+            }
+        }
+        // Photo aus Galerie auswählen
+        async void pickPhoto(object sender, EventArgs e)
+        {
+        if (!CrossMedia.Current.IsPickPhotoSupported)
+            {
+            DisplayAlert("Photos Not Supported", ":( Permission not granted to photos.", "OK");
+            return;
+            }
+        if (numPic == 3)
+            {
+                DisplayAlert("Fehler", "Es sind bereits 3 Bilder ausgewählt", "OK");
+                return;
+            }
+            var file = await CrossMedia.Current.PickPhotoAsync();
+
+        if (file == null)
+          return;
+            if (numPic == 0)
+            {
+                numPic = 1;
+                image.Source = ImageSource.FromStream(() =>
+                {
+                    var stream = file.GetStream();
+                    file.Dispose();
+                    return stream;
+                });
+
+            }
+            else if (numPic == 1)
+            {
+                numPic = 2;
+                image2.Source = ImageSource.FromStream(() =>
+                {
+                    var stream = file.GetStream();
+                    file.Dispose();
+                    return stream;
+                });
+
+            }
+            else if (numPic == 2)
+            {
+                numPic = 3;
+                image3.Source = ImageSource.FromStream(() =>
+                {
+                    var stream = file.GetStream();
+                    file.Dispose();
+                    return stream;
+                });
+            }
+
+    }
+
+        
         async void takePhoto(object sender, EventArgs e)
         {
 

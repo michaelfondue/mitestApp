@@ -61,7 +61,8 @@
           </StackLayout>
         </ScrollView>
         
-        <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True" Clicked="takePhoto"/>
+        <Button x:Name="Picture" Text="Foto hinzufügen" IsEnabled="True" Clicked="OnActionChoosePhoto"/>
+        <!--<Button x:Name="chosePicture" Text="Foto aus Galerie hinzufügen" IsEnabled="True" Clicked="pickPhoto"/>-->
         <!--<Image x:Name="image"/>-->
 
       <StackLayout HorizontalOptions = "Start"
