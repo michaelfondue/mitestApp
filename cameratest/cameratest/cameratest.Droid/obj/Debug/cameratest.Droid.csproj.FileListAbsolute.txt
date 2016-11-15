@@ -146,6 +146,18 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\R.cs.flag
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\uploadflags.txt
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_farbig.png
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_hintergrund.jpg
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\info.png
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings.png
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings_greyed.png
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.dll.mdb
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_farbig.png
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_hintergrund.jpg
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\info.png
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings.png
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings_greyed.png
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\xml\file_paths
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Java.Interop.dll.mdb
@@ -180,16 +192,5 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_farbig.png
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_hintergrund.jpg
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\info.png
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings.png
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings_greyed.png
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.dll.mdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_farbig.png
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_hintergrund.jpg
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\info.png
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings.png
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings_greyed.png
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll.mdb

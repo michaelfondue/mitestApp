@@ -4,5 +4,9 @@
 	<uses-permission android:name="android.permission.CALL_PHONE" />
 	<uses-permission android:name="android.permission.CAMERA" />
 	<uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
-	<application android:label="$safeprojectname$" android:theme="@android:style/Theme.Holo.Light"></application>
+	<application android:label="$safeprojectname$" android:theme="@android:style/Theme.Holo.Light">
+		<provider android:name="android.support.v4.content.FileProvider" android:authorities="cameratest.fileprovider" android:exported="false" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
+		</provider>
+	</application>
 </manifest>

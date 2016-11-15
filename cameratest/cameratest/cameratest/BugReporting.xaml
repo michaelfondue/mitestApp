@@ -65,7 +65,7 @@
         <!--<Button x:Name="chosePicture" Text="Foto aus Galerie hinzufügen" IsEnabled="True" Clicked="pickPhoto"/>-->
         <!--<Image x:Name="image"/>-->
 
-      <StackLayout HorizontalOptions = "Start"
+      <StackLayout HorizontalOptions = "FillAndExpand"
                    VerticalOptions="FillAndExpand"
                     Orientation="Horizontal"
                     Spacing="0">

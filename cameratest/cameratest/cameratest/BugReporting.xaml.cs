@@ -48,9 +48,18 @@ namespace cameratest
                 DisplayAlert("Fehler", "Es sind bereits 3 Bilder ausgewählt", "OK");
                 return;
             }
-            var file = await CrossMedia.Current.PickPhotoAsync();
+            //set Options for picking a picture
+            var pickmediaOptions = new Plugin.Media.Abstractions.PickMediaOptions
+            {
+                PhotoSize = Plugin.Media.Abstractions.PhotoSize.Custom,
+                CustomPhotoSize = 20
+            };
 
-        if (file == null)
+            //var file = await CrossMedia.Current.PickPhotoAsync();
+            var file = await CrossMedia.Current.PickPhotoAsync(pickmediaOptions);
+
+            //Aufüllen von Gridview bis 3 Bilder eingefügt sind.
+            if (file == null)
           return;
             if (numPic == 0)
             {
@@ -102,11 +111,14 @@ namespace cameratest
                 var mediaOptions = new Plugin.Media.Abstractions.StoreCameraMediaOptions
                 {
                     Directory = "cameratest",
-                    Name = $"{DateTime.UtcNow}.jpg"
+                    Name = $"{DateTime.UtcNow}.jpg",
+                    SaveToAlbum = true,
+                    PhotoSize = Plugin.Media.Abstractions.PhotoSize.Custom,
+                    CustomPhotoSize = 20
                 };
-
                 // Take a photo and save into cameratest.
                 var file = await CrossMedia.Current.TakePhotoAsync(mediaOptions);
+                
 
                 if (file == null)
                     return;
@@ -118,7 +130,7 @@ namespace cameratest
                     numPic = 1;
                     image.Source = ImageSource.FromStream(() =>
                     {
-                        var stream = file.GetStream();
+                        var stream = file.GetStream();  
                         file.Dispose();
                         return stream;
                     });
