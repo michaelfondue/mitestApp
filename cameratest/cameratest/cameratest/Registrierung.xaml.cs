@@ -45,16 +45,22 @@ namespace cameratest
 
             string json = JsonConvert.SerializeObject(userInfo);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
+          
             HttpResponseMessage response = null;
-            //await client.PostAsync(uri, content);
-            if (isNewItem)
-            {
-                response = await client.PostAsync(uri, content);
-            }
+            response = await client.PostAsync(uri, content);
+            Debug.WriteLine(response);
+            //if (isNewItem)
+            //{
+            //    response = await client.PostAsync(uri, content);
+            //}
 
             if (response.IsSuccessStatusCode)
             {
                 Debug.WriteLine(@"TodoItem successfully saved.");
+            }
+            else
+            {
+                Debug.WriteLine("You lose");
             }
         }
 

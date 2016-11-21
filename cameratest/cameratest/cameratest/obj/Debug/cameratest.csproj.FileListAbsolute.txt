@@ -65,9 +65,6 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.pdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csprojResolveAssemblyReference.cache
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
