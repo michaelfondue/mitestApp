@@ -28,16 +28,16 @@
       <Image Source="logo_hintergrund.jpg" />
       
       <Label Text="Name Ihrer Firma" />
-      <Entry x:Name="customerCompanyName" />
+      <Entry x:Name="customerCompanyName" Text="{Binding}" />
       <Label Text="Name Vorname" />
-      <Entry x:Name="reportername" />
+      <Entry x:Name="reporterName" Text="{Binding}" />
       <Label Text="E-Mail" />
-      <Entry x:Name="eMail"/>
+      <Entry x:Name="eMail" Text="{Binding}"/>
       <Label Text="Passwort" />
-      <Entry x:Name="password" IsPassword="true" />
+      <Entry x:Name="password" IsPassword="true" Text="{Binding}"/>
       <Label Text="Passwort wiederholen" />
       <Entry x:Name="passwordAgain" IsPassword="true" />
-      <Button x:Name="register" Text="Registrieren" IsEnabled="True" Clicked="registered" />
+      <Button x:Name="register" Text="Registrieren" IsEnabled="True" Clicked="registering" />
     </StackLayout>
     </ScrollView>
   </ContentPage.Content>

@@ -26,7 +26,7 @@ namespace cameratest {
         private global::Xamarin.Forms.Entry customerCompanyName;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry reportername;
+        private global::Xamarin.Forms.Entry reporterName;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry eMail;
@@ -46,7 +46,7 @@ namespace cameratest {
             about = this.FindByName<global::Xamarin.Forms.Button>("about");
             settings = this.FindByName<global::Xamarin.Forms.Button>("settings");
             customerCompanyName = this.FindByName<global::Xamarin.Forms.Entry>("customerCompanyName");
-            reportername = this.FindByName<global::Xamarin.Forms.Entry>("reportername");
+            reporterName = this.FindByName<global::Xamarin.Forms.Entry>("reporterName");
             eMail = this.FindByName<global::Xamarin.Forms.Entry>("eMail");
             password = this.FindByName<global::Xamarin.Forms.Entry>("password");
             passwordAgain = this.FindByName<global::Xamarin.Forms.Entry>("passwordAgain");

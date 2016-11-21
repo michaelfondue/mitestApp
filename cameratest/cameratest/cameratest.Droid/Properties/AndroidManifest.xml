@@ -4,5 +4,5 @@
 	<uses-permission android:name="android.permission.CALL_PHONE" />
 	<uses-permission android:name="android.permission.CAMERA" />
 	<uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
-	<application android:label="$safeprojectname$" android:theme="@android:style/Theme.Holo.Light"></application>
+	<application android:label="$safeprojectname$" android:theme="@android:style/Theme.Holo.Light" android:icon="@drawable/icon"></application>
 </manifest>

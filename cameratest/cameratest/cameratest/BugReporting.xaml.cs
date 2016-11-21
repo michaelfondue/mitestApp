@@ -5,6 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Plugin.Media;
 using Xamarin.Forms;
+using System.Net;
+using System.Net.Http;
+using System.Collections.Specialized;
+using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace cameratest
 {
@@ -82,5 +87,41 @@ namespace cameratest
         {
             await Navigation.PushAsync(new Settings());
         }
+
+        //async void sendingReport(object sender, EventArgs e)
+        //{
+        //    //var client = new System.Net.WebClient();
+        //    //Webclient client = new WebClient();
+        //    HttpClient client = new HttpClient();
+        //    Uri uri = new Uri("http://10.2.128.58/addUser.php");
+        //    bool isNewItem = false;
+
+        //    Dictionary<String, String> userInfo = new Dictionary<String, String>();
+        //    userInfo.Add("companyName", "Apple");
+        //    userInfo.Add("name", "name");
+        //    userInfo.Add("mail", "mail");
+        //    userInfo.Add("password", "password");
+
+        //    string json = JsonConvert.SerializeObject(userInfo);
+        //    var content = new StringContent(json, Encoding.UTF8, "application/json");
+        //    HttpResponseMessage response = null;
+        //    if (isNewItem)
+        //    {
+        //        response = await client.PostAsync(uri, content);
+        //    }
+
+        //    if (response.IsSuccessStatusCode)
+        //    {
+        //        Debug.WriteLine(@"TodoItem successfully saved.");
+        //    }
+        //    //client.UploadValuesCompleted += client_UploadValuesCompleted;
+
+        //    //await Navigation.PushAsync(new Settings());
+        //}
+
+        //void client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

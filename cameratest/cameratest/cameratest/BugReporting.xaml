@@ -75,7 +75,8 @@
       
       </StackLayout>
       
-        <Button x:Name="sendReport" Text="Senden" IsEnabled="True"/>
+        <Button x:Name="sendReport" Text="Senden" IsEnabled="True" />
+                <!--Clicked="sendingReport"-->           
       </StackLayout>
     </ScrollView>
   </ContentPage.Content>
