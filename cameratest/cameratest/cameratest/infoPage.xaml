@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cameratest.infoPage"
+             BackgroundColor="White">
+  <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="20, 40, 20, 20"
+                Android="20, 5, 20, 20"
+                WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   Orientation="Vertical"
+                   Spacing="10">
+
+      <StackLayout HorizontalOptions = "End"
+                   VerticalOptions="Fill"
+                    Orientation="Horizontal"
+                    Spacing="1">
+
+        <Button x:Name="about" IsEnabled="False" Image="info_greyed.png" BackgroundColor="White"/>
+        <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>
+      </StackLayout>
+
+      <Image Source="logo_hintergrund.jpg" />
+      <Label Text=""/>
+
+      <Label Text="Tuboly-Astronic AG" HorizontalOptions="Center" FontAttributes = "Bold"/>
+      <Label Text="Bleicheweg 5" HorizontalOptions="Center" FontAttributes = "Bold"/>
+      <Label Text="CH-5605 Dottikon" HorizontalOptions="Center" FontAttributes = "Bold" />
+      <Label Text="Schweiz" HorizontalOptions="Center" FontAttributes = "Bold"/>
+      
+      <Label Text=""/>
+      <Label Text=""/>
+      <Label Text=""/>
+
+      <Label Text="Icons made by:" FontSize = "Micro" FontAttributes = "Italic" />
+      <Label Text="http://www.flaticon.com/authors/freepik" FontSize = "Micro" FontAttributes = "Italic" />
+      <Label Text="http://www.flaticon.com/authors/rami-mcmin"  FontSize = "Micro" FontAttributes = "Italic"/>
+      <Label Text="http://www.flaticon.com/authors/egor-rumyantsev" FontSize = "Micro" FontAttributes = "Italic" />
+
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

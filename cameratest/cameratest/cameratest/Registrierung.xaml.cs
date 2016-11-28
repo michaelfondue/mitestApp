@@ -41,14 +41,16 @@ namespace cameratest
             var content = new System.Net.Http.FormUrlEncodedContent(postData);
             //var content = new System.Net.Http.MultipartFormDataContent(postData);
             var response = await client.PostAsync(uri, content);
-
         }
 
         async void openSettings(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Settings());
         }
-
+        async void openInfoPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new infoPage());
+        }
     }
 }
 

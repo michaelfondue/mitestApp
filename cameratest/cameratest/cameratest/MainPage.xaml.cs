@@ -24,6 +24,9 @@ namespace cameratest
         {
             await Navigation.PushAsync(new Settings());
         }
-
+        async void openInfoPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new infoPage());
+        }
     }
 }

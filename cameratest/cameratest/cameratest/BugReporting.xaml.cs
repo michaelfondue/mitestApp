@@ -88,6 +88,10 @@ namespace cameratest
             await Navigation.PushAsync(new Settings());
         }
 
+        async void openInfoPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new infoPage());
+        }
         //async void sendingReport(object sender, EventArgs e)
         //{
         //    //var client = new System.Net.WebClient();

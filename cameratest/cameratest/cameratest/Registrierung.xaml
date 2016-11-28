@@ -21,7 +21,7 @@
                     Orientation="Horizontal"
                     Spacing="1">
 
-        <Button x:Name="about" IsEnabled="True" Image="info.png" BackgroundColor="White"/>
+        <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
         <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>
       </StackLayout>
       
