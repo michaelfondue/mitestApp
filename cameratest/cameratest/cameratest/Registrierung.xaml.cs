@@ -11,6 +11,9 @@ using System.Collections.Specialized;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using Microsoft.VisualBasic;
+using System.IO;
+using System.Globalization;
+using System.Net.Http.Headers;
 
 namespace cameratest
 {
@@ -23,45 +26,22 @@ namespace cameratest
 
         async void registering(object sender, EventArgs e)
         {
-            HttpClient client = new HttpClient();
+
             Uri uri = new Uri("http://app.tuboly-astronic.ch/app/addUser.php");
-            bool isNewItem = false;
 
-            //Dictionary<string, string> userInfo = new Dictionary<string, string>();
-            //string companyName = customerCompanyName.Text;
-            //string name = reporterName.Text;
-            //string mail = eMail.Text;
-            //string password = password.Text;
+            var client = new System.Net.Http.HttpClient();
 
-            //userInfo.Add("companyName", companyName);
-            //userInfo.Add("name", name);
-            //userInfo.Add("mail", mail);
-            //userInfo.Add("password", password);
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            var userInfo = new TodoItem();
-            userInfo.companyName = customerCompanyName.Text;
-            userInfo.name = reporterName.Text;
-            userInfo.mail = eMail.Text;
+            var postData = new List<KeyValuePair<string, string>>();
+            postData.Add(new KeyValuePair<string, string>("companyName", customerCompanyName.Text));
+            postData.Add(new KeyValuePair<string, string>("name", reporterName.Text));
+            postData.Add(new KeyValuePair<string, string>("mail", eMail.Text));
 
-            string json = JsonConvert.SerializeObject(userInfo);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-          
-            HttpResponseMessage response = null;
-            response = await client.PostAsync(uri, content);
-            Debug.WriteLine(response);
-            //if (isNewItem)
-            //{
-            //    response = await client.PostAsync(uri, content);
-            //}
+            var content = new System.Net.Http.FormUrlEncodedContent(postData);
+            //var content = new System.Net.Http.MultipartFormDataContent(postData);
+            var response = await client.PostAsync(uri, content);
 
-            if (response.IsSuccessStatusCode)
-            {
-                Debug.WriteLine(@"TodoItem successfully saved.");
-            }
-            else
-            {
-                Debug.WriteLine("You lose");
-            }
         }
 
         async void openSettings(object sender, EventArgs e)
@@ -69,48 +49,6 @@ namespace cameratest
             await Navigation.PushAsync(new Settings());
         }
 
-
-//        public async Task registerUser(TodoItem item, bool isNewItem = false)
-//        {
-//            RestUrl = http://app.tuboly-astronic.ch/app/addUser.php;
-//            var uri = new Uri(string.Format(Constants.RestUrl, item.ID));
-
-  
-//            var json = JsonConvert.SerializeObject(item);
-//            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-//            HttpResponseMessage response = null;
-//            if (isNewItem)
-//            {
-//                response = await client.PostAsync(uri, content);
-//            }
-
-
-//              if (response.IsSuccessStatusCode)
-//                        {
-//                            Debug.WriteLine(@"             TodoItem successfully saved.");
-
-//                        }
-//}
     }
 }
 
-public class TodoItem
-{
-    public string ID { get; set; }
-    public string companyName { get; set; }
-    public string name { get; set; }
-    public string mail { get; set; }
-}
-
-//public class RestService : IRestService
-//{
-//    HttpClient client;
-
-//  public RestService()
-//    {
-//        client = new HttpClient();
-//        client.MaxResponseContentBufferSize = 256000;
-//  }
-
-//}
