@@ -37,6 +37,7 @@ namespace cameratest
             postData.Add(new KeyValuePair<string, string>("companyName", customerCompanyName.Text));
             postData.Add(new KeyValuePair<string, string>("name", reporterName.Text));
             postData.Add(new KeyValuePair<string, string>("mail", eMail.Text));
+            postData.Add(new KeyValuePair<string, string>("password", password.Text));
 
             var content = new System.Net.Http.FormUrlEncodedContent(postData);
             //var content = new System.Net.Http.MultipartFormDataContent(postData);
