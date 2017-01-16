@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 using Plugin.Media;
 using Xamarin.Forms;
+using System.Net.Http.Headers;
+using System.Net.Http;
 
 namespace cameratest
 {
@@ -16,10 +19,62 @@ namespace cameratest
         {
             InitializeComponent();
         }
-        //async void sendingReport(object sender, EventArgs e)
-        //{
-        //    await Navigation.PushAsync(new BugReporting());
-        //}
+
+        async void sendingReport(object sender, EventArgs e)
+        {
+            Uri uri = new Uri("http://app.tuboly-astronic.ch/app/email.php");
+
+            var client = new System.Net.Http.HttpClient();
+
+            string boundary = "---8d0f01e6b3b5dafaaadada";
+
+            //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+            var multiPartContent = new MultipartFormDataContent(boundary);
+            var selectedValueType = machineType.Items[machineType.SelectedIndex];
+            var selectedValueProblem = sortOfProblem.Items[sortOfProblem.SelectedIndex];
+
+            // content.Add(new StringContent(machineNumber.Text));
+            // content.Add(new StringContent(selectedValueType));
+            // content.Add(new StringContent(selectedValueProblem));
+            // content.Add(new StringContent(problembeschreibung.Text));
+
+
+            //byte[] fileContents = image;
+
+
+            //multiPartContent.Add(byteArrayContent, "file", "image" + uniqueId + ".jpg");
+
+            var postData = new List<KeyValuePair<string, string>>();
+            postData.Add(new KeyValuePair<string, string>("machineNumber", machineNumber.Text));
+            postData.Add(new KeyValuePair<string, string>("machineType", selectedValueType));
+            postData.Add(new KeyValuePair<string, string>("sortOfProblem", selectedValueProblem));
+            postData.Add(new KeyValuePair<string, string>("problemBeschrieb", problembeschreibung.Text));
+
+            var content = new System.Net.Http.FormUrlEncodedContent(postData);
+            //var content = new System.Net.Http.MultipartFormDataContent(postData);
+            var response = await client.PostAsync(uri, content);
+
+            DisplayAlert("Fehlerbericht", "Es wurde eine E-Mail versendet", "OK");
+
+            await Navigation.PushAsync(new Zwischenseite());
+            //content.Add(new StreamImageSource(Image));
+            //var content = new System.Net.Http.FormUrlEncodedContent(postData);
+            // var content = new System.Net.Http.MultipartFormDataContent(postData);
+            //var response = await client.PostAsync(uri, content);
+
+        }
+    
+        void OnTapGestureRecognizerTapped(object sender, EventArgs args)
+        { 
+
+            var imageSender = (Image)sender;
+ 
+            imageSender.Source = "tapped.jpg";
+
+        }
+
+
         async void OnActionChoosePhoto(object sender, EventArgs e)
         {
             var action = await DisplayActionSheet("Wählen Sie ", "Cancel", null, "Galerie", "Kamera");
