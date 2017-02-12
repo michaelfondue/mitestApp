@@ -21,7 +21,7 @@ namespace cameratest
         }
         async void openSettings(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Settings());
+            await Navigation.PushAsync(new Settings_loggedIn());
         }
         async void openInfoPage(object sender, EventArgs e)
         {

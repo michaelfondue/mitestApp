@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cameratest.Settings_loggedIn"
+             BackgroundColor="White">
+  <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="20, 40, 20, 20"
+                Android="20, 5, 20, 20"
+                WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   Orientation="Vertical"
+                   Spacing="15">
+
+      <StackLayout HorizontalOptions = "End"
+                   VerticalOptions="Fill"
+                    Orientation="Horizontal"
+                    Spacing="1">
+
+        <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
+        <Button x:Name="settings" IsEnabled="False" Clicked="openSettings" Image="settings_greyed.png" BackgroundColor="White"/>
+      </StackLayout>
+
+      <Image Source="logo_hintergrund.jpg" />
+
+      <Label Text="Wählen Sie eine Sprache:" />
+      <Picker x:Name="language" Title="Bitte auswählen" SelectedIndex="{Binding problem}" HorizontalOptions="FillAndExpand">
+        <Picker.Items>
+          <x:String>Deutsch</x:String>
+          <x:String>Englisch</x:String>
+          <x:String>Französisch</x:String>
+        </Picker.Items>
+      </Picker>
+
+      <Button x:Name="changePassword" Text="Passwort ändern" IsEnabled="True" Clicked="wantToChangePassword" />
+      <Button x:Name="logOut" Text="Ausloggen" IsEnabled="True" Clicked="loggingOut" />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

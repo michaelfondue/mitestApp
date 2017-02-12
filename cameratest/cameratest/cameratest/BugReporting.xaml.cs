@@ -19,6 +19,33 @@ namespace cameratest
         {
             InitializeComponent();
         }
+
+        void Completed_MachineNumber(object sender, EventArgs e)
+        {
+            if (((Entry)sender).Text != "")
+            {
+                string stringNumber = ((Entry)sender).Text;
+                int number = Convert.ToInt32(stringNumber);
+                if (number > 2000)
+                {
+                    DisplayAlert("Fehler", "Die Maschinennummer ist zu gross", "OK");
+                    return;
+                }
+            }
+        }
+        void Changed_MachineNumber(object sender, EventArgs e)
+        {
+            if (((Entry)sender).Text != "") 
+            {
+                string stringNumber = ((Entry)sender).Text;
+                int number = Convert.ToInt32(stringNumber);
+                if (number > 2000)
+                {
+                    DisplayAlert("Fehler", "Die Maschinennummer ist zu gross", "OK");
+                    return;
+                }
+            }
+        }
         //async void sendingReport(object sender, EventArgs e)
         //{
         //    await Navigation.PushAsync(new BugReporting());
@@ -85,7 +112,7 @@ namespace cameratest
 
         async void openSettings(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Settings());
+            await Navigation.PushAsync(new Settings_loggedIn());
         }
 
         async void openInfoPage(object sender, EventArgs e)

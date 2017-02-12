@@ -32,11 +32,11 @@
       <Label Text="Name Vorname" />
       <Entry x:Name="reporterName" Text="{Binding}" />
       <Label Text="E-Mail" />
-      <Entry x:Name="eMail" Text="{Binding}"/>
+      <Entry x:Name="eMail" Text="{Binding}" TextChanged="Changed_eMail" Completed="Completed_eMail"/>
       <Label Text="Passwort" />
-      <Entry x:Name="password" IsPassword="true" Text="{Binding}"/>
+      <Entry x:Name="password" IsPassword="true" Text="{Binding}" TextChanged="Changed_password" Completed="Completed_password"/>
       <Label Text="Passwort wiederholen" />
-      <Entry x:Name="passwordAgain" IsPassword="true" />
+      <Entry x:Name="passwordAgain" IsPassword="true" TextChanged="Changed_passwordAgain" Completed="Completed_passwordAgain"/>
       <Button x:Name="register" Text="Registrieren" IsEnabled="True" Clicked="registering" />
     </StackLayout>
     </ScrollView>

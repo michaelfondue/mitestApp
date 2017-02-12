@@ -31,7 +31,7 @@
         <Image Source="logo_hintergrund.jpg" />
 
         <Label Text="Maschinennummer" />
-        <Entry x:Name="machineNumber" />
+        <Entry x:Name="machineNumber" Completed="Completed_MachineNumber" TextChanged="Changed_MachineNumber" Keyboard="Numeric"/>
 
         <Label Text="Art der Maschine" />
         <Picker x:Name="machineType" Title="Bitte auswählen" SelectedIndex="{Binding machine}" HorizontalOptions="FillAndExpand">
@@ -52,14 +52,16 @@
         </Picker>
         <Label Text="Problembeschreibung" />
         
-        <ScrollView>
+        <!--<ScrollView>
           <StackLayout
                VerticalOptions="FillAndExpand"
-               Orientation="Vertical">
-            
-            <Editor x:Name="problembeschreibung"  HeightRequest = "80"/>
-          </StackLayout>
-        </ScrollView>
+               Orientation="Vertical">-->
+        
+            <!--Nicht gut-->
+            <Editor x:Name="problembeschreibung"  HeightRequest = "120"/>
+        
+          <!--</StackLayout>
+        </ScrollView>-->
         
         <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True" Clicked="takePhoto"/>
         <!--<Image x:Name="image"/>-->

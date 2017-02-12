@@ -23,6 +23,9 @@ namespace cameratest {
         private global::Xamarin.Forms.Button settings;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry eMail;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry oldPassword;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -39,6 +42,7 @@ namespace cameratest {
             this.LoadFromXaml(typeof(ChangePassword));
             about = this.FindByName<global::Xamarin.Forms.Button>("about");
             settings = this.FindByName<global::Xamarin.Forms.Button>("settings");
+            eMail = this.FindByName<global::Xamarin.Forms.Entry>("eMail");
             oldPassword = this.FindByName<global::Xamarin.Forms.Entry>("oldPassword");
             newPassword = this.FindByName<global::Xamarin.Forms.Entry>("newPassword");
             newPasswordRepeat = this.FindByName<global::Xamarin.Forms.Entry>("newPasswordRepeat");

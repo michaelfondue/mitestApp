@@ -39,14 +39,20 @@ namespace cameratest
             else if (answer == "Connection established. Answer: 0")
             {
                 //show that wrong password or username
+                DisplayAlert("Fehler","Der Benutzername oder das Passwort ist falsch", "OK");
+                return;
             }
             else if(answer == "Connection established. Answer: 2")
             {
                 // not registered yet
+                DisplayAlert("Fehler", "Nicht registrierte Benutzerdaten", "OK");
+                return;
             }
             else
             {
                 //no connection to the server
+                DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
+                return;
             }
 
             //});

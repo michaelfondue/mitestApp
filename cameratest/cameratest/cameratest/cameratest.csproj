@@ -65,6 +65,9 @@
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Settings_loggedIn.xaml.cs">
+      <DependentUpon>Settings_loggedIn.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Zwischenseite.xaml.cs">
       <DependentUpon>Zwischenseite.xaml</DependentUpon>
     </Compile>
@@ -160,6 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="infoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Settings_loggedIn.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
