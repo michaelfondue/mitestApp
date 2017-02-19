@@ -42,6 +42,7 @@
     <Compile Include="ChangePassword.xaml.cs">
       <DependentUpon>ChangePassword.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Globals.cs" />
     <Compile Include="IDialer.cs" />
     <Compile Include="infoPage.xaml.cs">
       <DependentUpon>infoPage.xaml</DependentUpon>

@@ -11,6 +11,8 @@ using Xamarin.Forms;
 
 namespace cameratest
 {
+    Globals g = Globals.getInstance();
+  
     public partial class Login : ContentPage
     {
         public Login()
@@ -41,6 +43,7 @@ namespace cameratest
             Debug.WriteLine(answer);
             if (answer == "True")
             {
+                g.setData(eMail.Text);
                 await Navigation.PushAsync(new Zwischenseite());
             }
             else if (answer == "False")
