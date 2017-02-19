@@ -1,0 +1,7 @@
+/cameratest/.vs/cameratest/v14/.suo
+*.exe
+*.dll
+*.tmp
+/cameratest/cameratest/cameratest/bin/
+/cameratest/cameratest/cameratest.Droid/bin/
+/cameratest/cameratest/cameratest.iOs/bin/
