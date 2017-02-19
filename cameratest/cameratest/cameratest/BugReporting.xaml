@@ -63,22 +63,24 @@
           <!--</StackLayout>
         </ScrollView>-->
         
-        <Button x:Name="makePicture" Text="Foto hinzufügen" IsEnabled="True" Clicked="takePhoto"/>
+        <Button x:Name="Picture" Text="Foto hinzufügen" IsEnabled="True" Clicked="OnActionChoosePhoto"/>
+        <!--<Button x:Name="chosePicture" Text="Foto aus Galerie hinzufügen" IsEnabled="True" Clicked="pickPhoto"/>-->
         <!--<Image x:Name="image"/>-->
 
-      <StackLayout HorizontalOptions = "Start"
+      <StackLayout HorizontalOptions = "FillAndExpand"
                    VerticalOptions="FillAndExpand"
                     Orientation="Horizontal"
                     Spacing="0">
         
-          <Image x:Name="image"  />
-          <Image x:Name="image2"  />
-          <Image x:Name="image3" />
+        
+          <Image x:Name="image"/>
+          <Image x:Name="image2"/>
+          <Image x:Name="image3"/>
       
       </StackLayout>
       
-        <Button x:Name="sendReport" Text="Senden" IsEnabled="True" />
-                <!--Clicked="sendingReport"-->           
+       <Button x:Name="sendReport" Text="Senden" IsEnabled="True" Clicked="sendingReport"/>
+
       </StackLayout>
     </ScrollView>
   </ContentPage.Content>
