@@ -8,12 +8,22 @@ using Plugin.Media;
 using Xamarin.Forms;
 using System.Net.Http.Headers;
 using System.Net.Http;
+using Plugin.Media.Abstractions;
+using System.IO;
 
 namespace cameratest
 {
     public partial class BugReporting : ContentPage
     {
         int numPic;
+        string picpath1;
+        string picpath2;
+        string picpath3;
+        byte[] bypic;
+        byte[] bypic2;
+        byte[] bypic3;
+
+
 
         public BugReporting()
         {
@@ -23,6 +33,7 @@ namespace cameratest
         async void sendingReport(object sender, EventArgs e)
         {
             Uri uri = new Uri("http://app.tuboly-astronic.ch/app/email.php");
+            Uri picuri = new Uri("http://app.tuboly-astronic.ch/app/uploadpic.php");
 
             var client = new System.Net.Http.HttpClient();
 
@@ -40,9 +51,26 @@ namespace cameratest
             // content.Add(new StringContent(problembeschreibung.Text));
 
 
-            //byte[] fileContents = image;
+            //byte[] fileContents = picpath1;
+            //var beachImage = new Image { };
+            //beachImage.Source = ImageSource.FromFile(picpath1);
+            //byte[] img = GetBytes(beachImage);
 
 
+            if (bypic != null)
+            {
+                multiPartContent.Add(new StreamContent(new MemoryStream(bypic)), "file", "upload.jpg");
+            }
+            if (bypic2 != null)
+            {
+                multiPartContent.Add(new StreamContent(new MemoryStream(bypic2)), "file2", "upload2.jpg");
+            }
+            if (bypic3 != null)
+            {
+                multiPartContent.Add(new StreamContent(new MemoryStream(bypic3)), "file3", "upload3.jpg");
+            }
+
+            HttpResponseMessage picresponse = await client.PostAsync(picuri, multiPartContent);
             //multiPartContent.Add(byteArrayContent, "file", "image" + uniqueId + ".jpg");
 
             var postData = new List<KeyValuePair<string, string>>();
@@ -52,8 +80,12 @@ namespace cameratest
             postData.Add(new KeyValuePair<string, string>("problemBeschrieb", problembeschreibung.Text));
 
             var content = new System.Net.Http.FormUrlEncodedContent(postData);
+
             //var content = new System.Net.Http.MultipartFormDataContent(postData);
             var response = await client.PostAsync(uri, content);
+            var answer = await response.Content.ReadAsStringAsync();
+            Debug.WriteLine(answer);
+
 
             DisplayAlert("Fehlerbericht", "Es wurde eine E-Mail versendet", "OK");
 
@@ -64,7 +96,7 @@ namespace cameratest
             //var response = await client.PostAsync(uri, content);
 
         }
-    
+
         void OnTapGestureRecognizerTapped(object sender, EventArgs args)
         { 
 
@@ -116,23 +148,40 @@ namespace cameratest
             //Aufüllen von Gridview bis 3 Bilder eingefügt sind.
             if (file == null)
           return;
+          //  await DisplayAlert("File Location", file.Path, "OK");
             if (numPic == 0)
             {
                 numPic = 1;
+                picpath1 = file.Path;
                 image.Source = ImageSource.FromStream(() =>
                 {
                     var stream = file.GetStream();
+                    //file.Dispose();
+
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        file.GetStream().CopyTo(memoryStream);
+                        //file.Dispose();
+                        bypic = memoryStream.ToArray();
+                    }
                     file.Dispose();
                     return stream;
                 });
-
+                //await DisplayAlert("File Location", picpath1, "ok");
             }
             else if (numPic == 1)
             {
                 numPic = 2;
+                picpath2 = file.Path;
                 image2.Source = ImageSource.FromStream(() =>
                 {
                     var stream = file.GetStream();
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        file.GetStream().CopyTo(memoryStream);
+                        //file.Dispose();
+                        bypic2 = memoryStream.ToArray();
+                    }
                     file.Dispose();
                     return stream;
                 });
@@ -141,9 +190,16 @@ namespace cameratest
             else if (numPic == 2)
             {
                 numPic = 3;
+                picpath3 = file.Path;
                 image3.Source = ImageSource.FromStream(() =>
                 {
                     var stream = file.GetStream();
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        file.GetStream().CopyTo(memoryStream);
+                        //file.Dispose();
+                        bypic3 = memoryStream.ToArray();
+                    }
                     file.Dispose();
                     return stream;
                 });
@@ -183,9 +239,16 @@ namespace cameratest
 
                   if (numPic == 0) {
                     numPic = 1;
+                    picpath1 = file.Path;
                     image.Source = ImageSource.FromStream(() =>
                     {
-                        var stream = file.GetStream();  
+                        var stream = file.GetStream();
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            file.GetStream().CopyTo(memoryStream);
+                            //file.Dispose();
+                            bypic = memoryStream.ToArray();
+                        }
                         file.Dispose();
                         return stream;
                     });
@@ -193,9 +256,16 @@ namespace cameratest
                 } else if (numPic == 1)
                 {
                     numPic = 2;
+                    picpath2 = file.Path;
                     image2.Source = ImageSource.FromStream(() =>
                     {
                         var stream = file.GetStream();
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            file.GetStream().CopyTo(memoryStream);
+                            //file.Dispose();
+                            bypic2 = memoryStream.ToArray();
+                        }
                         file.Dispose();
                         return stream;
                     });
@@ -203,9 +273,16 @@ namespace cameratest
                 } else if (numPic == 2)
                 {
                     numPic = 3;
+                    picpath3 = file.Path;
                     image3.Source = ImageSource.FromStream(() =>
                     {
                         var stream = file.GetStream();
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            file.GetStream().CopyTo(memoryStream);
+                            //file.Dispose();
+                            bypic3 = memoryStream.ToArray();
+                        }
                         file.Dispose();
                         return stream;
                     });
