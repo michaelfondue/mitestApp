@@ -8,7 +8,6 @@ using Plugin.Media;
 using Xamarin.Forms;
 using System.Net;
 using System.Collections.Specialized;
-using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Net.Http;
@@ -61,8 +60,6 @@ namespace cameratest
                 }
             }
         }
-
-        int numPic;
 
         async void sendingReport(object sender, EventArgs e)
         {

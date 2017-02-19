@@ -8,7 +8,6 @@ using Xamarin.Forms;
 using System.Net;
 using System.Net.Http;
 using System.Collections.Specialized;
-using Newtonsoft.Json;
 using System.Diagnostics;
 using Microsoft.VisualBasic;
 using System.IO;

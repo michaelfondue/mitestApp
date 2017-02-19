@@ -60,7 +60,6 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\info.png
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings.png
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings_greyed.png
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_farbig.png
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_hintergrund.jpg
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\info.png
@@ -102,7 +101,6 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.dll.mdb
-<<<<<<< HEAD
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.csprojResolveAssemblyReference.cache
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll.config
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll
@@ -111,7 +109,6 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid-Signed.apk
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.dll
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\FormsViewGroup.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Plugin.CurrentActivity.dll
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Plugin.Media.Abstractions.dll
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Plugin.Media.dll
@@ -132,7 +129,6 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.pdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\FormsViewGroup.pdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\FormsViewGroup.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Plugin.CurrentActivity.xml
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Plugin.Media.pdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Plugin.Media.xml
@@ -159,23 +155,18 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\bin\cameratest.Droid.apk
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_farbig.png
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_hintergrund.jpg
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\info.png
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings.png
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\settings_greyed.png
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable-hdpi\logo_ver_3_klein.png
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\logo_ver_3_klein.png
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\icon.png
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\R.cs.flag
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\uploadflags.txt
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\info_greyed.png
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\xml\file_paths
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Java.Interop.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Mono.Android.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\Mono.CSharp.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\mscorlib.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\System.Core.dll.mdb
@@ -189,9 +180,7 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\cameratest.Droid.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Mono.CSharp.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Plugin.Media.Abstractions.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Plugin.Media.dll.mdb
@@ -208,9 +197,5 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\res\drawable\info_greyed.png
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\obj\Debug\cameratest.Droid.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll.mdb
-=======
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest.Droid\bin\Debug\cameratest.Droid.dll.mdb
->>>>>>> origin/MiGui

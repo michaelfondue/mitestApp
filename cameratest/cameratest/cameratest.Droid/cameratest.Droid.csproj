@@ -132,13 +132,16 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
-    <Compile Include="PhoneDialer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
@@ -147,7 +150,9 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\cameratest\cameratest.csproj">
@@ -171,7 +176,6 @@
     <AndroidResource Include="Resources\drawable\settings_greyed.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <AndroidResource Include="Resources\drawable-hdpi\logo_ver_3_klein.png" />
   </ItemGroup>
   <ItemGroup>
@@ -185,9 +189,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\info_greyed.png" />
-=======
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\xml\file_paths" />
->>>>>>> origin/MiGui
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

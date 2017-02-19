@@ -10,14 +10,10 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-feature android:name="android.hardware.camera" android:required="false" />
   <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
-<<<<<<< HEAD
   <application android:label="$safeprojectname$" android:theme="@android:style/Theme.Holo.Light" android:icon="@drawable/icon" android:name="md578a96ac533ef8811a732a38c50527c6f.MainApplication" android:allowBackup="true" android:debuggable="true">
-=======
-  <application android:label="$safeprojectname$" android:theme="@android:style/Theme.Holo.Light" android:name="md578a96ac533ef8811a732a38c50527c6f.MainApplication" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
     <provider android:name="android.support.v4.content.FileProvider" android:authorities="cameratest.fileprovider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
     </provider>
->>>>>>> origin/MiGui
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="cameratest" android:name="md578a96ac533ef8811a732a38c50527c6f.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
