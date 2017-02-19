@@ -17,46 +17,53 @@ namespace cameratest
 
         async void loggedIn(object sender, EventArgs e)
         {
-            Uri uri = new Uri("http://app.tuboly-astronic.ch/app/login.php");
-
-            var client = new System.Net.Http.HttpClient();
-
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-            var postData = new List<KeyValuePair<string, string>>();
-            postData.Add(new KeyValuePair<string, string>("mail", eMail.Text));
-            postData.Add(new KeyValuePair<string, string>("password", password.Text));
-
-            var content = new System.Net.Http.FormUrlEncodedContent(postData);
-            var response = await client.PostAsync(uri, content);
-
-            var answer = await response.Content.ReadAsStringAsync();
-            //Debug.WriteLine("anser: "+answer);
-            if (answer == "Connection established. Answer: 1")
+            if (eMail.Text == "E-Mail" || password.Text == "Passwort" || eMail.Text == "" || password.Text == "" || eMail.Text == null || password.Text == null)
             {
-                await Navigation.PushAsync(new Zwischenseite());
-            }
-            else if (answer == "Connection established. Answer: 0")
-            {
-                //show that wrong password or username
-                DisplayAlert("Fehler","Der Benutzername oder das Passwort ist falsch", "OK");
-                return;
-            }
-            else if(answer == "Connection established. Answer: 2")
-            {
-                // not registered yet
-                DisplayAlert("Fehler", "Nicht registrierte Benutzerdaten", "OK");
+                DisplayAlert("Fehler", "Bitte geben Sie Ihre Benutzerdaten ein", "OK");
                 return;
             }
             else
             {
-                //no connection to the server
-                DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
-                return;
+                Uri uri = new Uri("http://app.tuboly-astronic.ch/app/login.php");
+
+                var client = new System.Net.Http.HttpClient();
+
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                var postData = new List<KeyValuePair<string, string>>();
+                postData.Add(new KeyValuePair<string, string>("mail", eMail.Text));
+                postData.Add(new KeyValuePair<string, string>("password", password.Text));
+
+                var content = new System.Net.Http.FormUrlEncodedContent(postData);
+                var response = await client.PostAsync(uri, content);
+
+                var answer = await response.Content.ReadAsStringAsync();
+                //Debug.WriteLine("anser: "+answer);
+                if (answer == "Connection established. Answer: 1")
+                {
+                    await Navigation.PushAsync(new Zwischenseite());
+                }
+                else if (answer == "Connection established. Answer: 0")
+                {
+                    //show that wrong password or username
+                    DisplayAlert("Fehler", "Der Benutzername oder das Passwort ist falsch", "OK");
+                    return;
+                }
+                else if (answer == "Connection established. Answer: 2")
+                {
+                    // not registered yet
+                    DisplayAlert("Fehler", "Nicht registrierte Benutzerdaten", "OK");
+                    return;
+                }
+                else
+                {
+                    //no connection to the server
+                    DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
+                    return;
+                }
+
+                //});
             }
-
-            //});
-
         }
         async void OnCallRegistrierung(object sender, EventArgs e)
         {
