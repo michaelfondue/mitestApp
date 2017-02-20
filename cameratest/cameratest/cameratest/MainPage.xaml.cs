@@ -41,6 +41,8 @@ namespace cameratest
                 //Debug.WriteLine("anser: "+answer);
                 if (answer == "Connection established. Answer: 1")
                 {
+                    Globals g = Globals.getInstance();
+                    g.setData(eMail.Text);
                     await Navigation.PushAsync(new Zwischenseite());
                 }
                 else if (answer == "Connection established. Answer: 0")

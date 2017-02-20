@@ -103,12 +103,15 @@ namespace cameratest
 
             HttpResponseMessage picresponse = await client.PostAsync(picuri, multiPartContent);
             //multiPartContent.Add(byteArrayContent, "file", "image" + uniqueId + ".jpg");
+            Globals g = Globals.getInstance();
+            var mail = g.getData();
 
             var postData = new List<KeyValuePair<string, string>>();
             postData.Add(new KeyValuePair<string, string>("machineNumber", machineNumber.Text));
             postData.Add(new KeyValuePair<string, string>("machineType", selectedValueType));
             postData.Add(new KeyValuePair<string, string>("sortOfProblem", selectedValueProblem));
             postData.Add(new KeyValuePair<string, string>("problemBeschrieb", problembeschreibung.Text));
+            postData.Add(new KeyValuePair<string, string>("eMail", mail));
 
             var content = new System.Net.Http.FormUrlEncodedContent(postData);
 
