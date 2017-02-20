@@ -273,6 +273,15 @@ namespace cameratest
                   if (numPic == 0) {
                     numPic = 1;
                     picpath1 = file.Path;
+
+                    var tapGestureRecognizer = new TapGestureRecognizer();
+                    tapGestureRecognizer.Tapped += (s, x) => {
+                        //DisplayAlert("OMFG", "ROFL", "OK");
+                        //image.Scale = 4;
+                        
+                    };
+                    image.GestureRecognizers.Add(tapGestureRecognizer);
+
                     image.Source = ImageSource.FromStream(() =>
                     {
                         var stream = file.GetStream();
