@@ -66,18 +66,20 @@
         <Button x:Name="Picture" Text="Foto hinzufügen" IsEnabled="True" Clicked="OnActionChoosePhoto"/>
         <!--<Button x:Name="chosePicture" Text="Foto aus Galerie hinzufügen" IsEnabled="True" Clicked="pickPhoto"/>-->
         <!--<Image x:Name="image"/>-->
-
-      <StackLayout HorizontalOptions = "FillAndExpand"
-                   VerticalOptions="FillAndExpand"
-                    Orientation="Horizontal"
-                    Spacing="0">
+      <ScrollView
+        Orientation="Horizontal">
+          <StackLayout 
+            HorizontalOptions = "Fill"
+            VerticalOptions="FillAndExpand"
+            Orientation="Horizontal"
+            Spacing="1">
         
+            <Image x:Name="image"/>
+            <Image x:Name="image2"/>
+            <Image x:Name="image3"/>
         
-          <Image x:Name="image"/>
-          <Image x:Name="image2"/>
-          <Image x:Name="image3"/>
-      
-      </StackLayout>
+          </StackLayout>
+      </ScrollView>
       
        <Button x:Name="sendReport" Text="Senden" IsEnabled="True" Clicked="sendingReport"/>
 

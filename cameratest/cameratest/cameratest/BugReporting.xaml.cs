@@ -276,6 +276,7 @@ namespace cameratest
 
                     var tapGestureRecognizer = new TapGestureRecognizer();
                     tapGestureRecognizer.Tapped += (s, x) => {
+                        
                         //DisplayAlert("OMFG", "ROFL", "OK");
                         //image.Scale = 4;
                         
