@@ -19,7 +19,9 @@ namespace cameratest
 {
     public partial class BugReporting : ContentPage
     {
-        int numPic;
+        int numPic; //Number of Pictures added
+        int Picnum = 1; // Number of Picturecontainer
+        int bild; // Bildwahl für Tapauswahl
         string picpath1;
         string picpath2;
         string picpath3;
@@ -130,18 +132,44 @@ namespace cameratest
             //var response = await client.PostAsync(uri, content);
 
         }
+        
+        async void OnActionPictureOption(object sender, EventArgs e, int picN)
+        {
+            var action = await DisplayActionSheet("Bild löschen?", "Nein", "Ja");
+            if (action == "Nein")
+            {
+                return;
+            }
+            if (action == "Ja")
+            {
+                if (picN == 1)
+                {
+                    image.Source = null;
+                    bypic = null;
+                    numPic -= 1;
+                    Picnum = 1;
 
-        void OnTapGestureRecognizerTapped(object sender, EventArgs args)
-        { 
+                }
+                if (picN == 2)
+                {
+                    image2.Source = null;
+                    bypic2 = null;
+                    numPic -= 1;
+                    Picnum = 2;
+                }
+                if (picN == 3)
+                {
+                    image3.Source = null;
+                    bypic3 = null;
+                    numPic -= 1;
+                    Picnum = 3;
+                }
 
-            var imageSender = (Image)sender;
- 
-            imageSender.Source = "tapped.jpg";
-
+                return;
+            }
         }
 
-
-        async void OnActionChoosePhoto(object sender, EventArgs e)
+            async void OnActionChoosePhoto(object sender, EventArgs e)
         {
             var action = await DisplayActionSheet("Wählen Sie ", "Cancel", null, "Galerie", "Kamera");
             if (action == "Galerie")
@@ -183,60 +211,126 @@ namespace cameratest
             if (file == null)
           return;
           //  await DisplayAlert("File Location", file.Path, "OK");
-            if (numPic == 0)
+            if (Picnum == 1 && numPic < 3)
             {
-                numPic = 1;
-                picpath1 = file.Path;
-                image.Source = ImageSource.FromStream(() =>
+                if (image.Source != null)
                 {
-                    var stream = file.GetStream();
+                    Picnum = 2;
+                }
+                else
+                {
+                    numPic += 1;
+                    Picnum = 2;
+                    picpath1 = file.Path;
+
+                    var tapGestureRecognizer = new TapGestureRecognizer();
+                    tapGestureRecognizer.Tapped += (s, x) =>
+                    {
+
+                        //DisplayAlert("OMFG", "ROFL", "OK");
+                        //image.Scale = 4;
+                        //DisplayAlert("Bildoptionen", "", "OK");
+                        //bild = 1;
+                        OnActionPictureOption(sender, e, 1);
+
+
+                    };
+                    image.GestureRecognizers.Add(tapGestureRecognizer);
+
+                    image.Source = ImageSource.FromStream(() =>
+                    {
+                        var stream = file.GetStream();
                     //file.Dispose();
 
                     using (var memoryStream = new MemoryStream())
-                    {
-                        file.GetStream().CopyTo(memoryStream);
+                        {
+                            file.GetStream().CopyTo(memoryStream);
                         //file.Dispose();
                         bypic = memoryStream.ToArray();
-                    }
-                    file.Dispose();
-                    return stream;
-                });
+                        }
+                        file.Dispose();
+                        return stream;
+                    });
+                }
                 //await DisplayAlert("File Location", picpath1, "ok");
             }
-            else if (numPic == 1)
+            else if (Picnum == 2 && numPic < 3)
             {
-                numPic = 2;
-                picpath2 = file.Path;
-                image2.Source = ImageSource.FromStream(() =>
+                if (image2.Source != null)
                 {
-                    var stream = file.GetStream();
-                    using (var memoryStream = new MemoryStream())
+                    Picnum = 3;
+                }
+                else
+                {
+                    numPic += 1;
+                    Picnum = 3;
+                    picpath2 = file.Path;
+
+                    var tapGestureRecognizer = new TapGestureRecognizer();
+                    tapGestureRecognizer.Tapped += (s, x) =>
                     {
-                        file.GetStream().CopyTo(memoryStream);
+
+                        //DisplayAlert("OMFG", "ROFL", "OK");
+                        //image.Scale = 4;
+                        //DisplayAlert("Bildoptionen", "", "OK");
+                        OnActionPictureOption(sender, e, 2);
+
+
+                    };
+                    image2.GestureRecognizers.Add(tapGestureRecognizer);
+
+                    image2.Source = ImageSource.FromStream(() =>
+                    {
+                        var stream = file.GetStream();
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            file.GetStream().CopyTo(memoryStream);
                         //file.Dispose();
                         bypic2 = memoryStream.ToArray();
-                    }
-                    file.Dispose();
-                    return stream;
-                });
-
+                        }
+                        file.Dispose();
+                        return stream;
+                    });
+                }
             }
-            else if (numPic == 2)
+            else if (Picnum == 3 && numPic < 3)
             {
-                numPic = 3;
-                picpath3 = file.Path;
-                image3.Source = ImageSource.FromStream(() =>
+                if (image3.Source != null)
                 {
-                    var stream = file.GetStream();
-                    using (var memoryStream = new MemoryStream())
+                    Picnum = 1;
+                }
+                else
+                {
+                    numPic += 1;
+                    Picnum = 1;
+                    picpath3 = file.Path;
+
+                    var tapGestureRecognizer = new TapGestureRecognizer();
+                    tapGestureRecognizer.Tapped += (s, x) =>
                     {
-                        file.GetStream().CopyTo(memoryStream);
+
+                        //DisplayAlert("OMFG", "ROFL", "OK");
+                        //image.Scale = 4;
+                        //DisplayAlert("Bildoptionen", "", "OK");
+                        OnActionPictureOption(sender, e, 3);
+
+
+                    };
+                    image3.GestureRecognizers.Add(tapGestureRecognizer);
+
+                    image3.Source = ImageSource.FromStream(() =>
+                    {
+                        var stream = file.GetStream();
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            file.GetStream().CopyTo(memoryStream);
                         //file.Dispose();
                         bypic3 = memoryStream.ToArray();
-                    }
-                    file.Dispose();
-                    return stream;
-                });
+                        }
+                        file.Dispose();
+                        return stream;
+                    });
+                }
             }
 
     }
@@ -270,65 +364,123 @@ namespace cameratest
                 // DisplayAlert("File Location", file.Path, "OK");
                 //Aufüllen von Gridview bis 3 Bilder eingefügt sind.
 
-                  if (numPic == 0) {
-                    numPic = 1;
-                    picpath1 = file.Path;
+                  if (Picnum == 1 && numPic < 3) {
 
-                    var tapGestureRecognizer = new TapGestureRecognizer();
-                    tapGestureRecognizer.Tapped += (s, x) => {
-                        
-                        //DisplayAlert("OMFG", "ROFL", "OK");
-                        //image.Scale = 4;
-                        
-                    };
-                    image.GestureRecognizers.Add(tapGestureRecognizer);
-
-                    image.Source = ImageSource.FromStream(() =>
+                    if (image.Source != null)
                     {
-                        var stream = file.GetStream();
-                        using (var memoryStream = new MemoryStream())
+                        Picnum = 2;
+                    }
+                    else
+                    {
+                        numPic += 1;
+                        Picnum = 2;
+                        picpath1 = file.Path;
+
+                        var tapGestureRecognizer = new TapGestureRecognizer();
+                        tapGestureRecognizer.Tapped += (s, x) =>
                         {
-                            file.GetStream().CopyTo(memoryStream);
+
+                            //DisplayAlert("OMFG", "ROFL", "OK");
+                            //image.Scale = 4;
+                            //DisplayAlert("Bildoptionen", "", "OK");
+                            OnActionPictureOption(sender, e, 1);
+
+
+                        };
+                        image.GestureRecognizers.Add(tapGestureRecognizer);
+
+                        image.Source = ImageSource.FromStream(() =>
+                        {
+                            var stream = file.GetStream();
+                            using (var memoryStream = new MemoryStream())
+                            {
+                                file.GetStream().CopyTo(memoryStream);
                             //file.Dispose();
                             bypic = memoryStream.ToArray();
-                        }
-                        file.Dispose();
-                        return stream;
-                    });
+                            }
+                            file.Dispose();
+                            return stream;
+                        });
+                    }
                  
-                } else if (numPic == 1)
+                } else if (Picnum == 2 && numPic < 3)
                 {
-                    numPic = 2;
-                    picpath2 = file.Path;
-                    image2.Source = ImageSource.FromStream(() =>
+                    if (image2.Source != null)
                     {
-                        var stream = file.GetStream();
-                        using (var memoryStream = new MemoryStream())
+                        Picnum = 3;
+                    }
+                    else
+                    {
+                        numPic += 1;
+                        Picnum = 3;
+                        picpath2 = file.Path;
+
+                        var tapGestureRecognizer = new TapGestureRecognizer();
+                        tapGestureRecognizer.Tapped += (s, x) =>
                         {
-                            file.GetStream().CopyTo(memoryStream);
+
+                            //DisplayAlert("OMFG", "ROFL", "OK");
+                            //image.Scale = 4;
+                            //DisplayAlert("Bildoptionen", "", "OK");
+                            OnActionPictureOption(sender, e, 2);
+
+
+                        };
+                        image2.GestureRecognizers.Add(tapGestureRecognizer);
+
+                        image2.Source = ImageSource.FromStream(() =>
+                        {
+                            var stream = file.GetStream();
+                            using (var memoryStream = new MemoryStream())
+                            {
+                                file.GetStream().CopyTo(memoryStream);
                             //file.Dispose();
                             bypic2 = memoryStream.ToArray();
-                        }
-                        file.Dispose();
-                        return stream;
-                    });
+                            }
+                            file.Dispose();
+                            return stream;
+                        });
+                    }
                     
-                } else if (numPic == 2)
+                } else if (Picnum == 3 && numPic < 3)
                 {
-                    numPic = 3;
-                    picpath3 = file.Path;
-                    image3.Source = ImageSource.FromStream(() =>
+                    if (image3.Source != null)
                     {
-                        var stream = file.GetStream();
-                        using (var memoryStream = new MemoryStream())
+                        Picnum = 1;
+                    }
+                    else
+                    {
+                        numPic += 1;
+                        Picnum = 1;
+                        picpath3 = file.Path;
+                        
+
+                        var tapGestureRecognizer = new TapGestureRecognizer();
+                        tapGestureRecognizer.Tapped += (s, x) =>
                         {
-                            file.GetStream().CopyTo(memoryStream);
+
+                            //DisplayAlert("OMFG", "ROFL", "OK");
+                            //image.Scale = 4;
+                            //DisplayAlert("Bildoptionen", "", "OK");
+                            OnActionPictureOption(sender, e, 3);
+
+
+                        };
+                        image3.GestureRecognizers.Add(tapGestureRecognizer);
+
+                        image3.Source = ImageSource.FromStream(() =>
+                        {
+                            var stream = file.GetStream();
+                            using (var memoryStream = new MemoryStream())
+                            {
+                                file.GetStream().CopyTo(memoryStream);
                             //file.Dispose();
                             bypic3 = memoryStream.ToArray();
-                        }
-                        file.Dispose();
-                        return stream;
-                    });
+                            }
+                            file.Dispose();
+                            return stream;
+                        });
+                    }
                 }
            
             }
