@@ -123,9 +123,9 @@ namespace cameratest
             Debug.WriteLine(answer);
 
 
-            DisplayAlert("Fehlerbericht", "Es wurde eine E-Mail versendet", "OK");
+            await DisplayAlert("Fehlerbericht", "Es wurde eine E-Mail versendet", "OK");
 
-            await Navigation.PushAsync(new Zwischenseite());
+            await Navigation.PopAsync();
             //content.Add(new StreamImageSource(Image));
             //var content = new System.Net.Http.FormUrlEncodedContent(postData);
             // var content = new System.Net.Http.MultipartFormDataContent(postData);

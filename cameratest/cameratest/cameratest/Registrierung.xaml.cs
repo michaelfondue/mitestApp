@@ -108,8 +108,8 @@ namespace cameratest
                 var answer = await response.Content.ReadAsStringAsync();
                 if (answer == "Connection established. Answer: 1")
                 {
-                    DisplayAlert("Erfolgreich", "Ihre Registrierung war erfolgreich, Sie können sich jetzt einloggen", "OK");
-                    await Navigation.PushAsync(new MainPage());
+                    await DisplayAlert("Erfolgreich", "Ihre Registrierung war erfolgreich, Sie können sich jetzt einloggen", "OK");
+                    await Navigation.PopAsync();
                 }
                 else if (answer == "Connection established. Answer: 0")
                 {

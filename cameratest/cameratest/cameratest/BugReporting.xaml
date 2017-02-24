@@ -72,11 +72,12 @@
             HorizontalOptions = "Fill"
             VerticalOptions="FillAndExpand"
             Orientation="Horizontal"
+						
             Spacing="1">
         
-            <Image x:Name="image"/>
-            <Image x:Name="image2"/>
-            <Image x:Name="image3"/>
+            <Image x:Name="image" WidthRequest="240" HeightRequest="300" Aspect="AspectFill"/>
+            <Image x:Name="image2" WidthRequest="240" HeightRequest="300" Aspect="AspectFill"/>
+            <Image x:Name="image3" WidthRequest="240" HeightRequest="300" Aspect="AspectFill"/>
         
           </StackLayout>
       </ScrollView>
