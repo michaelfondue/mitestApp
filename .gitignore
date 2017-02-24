@@ -8,3 +8,5 @@
 cameratest/packages
 cameratest.userprefs
 cameratest/cameratest/cameratest/obj
+cameratest/cameratest/cameratest.iOS/obj
+cameratest/cameratest/cameratest.Droid/obj
