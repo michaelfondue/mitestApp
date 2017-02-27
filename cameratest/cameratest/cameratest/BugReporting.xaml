@@ -75,9 +75,9 @@
 						
             Spacing="1">
         
-            <Image x:Name="image" WidthRequest="240" HeightRequest="300" Aspect="AspectFill"/>
-            <Image x:Name="image2" WidthRequest="240" HeightRequest="300" Aspect="AspectFill"/>
-            <Image x:Name="image3" WidthRequest="240" HeightRequest="300" Aspect="AspectFill"/>
+            <Image x:Name="image" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
+            <Image x:Name="image2" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
+            <Image x:Name="image3" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
         
           </StackLayout>
       </ScrollView>
