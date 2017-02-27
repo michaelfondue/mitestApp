@@ -31,6 +31,7 @@ namespace cameratest
         async void loggingOut(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
+            //TODO: Nach dem Ausloggen sollte der User nirgends zurück können!!!
         }
     }
 }

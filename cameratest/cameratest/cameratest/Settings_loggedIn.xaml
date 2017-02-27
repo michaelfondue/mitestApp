@@ -11,6 +11,7 @@
                 WinPhone="20, 20, 20, 20" />
   </ContentPage.Padding>
   <ContentPage.Content>
+    <ScrollView>
     <StackLayout VerticalOptions="FillAndExpand"
                    HorizontalOptions="FillAndExpand"
                    Orientation="Vertical"
@@ -39,5 +40,6 @@
       <Button x:Name="changePassword" Text="Passwort ändern" IsEnabled="True" Clicked="wantToChangePassword" />
       <Button x:Name="logOut" Text="Ausloggen" IsEnabled="True" Clicked="loggingOut" />
     </StackLayout>
+      </ScrollView>
   </ContentPage.Content>
 </ContentPage>

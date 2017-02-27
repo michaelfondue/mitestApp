@@ -10,6 +10,7 @@
               WinPhone="20, 20, 20, 20" />
 </ContentPage.Padding>
 <ContentPage.Content>
+  <ScrollView>
   <StackLayout VerticalOptions="FillAndExpand"
                HorizontalOptions="FillAndExpand"
                Orientation="Vertical"
@@ -30,5 +31,6 @@
     <Button x:Name="faq" Text="Häufig gestellte Fragen" IsEnabled="True"/>
     <Button x:Name="videos" Text="Videos zur Problembehandlung" IsEnabled="True"/>
   </StackLayout>
+    </ScrollView>
 </ContentPage.Content>
 </ContentPage>

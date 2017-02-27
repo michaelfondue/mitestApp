@@ -44,6 +44,7 @@ namespace cameratest
                     Globals g = Globals.getInstance();
                     g.setData(eMail.Text);
                     await Navigation.PushAsync(new Zwischenseite());
+                    Navigation.RemovePage(this);
                 }
                 else if (answer == "Connection established. Answer: 0")
                 {

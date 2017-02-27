@@ -11,6 +11,7 @@
                 WinPhone="20, 20, 20, 20" />
   </ContentPage.Padding>
   <ContentPage.Content>
+    <ScrollView>
     <StackLayout VerticalOptions="FillAndExpand"
                    HorizontalOptions="FillAndExpand"
                    Orientation="Vertical"
@@ -43,5 +44,6 @@
       <Label Text="http://www.flaticon.com/authors/egor-rumyantsev" FontSize = "Micro" FontAttributes = "Italic" />
 
     </StackLayout>
+      </ScrollView>
   </ContentPage.Content>
 </ContentPage>
