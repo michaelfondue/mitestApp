@@ -92,15 +92,15 @@ namespace cameratest
 
             if (bypic != null)
             {
-                multiPartContent.Add(new StreamContent(new MemoryStream(bypic)), "file", "upload.jpg");
+                multiPartContent.Add(new StreamContent(new MemoryStream(bypic)), "file", "reportpicture1.jpg");
             }
             if (bypic2 != null)
             {
-                multiPartContent.Add(new StreamContent(new MemoryStream(bypic2)), "file2", "upload2.jpg");
+                multiPartContent.Add(new StreamContent(new MemoryStream(bypic2)), "file2", "reportpicture2.jpg");
             }
             if (bypic3 != null)
             {
-                multiPartContent.Add(new StreamContent(new MemoryStream(bypic3)), "file3", "upload3.jpg");
+                multiPartContent.Add(new StreamContent(new MemoryStream(bypic3)), "file3", "reportpicture3.jpg");
             }
 
             HttpResponseMessage picresponse = await client.PostAsync(picuri, multiPartContent);

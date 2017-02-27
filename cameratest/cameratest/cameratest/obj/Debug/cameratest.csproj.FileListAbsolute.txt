@@ -68,7 +68,9 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csproj.App.config
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.infoPage.xaml.g.cs
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Settings_loggedIn.xaml.g.cs
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
+C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
