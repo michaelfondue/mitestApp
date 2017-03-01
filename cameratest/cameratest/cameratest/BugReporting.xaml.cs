@@ -22,7 +22,7 @@ namespace cameratest
         int numPic; //Number of Pictures added
         int Picnum = 1; // Number of Picturecontainer
         int bild; // Bildwahl für Tapauswahl
-        string picpath1;
+        public static string picpath1;
         string picpath2;
         string picpath3;
         byte[] bypic;
@@ -133,7 +133,7 @@ namespace cameratest
 
         }
         
-        async void OnActionPictureOption(object sender, EventArgs e, int picN)
+        async public void OnActionPictureOption(object sender, EventArgs e, int picN)
         {
             var action = await DisplayActionSheet("Bild löschen?", "Nein", "Ja");
             if (action == "Nein")
@@ -231,8 +231,8 @@ namespace cameratest
                         //image.Scale = 4;
                         //DisplayAlert("Bildoptionen", "", "OK");
                         //bild = 1;
-                        OnActionPictureOption(sender, e, 1);
-
+                        //OnActionPictureOption(sender, e, 1);
+                        ZoomPic(sender, e);
 
                     };
                     image.GestureRecognizers.Add(tapGestureRecognizer);
@@ -265,6 +265,7 @@ namespace cameratest
                     numPic += 1;
                     Picnum = 3;
                     picpath2 = file.Path;
+                    
 
                     var tapGestureRecognizer = new TapGestureRecognizer();
                     tapGestureRecognizer.Tapped += (s, x) =>
@@ -295,6 +296,7 @@ namespace cameratest
             }
             else if (Picnum == 3 && numPic < 3)
             {
+                
                 if (image3.Source != null)
                 {
                     Picnum = 1;
@@ -495,6 +497,12 @@ namespace cameratest
         {
             await Navigation.PushAsync(new infoPage());
         }
+
+        async void ZoomPic(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ZoomPic());
+        }
+
         //async void sendingReport(object sender, EventArgs e)
         //{
         //    //var client = new System.Net.WebClient();

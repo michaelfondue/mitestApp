@@ -1,0 +1,23 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cameratest.ZoomPic">
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+
+  <AbsoluteLayout VerticalOptions="FillAndExpand"
+                  HorizontalOptions="FillAndExpand">
+    <Image x:Name="zoomedPic" Aspect="AspectFill"    
+                AbsoluteLayout.LayoutBounds="0, 0, 1, 0.9"
+                AbsoluteLayout.LayoutFlags="All" />
+    
+    <Button    x:Name="Del" Text="Löschen" IsEnabled="True" Clicked="OnDel"
+               AbsoluteLayout.LayoutBounds="0, 1, 0.5, 0.1"
+               AbsoluteLayout.LayoutFlags="All" />
+              
+
+    <Button    x:Name="Ok" Text="Ok" IsEnabled="True" Clicked="OnDel"
+               AbsoluteLayout.LayoutBounds="1, 1, 0.5, 0.1"
+               AbsoluteLayout.LayoutFlags="All" />
+
+  </AbsoluteLayout>
+
+</ContentPage>

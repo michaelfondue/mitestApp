@@ -72,7 +72,6 @@
             HorizontalOptions = "Fill"
             VerticalOptions="FillAndExpand"
             Orientation="Horizontal"
-						
             Spacing="1">
         
             <Image x:Name="image" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
