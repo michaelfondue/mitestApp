@@ -31,6 +31,8 @@
       <Entry x:Name="customerCompanyName" Text="{Binding}" />
       <Label Text="Name Vorname" />
       <Entry x:Name="reporterName" Text="{Binding}" />
+      <Label Text="Telefonnummer" />
+      <Entry x:Name="phoneNumber" Text="{Binding}" Keyboard="Numeric"/>
       <Label Text="E-Mail" />
       <Entry x:Name="eMail" Text="{Binding}" TextChanged="Changed_eMail" Completed="Completed_eMail"/>
       <Label Text="Passwort" />

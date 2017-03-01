@@ -72,7 +72,7 @@ namespace cameratest
         async void registering(object sender, EventArgs e)
         {
             //last check
-            if (customerCompanyName.Text == "" || reporterName.Text == "" || eMail.Text == "" || password.Text == "" || passwordAgain.Text == "")
+            if (customerCompanyName.Text == "" || reporterName.Text == "" || eMail.Text == "" || password.Text == "" || passwordAgain.Text == "" || phoneNumber.Text == "")
             {
                 DisplayAlert("Fehler", "Bitte füllen Sie alle Felder aus", "OK");
                 return;
@@ -100,6 +100,7 @@ namespace cameratest
                 postData.Add(new KeyValuePair<string, string>("name", reporterName.Text));
                 postData.Add(new KeyValuePair<string, string>("mail", eMail.Text));
                 postData.Add(new KeyValuePair<string, string>("password", password.Text));
+                postData.Add(new KeyValuePair<string, string>("phoneNumber", phoneNumber.Text));
 
                 var content = new System.Net.Http.FormUrlEncodedContent(postData);
                 //var content = new System.Net.Http.MultipartFormDataContent(postData);
