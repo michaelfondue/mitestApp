@@ -115,6 +115,15 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\icon.png" />
+    <BundleResource Include="Resources\info_greyed.png" />
+    <BundleResource Include="Resources\info_gross.png" />
+    <BundleResource Include="Resources\info.png" />
+    <BundleResource Include="Resources\logo_farbig.png" />
+    <BundleResource Include="Resources\logo_hintergrund.jpg" />
+    <BundleResource Include="Resources\logo_ver_3_klein.png" />
+    <BundleResource Include="Resources\settings_greyed.png" />
+    <BundleResource Include="Resources\settings.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Plugin.Media, Version=2.6.1.0, Culture=neutral, processorArchitecture=MSIL">

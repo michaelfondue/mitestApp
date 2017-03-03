@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.MainPage"
@@ -30,8 +30,8 @@
             <Label Text="Geben Sie Ihre Logindaten ein:" />
             <Entry x:Name="eMail" Placeholder="E-Mail" />
             <Entry x:Name="password" Placeholder="Passwort" IsPassword="true"/>            
-          <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="loggedIn" />
-          <Button x:Name="machRegistrierig" Text="Registrierung" IsEnabled="True" Clicked="OnCallRegistrierung" />
+          <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="loggedIn" BackgroundColor="Gray" TextColor="White" />
+          <Button x:Name="machRegistrierig" Text="Registrierung" IsEnabled="True" Clicked="OnCallRegistrierung"  BackgroundColor="Gray" TextColor="White" />
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>

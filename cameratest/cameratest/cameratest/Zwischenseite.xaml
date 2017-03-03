@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.Zwischenseite"
@@ -27,9 +27,9 @@
 
     <Image Source="logo_hintergrund.jpg" />
     
-    <Button x:Name="reportBug" Text="Einen Fehler melden" IsEnabled="True" Clicked="reportingBug"/>
-    <Button x:Name="faq" Text="Häufig gestellte Fragen" IsEnabled="True"/>
-    <Button x:Name="videos" Text="Videos zur Problembehandlung" IsEnabled="True"/>
+    <Button x:Name="reportBug" Text="Einen Fehler melden" IsEnabled="True" Clicked="reportingBug" BackgroundColor="Gray" TextColor="White"/>
+    <Button x:Name="faq" Text="Häufig gestellte Fragen" IsEnabled="True" BackgroundColor="Gray" TextColor="White"/>
+    <Button x:Name="videos" Text="Videos zur Problembehandlung" IsEnabled="True" BackgroundColor="Gray" TextColor="White"/>
   </StackLayout>
     </ScrollView>
 </ContentPage.Content>

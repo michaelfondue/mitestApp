@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.BugReporting"
@@ -22,7 +22,7 @@
             <StackLayout HorizontalOptions = "End" 
                          VerticalOptions="Fill"
                           Orientation="Horizontal"
-                          Spacing="1">
+                          Spacing="5">
              
                   <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
                   <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>              
@@ -63,7 +63,7 @@
           <!--</StackLayout>
         </ScrollView>-->
         
-        <Button x:Name="Picture" Text="Foto hinzufügen" IsEnabled="True" Clicked="OnActionChoosePhoto"/>
+        <Button x:Name="Picture" Text="Foto hinzufügen" IsEnabled="True" Clicked="OnActionChoosePhoto"  BackgroundColor="Gray" TextColor="White"/>
         <!--<Button x:Name="chosePicture" Text="Foto aus Galerie hinzufügen" IsEnabled="True" Clicked="pickPhoto"/>-->
         <!--<Image x:Name="image"/>-->
       <ScrollView
@@ -82,7 +82,7 @@
           </StackLayout>
       </ScrollView>
       
-       <Button x:Name="sendReport" Text="Senden" IsEnabled="True" Clicked="sendingReport"/>
+       <Button x:Name="sendReport" Text="Senden" IsEnabled="True" Clicked="sendingReport"  BackgroundColor="Gray" TextColor="White"/>
 
       </StackLayout>
     </ScrollView>
