@@ -50,6 +50,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="resetPassword.xaml.cs">
+      <DependentUpon>resetPassword.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZoomPic.xaml.cs">
       <DependentUpon>ZoomPic.xaml</DependentUpon>
     </Compile>
@@ -157,6 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ZoomPic.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resetPassword.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

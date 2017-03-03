@@ -29,9 +29,10 @@
           
             <Label Text="Geben Sie Ihre Logindaten ein:" />
             <Entry x:Name="eMail" Placeholder="E-Mail" />
-            <Entry x:Name="password" Placeholder="Passwort" IsPassword="true"/>            
-          <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="loggedIn" />
-          <Button x:Name="machRegistrierig" Text="Registrierung" IsEnabled="True" Clicked="OnCallRegistrierung" />
+            <Entry x:Name="password" Placeholder="Passwort" IsPassword="true"/>
+            <Button x:Name="forgottenPassword" Text="Passwort vergessen" Clicked="forgotPassword" FontSize="Small"/>
+            <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="loggedIn" />
+            <Button x:Name="machRegistrierig" Text="Registrierung" IsEnabled="True" Clicked="OnCallRegistrierung" />
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>

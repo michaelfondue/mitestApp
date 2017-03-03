@@ -22,6 +22,11 @@ namespace cameratest
                 DisplayAlert("Fehler", "Bitte geben Sie Ihre Benutzerdaten ein", "OK");
                 return;
             }
+            else if (!(eMail.Text.Contains("@") && eMail.Text.Contains(".")))
+            {
+                DisplayAlert("Fehler", "Bitte geben Sie eine gültige E-Mail Adresse an", "OK");
+                return;
+            }
             else
             {
                 Uri uri = new Uri("http://app.tuboly-astronic.ch/app/login.php");
@@ -79,6 +84,10 @@ namespace cameratest
         async void openInfoPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new infoPage());
+        }
+        async void forgotPassword(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new resetPassword());
         }
     }
 }
