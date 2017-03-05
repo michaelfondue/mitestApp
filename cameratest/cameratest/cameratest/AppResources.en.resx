@@ -117,13 +117,100 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="forgotPassword" xml:space="preserve">
-    <value>Passwort vergessen</value>
+  <data name="str_addPicture" xml:space="preserve">
+    <value>Add picture</value>
   </data>
-  <data name="password" xml:space="preserve">
-    <value>Passwort</value>
+  <data name="str_alreadyExistingUserName" xml:space="preserve">
+    <value>This user name already exists</value>
+  </data>
+  <data name="str_breakdown" xml:space="preserve">
+    <value>mc:breakdown</value>
+  </data>
+  <data name="str_companyName" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="str_enterUserData" xml:space="preserve">
+    <value>Please enter your user data</value>
+  </data>
+  <data name="str_error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="str_faq" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="str_fillAll" xml:space="preserve">
+    <value>Please fill out all of the fields above</value>
+  </data>
+  <data name="str_forgotPassword" xml:space="preserve">
+    <value>Password forgotten</value>
   </data>
   <data name="str_login" xml:space="preserve">
-    <value>msljfdaksjfdlasjdl</value>
+    <value>Please enter the data to log in</value>
+  </data>
+  <data name="str_machineNumber" xml:space="preserve">
+    <value>Machine number</value>
+  </data>
+  <data name="str_name" xml:space="preserve">
+    <value>Lastname firstname</value>
+  </data>
+  <data name="str_noConnection" xml:space="preserve">
+    <value>No connection to the server</value>
+  </data>
+  <data name="str_nonMatchingPasswords" xml:space="preserve">
+    <value>The passwords don't match</value>
+  </data>
+  <data name="str_notRegistered" xml:space="preserve">
+    <value>Not registered user data</value>
+  </data>
+  <data name="str_onSuccess" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="str_other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="str_password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="str_passwordAgain" xml:space="preserve">
+    <value>Password (repeated)</value>
+  </data>
+  <data name="str_phoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="str_problemDescription" xml:space="preserve">
+    <value>Description of your problem</value>
+  </data>
+  <data name="str_question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="str_register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="str_registerSuccess" xml:space="preserve">
+    <value>Your registration was successfull, you can now log in</value>
+  </data>
+  <data name="str_reportBug" xml:space="preserve">
+    <value>Report problem</value>
+  </data>
+  <data name="str_send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="str_sortOfProblem" xml:space="preserve">
+    <value>Sort of problem</value>
+  </data>
+  <data name="str_spareParts" xml:space="preserve">
+    <value>Spare parts</value>
+  </data>
+  <data name="str_typeOfMachine" xml:space="preserve">
+    <value>Type of machine</value>
+  </data>
+  <data name="str_validMailAdress" xml:space="preserve">
+    <value>Please enter a valid e-mail adress</value>
+  </data>
+  <data name="str_videos" xml:space="preserve">
+    <value>Troubleshooting Videos</value>
+  </data>
+  <data name="str_wrongUserNameOrPassword" xml:space="preserve">
+    <value>Your user name or your password is wrong</value>
   </data>
 </root>

@@ -7,11 +7,17 @@ namespace cameratest
     public class App : Application
     {
         public static List<string> PhoneNumbers { get; set; }
-
+        
         public App()
         {
+            if (Device.OS == TargetPlatform.iOS || Device.OS == TargetPlatform.Android)
+            {
+                var ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
+                cameratest.AppResources.Culture = ci; // set the RESX for resource localization
+                DependencyService.Get<ILocalize>().SetLocale(ci); // set the Thread for locale-aware methods
+            }
             MainPage = new NavigationPage(new cameratest.MainPage());
-            PhoneNumbers = new List<String>();
+            
         }
 
         protected override void OnStart()

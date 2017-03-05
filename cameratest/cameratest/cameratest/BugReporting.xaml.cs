@@ -8,7 +8,6 @@ using Plugin.Media;
 using Xamarin.Forms;
 using System.Net;
 using System.Collections.Specialized;
-using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using Plugin.Media.Abstractions;

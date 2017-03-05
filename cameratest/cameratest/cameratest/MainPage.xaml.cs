@@ -5,6 +5,7 @@ using Plugin.Media;
 using System.Net.Http.Headers;
 using System.Diagnostics;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace cameratest
 {
@@ -13,9 +14,16 @@ namespace cameratest
         public MainPage()
         {
             InitializeComponent();
+            // ...
+            // NOTE: use for debugging, not in released app code!
+            var assembly = typeof(MainPage).GetTypeInfo().Assembly; // "EmbeddedImages" should be a class in your app
+            foreach (var res in assembly.GetManifestResourceNames())
+            {
+                System.Diagnostics.Debug.WriteLine("found resource: " + res);
+            }
         }
-
-        async void loggedIn(object sender, EventArgs e)
+        
+async void loggedIn(object sender, EventArgs e)
         {
             if (eMail.Text == "E-Mail" || password.Text == "Passwort" || eMail.Text == "" || password.Text == "" || eMail.Text == null || password.Text == null)
             {

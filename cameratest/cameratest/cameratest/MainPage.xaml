@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.MainPage"
+             xmlns:i18n="clr-namespace:cameratest;assembly=cameratest">
               BackgroundColor="White">
      <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness"
@@ -27,7 +28,7 @@
 
             <Image Source="logo_hintergrund.jpg" />
           
-            <Label Text="Geben Sie Ihre Logindaten ein:" />
+            <Label Text="{i18n:Translate str_login}" />
             <Entry x:Name="eMail" Placeholder="E-Mail" />
             <Entry x:Name="password" Placeholder="Passwort" IsPassword="true"/>
             <Button x:Name="forgottenPassword" Text="Passwort vergessen" Clicked="forgotPassword" FontSize="Small"/>

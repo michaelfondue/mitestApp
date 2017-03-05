@@ -28,7 +28,12 @@
       <Image Source="logo_hintergrund.jpg" />
       
       <Label Text="Name Ihrer Firma" />
-      <Entry x:Name="customerCompanyName" Text="{Binding}" />
+      <Entry x:Name="customerCompanyName" Text="{
+             
+      
+      
+      
+      }" />
       <Label Text="Name Vorname" />
       <Entry x:Name="reporterName" Text="{Binding}" />
       <Label Text="Telefonnummer" />
