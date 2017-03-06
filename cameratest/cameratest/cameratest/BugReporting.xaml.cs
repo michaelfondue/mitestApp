@@ -121,13 +121,29 @@ namespace cameratest
 
             //var content = new System.Net.Http.MultipartFormDataContent(postData);
             var response = await client.PostAsync(uri, content);
+
+
             var answer = await response.Content.ReadAsStringAsync();
-            Debug.WriteLine(answer);
+            if (answer == "Message has been sent")
+            {
+                await DisplayAlert("Erfolgreich", "E-Mail erfolgreich versendet.", "OK");
+                await Navigation.PopAsync();
+            }
+            else if (answer == "Message could not be sent.")
+            {
+                //E-Mail could not be sent
+                DisplayAlert("Fehler", "E-Mail konnte nicht versendet werden.", "OK");
+                return;
+            }
+            else
+            {
+                //no connection to the server
+                Debug.WriteLine(answer);
+                DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
+                return;
+            }
 
-
-            await DisplayAlert("Fehlerbericht", "Es wurde eine E-Mail versendet", "OK");
-
-            await Navigation.PopAsync();
+            //await Navigation.PopAsync();
             //content.Add(new StreamImageSource(Image));
             //var content = new System.Net.Http.FormUrlEncodedContent(postData);
             // var content = new System.Net.Http.MultipartFormDataContent(postData);
