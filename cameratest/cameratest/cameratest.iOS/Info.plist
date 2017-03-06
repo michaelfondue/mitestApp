@@ -23,7 +23,7 @@
 	<key>MinimumOSVersion</key>
 	<string>7.1</string>
 	<key>CFBundleDisplayName</key>
-	<string>cameratest</string>
+	<string>ServiceApp</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.yourcompany.cameratest</string>
 	<key>CFBundleVersion</key>
@@ -54,5 +54,7 @@
 	<string>Die App benötigt Zugriff auf ihre Fotos</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Die App benötigt Zugriff auf ihre Kamera</string>
+	<key>CFBundleShortVersionString</key>
+	<string></string>
 </dict>
 </plist>
