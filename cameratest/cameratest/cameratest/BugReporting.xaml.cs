@@ -18,14 +18,17 @@ namespace cameratest
 {
     public partial class BugReporting : ContentPage
     {
+        //Die Klasse ist für Seite der Fehlermeldung zuständig sowie wie den Versand der Dateiene an den Server.
+
+        //Definition der globalen Veriablen
         public static int numPic; //Number of Pictures added
         public static int Picnum = 1; // Number of Picturecontainer
         public static int bild; // Bildwahl für Tapauswahl
         public static string zoompicpath; //Pfad für ZoomedPic
-        public static string picpath1;
+        string picpath1; //Pfad der Bilder
         string picpath2;
         string picpath3;
-        public static byte[] bypic;
+        public static byte[] bypic; //Bilder in Byte-Array-Form
         public static byte[] bypic2;
         public static byte[] bypic3;
         
@@ -67,30 +70,20 @@ namespace cameratest
 
         async void sendingReport(object sender, EventArgs e)
         {
+            //Diese Methode wird beim versenden des Fehlerberichts aufgerufen. Es beinhaltet den Versand der Felder und der Bilder
+            //mittels HTTP-Requests und speziell Multipartform-Requests für den Versand der Bilder.
+
+            //URIs für die Übertragung der Daten
             Uri uri = new Uri("http://app.tuboly-astronic.ch/app/email.php");
             Uri picuri = new Uri("http://app.tuboly-astronic.ch/app/uploadpic.php");
-
             var client = new System.Net.Http.HttpClient();
 
+
+            //Erstellen des Multipartform-Contents
             string boundary = "---8d0f01e6b3b5dafaaadada";
-
-            //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
             var multiPartContent = new MultipartFormDataContent(boundary);
-            var selectedValueType = machineType.Items[machineType.SelectedIndex];
-            var selectedValueProblem = sortOfProblem.Items[sortOfProblem.SelectedIndex];
 
-            // content.Add(new StringContent(machineNumber.Text));
-            // content.Add(new StringContent(selectedValueType));
-            // content.Add(new StringContent(selectedValueProblem));
-            // content.Add(new StringContent(problembeschreibung.Text));
-
-
-            //byte[] fileContents = picpath1;
-            //image4.Source = ImageSource.FromFile(picpath1);
-            //byte[] img = GetBytes(beachImage);
-
-
+            //Überprüfung wieviele Bilder mitgesendet werden.
             if (bypic != null)
             {
                 multiPartContent.Add(new StreamContent(new MemoryStream(bypic)), "file", "reportpicture1.jpg");
@@ -105,7 +98,12 @@ namespace cameratest
             }
 
             HttpResponseMessage picresponse = await client.PostAsync(picuri, multiPartContent);
-            //multiPartContent.Add(byteArrayContent, "file", "image" + uniqueId + ".jpg");
+
+
+
+            //Auswahl und Erstellen der Datenfelder für den Versand
+            var selectedValueType = machineType.Items[machineType.SelectedIndex];
+            var selectedValueProblem = sortOfProblem.Items[sortOfProblem.SelectedIndex];
             Globals g = Globals.getInstance();
             var mail = g.getData();
 
@@ -117,10 +115,11 @@ namespace cameratest
             postData.Add(new KeyValuePair<string, string>("eMail", mail));
 
             var content = new System.Net.Http.FormUrlEncodedContent(postData);
-
-            //var content = new System.Net.Http.MultipartFormDataContent(postData);
             var response = await client.PostAsync(uri, content);
 
+
+
+            //Antwort des Servers zur Überprüfung ob die Übermittlung erfolgreich war.
             var answer = await response.Content.ReadAsStringAsync();
             if (answer == "Message has been sent")
             {
@@ -140,35 +139,28 @@ namespace cameratest
                 DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
                 return;
             }
-
-            //await Navigation.PopAsync();
-            //content.Add(new StreamImageSource(Image));
-            //var content = new System.Net.Http.FormUrlEncodedContent(postData);
-            // var content = new System.Net.Http.MultipartFormDataContent(postData);
-            //var response = await client.PostAsync(uri, content);
-
         }
 
 
         async void OnActionPictureOption(object sender, EventArgs e, int picN)
         {
+            //Diese Methode dient zur Handhabung beim Tappen eines Bildes.
+            //Es wird nach Bild löschen und vergrössern unterschieden
             var action = await DisplayActionSheet("Was möchten Sie tun? ", "Cancel", null, "Bild löschen", "Bild vergrössern");
             if (action == "Cancel")
             {
                 return;
             }
+            //Bei Bild vergrössern wird auf die Funktion für eine neue Page verwiesen.
             if (action == "Bild vergrössern")
             {
                 ZoomPic(sender, e);
             }
             if (action == "Bild löschen")
             {
-
-                //BugReporting Bug =  cameratest.BugReporting;
-                //Debug.WriteLine(picN);
+                //Bei Bild löschen wird zusätzlich nach der Bildnummer gefiltert.
                 if (picN == 1)
                 {
-                    //  Debug.WriteLine("ich bin pic 1");
                     image.Source = null;      
                     bypic = null;
                     numPic -= 1;
@@ -177,7 +169,6 @@ namespace cameratest
                 }
                 if (picN == 2)
                 {
-                    //  Debug.WriteLine("ich bin pic 2");
                     image2.Source = null;
                     bypic2 = null;
                     numPic -= 1;
@@ -185,7 +176,6 @@ namespace cameratest
                 }
                 if (picN == 3)
                 {
-                    //Debug.WriteLine("ich bin pic 3");
                     image3.Source = null;
                     bypic3 = null;
                     numPic -= 1;
@@ -196,6 +186,7 @@ namespace cameratest
 
             async void OnActionChoosePhoto(object sender, EventArgs e)
         {
+            //Bei der Auswahl für ein Photo wird zwischen Kamera und Galerie unterschieden.
             var action = await DisplayActionSheet("Wählen Sie ", "Cancel", null, "Galerie", "Kamera");
             if (action == "Galerie")
             {
@@ -222,20 +213,18 @@ namespace cameratest
                 DisplayAlert("Fehler", "Es sind bereits 3 Bilder ausgewählt", "OK");
                 return;
             }
-            //set Options for picking a picture
+            //set Options for picking a picture and scaling
             var pickmediaOptions = new Plugin.Media.Abstractions.PickMediaOptions
             {
                 PhotoSize = Plugin.Media.Abstractions.PhotoSize.Custom,
                 CustomPhotoSize = 20
             };
 
-            //var file = await CrossMedia.Current.PickPhotoAsync();
             var file = await CrossMedia.Current.PickPhotoAsync(pickmediaOptions);
 
             //Aufüllen von Gridview bis 3 Bilder eingefügt sind.
             if (file == null)
-          return;
-          //  await DisplayAlert("File Location", file.Path, "OK");
+                return;
             if (Picnum == 1 && numPic < 3)
             {
                 if (image.Source != null)
@@ -247,42 +236,34 @@ namespace cameratest
                     numPic += 1;
                     Picnum = 2;
                     picpath1 = file.Path;
-                    Debug.WriteLine(picpath1);
-                    
-
+       
+                    //Erstellen der Erkkennung für den Tap auf das Bild
                     var tapGestureRecognizer = new TapGestureRecognizer();
                     tapGestureRecognizer.Tapped += (s, x) =>
                     {
-
-                        //DisplayAlert("OMFG", "ROFL", "OK");
-                        //image.Scale = 4;
-                        //DisplayAlert("Bildoptionen", "", "OK");
-                        //bild = 1;
                         OnActionPictureOption(sender, e, 1);
                         zoompicpath = picpath1;
                         bild = 1;
-                        //ZoomPic(sender, e); // gross Bildfunktion
-
                     };
+
                     image.GestureRecognizers.Add(tapGestureRecognizer);
 
+                    //Schreiben des Bildes in den Imagestream
                     image.Source = ImageSource.FromStream(() =>
                     {
                         var stream = file.GetStream();
-                    //file.Dispose();
-
+                    
+                    //Umwandeln des Streams in ein Bytearray
                     using (var memoryStream = new MemoryStream())
                         {
                             file.GetStream().CopyTo(memoryStream);
-                        //file.Dispose();
-                        bypic = memoryStream.ToArray();
+                            bypic = memoryStream.ToArray();
                         }
                                        
                         file.Dispose();
                         return stream;
                     });
                 }
-                //await DisplayAlert("File Location", picpath1, "ok");
             }
             else if (Picnum == 2 && numPic < 3)
             {
@@ -295,31 +276,26 @@ namespace cameratest
                     numPic += 1;
                     Picnum = 3;
                     picpath2 = file.Path;
-                    
 
+                    //Erstellen der Erkkennung für den Tap auf das Bild
                     var tapGestureRecognizer = new TapGestureRecognizer();
                     tapGestureRecognizer.Tapped += (s, x) =>
                     {
-
-                        //DisplayAlert("OMFG", "ROFL", "OK");
-                        //image.Scale = 4;
-                        //DisplayAlert("Bildoptionen", "", "OK");
                         OnActionPictureOption(sender, e, 2);
                         zoompicpath = picpath2;
                         bild = 2;
-                        //ZoomPic(sender, e);
-
                     };
                     image2.GestureRecognizers.Add(tapGestureRecognizer);
 
+                    //Schreiben des Bildes in den Imagestream
                     image2.Source = ImageSource.FromStream(() =>
                     {
                         var stream = file.GetStream();
+                        //Umwandeln des Streams in ein Bytearray
                         using (var memoryStream = new MemoryStream())
                         {
                             file.GetStream().CopyTo(memoryStream);
-                        //file.Dispose();
-                        bypic2 = memoryStream.ToArray();
+                            bypic2 = memoryStream.ToArray();
                         }
                         file.Dispose();
                         return stream;
@@ -339,29 +315,25 @@ namespace cameratest
                     Picnum = 1;
                     picpath3 = file.Path;
 
+                    //Erstellen der Erkkennung für den Tap auf das Bild
                     var tapGestureRecognizer = new TapGestureRecognizer();
                     tapGestureRecognizer.Tapped += (s, x) =>
                     {
-
-                        //DisplayAlert("OMFG", "ROFL", "OK");
-                        //image.Scale = 4;
-                        //DisplayAlert("Bildoptionen", "", "OK");
                         OnActionPictureOption(sender, e, 3);
                         zoompicpath = picpath3;
                         bild = 3;
-                        //ZoomPic(sender, e);
-
                     };
                     image3.GestureRecognizers.Add(tapGestureRecognizer);
 
+                    //Schreiben des Bildes in den Imagestream
                     image3.Source = ImageSource.FromStream(() =>
                     {
                         var stream = file.GetStream();
+                        //Umwandeln des Streams in ein Bytearray
                         using (var memoryStream = new MemoryStream())
                         {
                             file.GetStream().CopyTo(memoryStream);
-                        //file.Dispose();
-                        bypic3 = memoryStream.ToArray();
+                           bypic3 = memoryStream.ToArray();
                         }
                         file.Dispose();
                         return stream;
@@ -373,7 +345,7 @@ namespace cameratest
 
         async void takePhoto(object sender, EventArgs e)
         {
-
+            //Photo mit der Kamera erstellen
             if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsTakePhotoSupported)
             {
                 if (numPic == 3)
@@ -384,6 +356,7 @@ namespace cameratest
                 // Supply media options for saving our photo after it's taken.
                 var mediaOptions = new Plugin.Media.Abstractions.StoreCameraMediaOptions
                 {
+                    //Optionen wie das setzen des Speicherpfades und des Speichernamens
                     Directory = "cameratest",
                     Name = $"{DateTime.UtcNow}.jpg",
                     SaveToAlbum = true,
@@ -393,14 +366,9 @@ namespace cameratest
                 // Take a photo and save into cameratest.
                 var file = await CrossMedia.Current.TakePhotoAsync(mediaOptions);
                 
-
                 if (file == null)
                     return;
-
-                // DisplayAlert("File Location", file.Path, "OK");
-                //Aufüllen von Gridview bis 3 Bilder eingefügt sind.
-
-                  if (Picnum == 1 && numPic < 3) {
+                if (Picnum == 1 && numPic < 3) {
 
                     if (image.Source != null)
                     {
@@ -412,29 +380,25 @@ namespace cameratest
                         Picnum = 2;
                         picpath1 = file.Path;
 
+                        //Erstellen der Erkkennung für den Tap auf das Bild
                         var tapGestureRecognizer = new TapGestureRecognizer();
                         tapGestureRecognizer.Tapped += (s, x) =>
                         {
-
-                            //DisplayAlert("OMFG", "ROFL", "OK");
-                            //image.Scale = 4;
-                            //DisplayAlert("Bildoptionen", "", "OK");
                             OnActionPictureOption(sender, e, 1);
                             zoompicpath = picpath1;
                             bild = 1;
-                            //ZoomPic(sender, e);
-
                         };
                         image.GestureRecognizers.Add(tapGestureRecognizer);
 
+                        //Schreiben des Bildes in den Imagestream
                         image.Source = ImageSource.FromStream(() =>
                         {
                             var stream = file.GetStream();
+                            //Umwandeln des Streams in ein Bytearray
                             using (var memoryStream = new MemoryStream())
                             {
                                 file.GetStream().CopyTo(memoryStream);
-                            //file.Dispose();
-                            bypic = memoryStream.ToArray();
+                                bypic = memoryStream.ToArray();
                             }
                             file.Dispose();
                             return stream;
@@ -453,29 +417,25 @@ namespace cameratest
                         Picnum = 3;
                         picpath2 = file.Path;
 
+                        //Erstellen der Erkkennung für den Tap auf das Bild
                         var tapGestureRecognizer = new TapGestureRecognizer();
                         tapGestureRecognizer.Tapped += (s, x) =>
                         {
-
-                            //DisplayAlert("OMFG", "ROFL", "OK");
-                            //image.Scale = 4;
-                            //DisplayAlert("Bildoptionen", "", "OK");
                             OnActionPictureOption(sender, e, 2);
                             zoompicpath = picpath2;
                             bild = 2;
-                            //ZoomPic(sender, e);
-
                         };
                         image2.GestureRecognizers.Add(tapGestureRecognizer);
 
+                        //Schreiben des Bildes in den Imagestream
                         image2.Source = ImageSource.FromStream(() =>
                         {
                             var stream = file.GetStream();
+                            //Umwandeln des Streams in ein Bytearray
                             using (var memoryStream = new MemoryStream())
                             {
                                 file.GetStream().CopyTo(memoryStream);
-                            //file.Dispose();
-                            bypic2 = memoryStream.ToArray();
+                                bypic2 = memoryStream.ToArray();
                             }
                             file.Dispose();
                             return stream;
@@ -493,31 +453,26 @@ namespace cameratest
                         numPic += 1;
                         Picnum = 1;
                         picpath3 = file.Path;
-                        
 
+                        //Erstellen der Erkkennung für den Tap auf das Bild
                         var tapGestureRecognizer = new TapGestureRecognizer();
                         tapGestureRecognizer.Tapped += (s, x) =>
                         {
-
-                            //DisplayAlert("OMFG", "ROFL", "OK");
-                            //image.Scale = 4;
-                            //DisplayAlert("Bildoptionen", "", "OK");
                             OnActionPictureOption(sender, e, 3);
                             zoompicpath = picpath3;
                             bild = 3;
-                            //ZoomPic(sender, e);
-
                         };
                         image3.GestureRecognizers.Add(tapGestureRecognizer);
 
+                        //Schreiben des Bildes in den Imagestream
                         image3.Source = ImageSource.FromStream(() =>
                         {
                             var stream = file.GetStream();
+                            //Umwandeln des Streams in ein Bytearray
                             using (var memoryStream = new MemoryStream())
                             {
                                 file.GetStream().CopyTo(memoryStream);
-                            //file.Dispose();
-                            bypic3 = memoryStream.ToArray();
+                                bypic3 = memoryStream.ToArray();
                             }
                             file.Dispose();
                             return stream;
@@ -542,41 +497,5 @@ namespace cameratest
         {
             await Navigation.PushAsync(new ZoomPic());
         }
-
-        //async void sendingReport(object sender, EventArgs e)
-        //{
-        //    //var client = new System.Net.WebClient();
-        //    //Webclient client = new WebClient();
-        //    HttpClient client = new HttpClient();
-        //    Uri uri = new Uri("http://10.2.128.58/addUser.php");
-        //    bool isNewItem = false;
-
-        //    Dictionary<String, String> userInfo = new Dictionary<String, String>();
-        //    userInfo.Add("companyName", "Apple");
-        //    userInfo.Add("name", "name");
-        //    userInfo.Add("mail", "mail");
-        //    userInfo.Add("password", "password");
-
-        //    string json = JsonConvert.SerializeObject(userInfo);
-        //    var content = new StringContent(json, Encoding.UTF8, "application/json");
-        //    HttpResponseMessage response = null;
-        //    if (isNewItem)
-        //    {
-        //        response = await client.PostAsync(uri, content);
-        //    }
-
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        Debug.WriteLine(@"TodoItem successfully saved.");
-        //    }
-        //    //client.UploadValuesCompleted += client_UploadValuesCompleted;
-
-        //    //await Navigation.PushAsync(new Settings());
-        //}
-
-        //void client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }
