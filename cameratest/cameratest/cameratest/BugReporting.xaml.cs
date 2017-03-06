@@ -119,10 +119,7 @@ namespace cameratest
             //var content = new System.Net.Http.MultipartFormDataContent(postData);
             var response = await client.PostAsync(uri, content);
             var answer = await response.Content.ReadAsStringAsync();
-            Debug.WriteLine(answer);
 
-
-            await DisplayAlert(AppResources.str_onSuccess, AppResources.str_mailSent, "OK");
 
             await Navigation.PopAsync();
             //content.Add(new StreamImageSource(Image));
