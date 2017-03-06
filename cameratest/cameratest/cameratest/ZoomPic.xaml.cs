@@ -12,11 +12,16 @@ namespace cameratest
         public ZoomPic()
         {
             InitializeComponent();
-            zoomedPic.Source = BugReporting.picpath1;
+            zoomedPic.Source = BugReporting.zoompicpath;
         }
 
         
-        BugReporting Bug = new BugReporting();
+        //BugReporting Bug = new BugReporting();
+
+        async void OnOk(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
       
 
         async void OnDel(object sender, EventArgs e)
@@ -28,9 +33,14 @@ namespace cameratest
             }
             if (action == "Ja")
             {
-                Bug.OnActionPictureOption(sender, e, 1);
-                await Navigation.PushAsync(new BugReporting());
+
+                //Bug.OnActionPictureOption(sender, e, BugReporting.bild);
+                //await Navigation.PushAsync(new BugReporting());
+                await Navigation.PopAsync();
+              // BugReporting.OnActionPictureOption(sender, e, BugReporting.bild);
+             
+               
             }
-         } 
+        } 
       }
 }

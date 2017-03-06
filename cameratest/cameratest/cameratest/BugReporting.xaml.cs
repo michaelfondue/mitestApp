@@ -18,15 +18,18 @@ namespace cameratest
 {
     public partial class BugReporting : ContentPage
     {
-        int numPic; //Number of Pictures added
-        int Picnum = 1; // Number of Picturecontainer
-        int bild; // Bildwahl für Tapauswahl
+        public static int numPic; //Number of Pictures added
+        public static int Picnum = 1; // Number of Picturecontainer
+        public static int bild; // Bildwahl für Tapauswahl
+        public static string zoompicpath; //Pfad für ZoomedPic
         public static string picpath1;
         string picpath2;
         string picpath3;
-        byte[] bypic;
-        byte[] bypic2;
-        byte[] bypic3;
+        public static byte[] bypic;
+        public static byte[] bypic2;
+        public static byte[] bypic3;
+        
+
 
 
 
@@ -84,8 +87,7 @@ namespace cameratest
 
 
             //byte[] fileContents = picpath1;
-            //var beachImage = new Image { };
-            //beachImage.Source = ImageSource.FromFile(picpath1);
+            //image4.Source = ImageSource.FromFile(picpath1);
             //byte[] img = GetBytes(beachImage);
 
 
@@ -118,32 +120,56 @@ namespace cameratest
 
             //var content = new System.Net.Http.MultipartFormDataContent(postData);
             var response = await client.PostAsync(uri, content);
+
             var answer = await response.Content.ReadAsStringAsync();
-            Debug.WriteLine(answer);
+            if (answer == "Message has been sent")
+            {
+                await DisplayAlert("Erfolgreich", "E-Mail erfolgreich versendet.", "OK");
+                await Navigation.PopAsync();
+            }
+            else if (answer == "Message could not be sent.")
+            {
+                //E-Mail could not be sent
+                DisplayAlert("Fehler", "E-Mail konnte nicht versendet werden.", "OK");
+                return;
+            }
+            else
+            {
+                //no connection to the server
+                Debug.WriteLine(answer);
+                DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
+                return;
+            }
 
-
-            await DisplayAlert(AppResources.str_onSuccess, AppResources.str_mailSent, "OK");
-
-            await Navigation.PopAsync();
+            //await Navigation.PopAsync();
             //content.Add(new StreamImageSource(Image));
             //var content = new System.Net.Http.FormUrlEncodedContent(postData);
             // var content = new System.Net.Http.MultipartFormDataContent(postData);
             //var response = await client.PostAsync(uri, content);
 
         }
-        
-        async public void OnActionPictureOption(object sender, EventArgs e, int picN)
+
+
+        async void OnActionPictureOption(object sender, EventArgs e, int picN)
         {
-            var action = await DisplayActionSheet("Bild löschen?", "Nein", "Ja");
-            if (action == "Nein")
+            var action = await DisplayActionSheet("Was möchten Sie tun? ", "Cancel", null, "Bild löschen", "Bild vergrössern");
+            if (action == "Cancel")
             {
                 return;
             }
-            if (action == "Ja")
+            if (action == "Bild vergrössern")
             {
+                ZoomPic(sender, e);
+            }
+            if (action == "Bild löschen")
+            {
+
+                //BugReporting Bug =  cameratest.BugReporting;
+                //Debug.WriteLine(picN);
                 if (picN == 1)
                 {
-                    image.Source = null;
+                    //  Debug.WriteLine("ich bin pic 1");
+                    image.Source = null;      
                     bypic = null;
                     numPic -= 1;
                     Picnum = 1;
@@ -151,6 +177,7 @@ namespace cameratest
                 }
                 if (picN == 2)
                 {
+                    //  Debug.WriteLine("ich bin pic 2");
                     image2.Source = null;
                     bypic2 = null;
                     numPic -= 1;
@@ -158,13 +185,12 @@ namespace cameratest
                 }
                 if (picN == 3)
                 {
+                    //Debug.WriteLine("ich bin pic 3");
                     image3.Source = null;
                     bypic3 = null;
                     numPic -= 1;
                     Picnum = 3;
                 }
-
-                return;
             }
         }
 
@@ -221,6 +247,8 @@ namespace cameratest
                     numPic += 1;
                     Picnum = 2;
                     picpath1 = file.Path;
+                    Debug.WriteLine(picpath1);
+                    
 
                     var tapGestureRecognizer = new TapGestureRecognizer();
                     tapGestureRecognizer.Tapped += (s, x) =>
@@ -230,8 +258,10 @@ namespace cameratest
                         //image.Scale = 4;
                         //DisplayAlert("Bildoptionen", "", "OK");
                         //bild = 1;
-                        //OnActionPictureOption(sender, e, 1);
-                        ZoomPic(sender, e);
+                        OnActionPictureOption(sender, e, 1);
+                        zoompicpath = picpath1;
+                        bild = 1;
+                        //ZoomPic(sender, e); // gross Bildfunktion
 
                     };
                     image.GestureRecognizers.Add(tapGestureRecognizer);
@@ -247,6 +277,7 @@ namespace cameratest
                         //file.Dispose();
                         bypic = memoryStream.ToArray();
                         }
+                                       
                         file.Dispose();
                         return stream;
                     });
@@ -274,7 +305,9 @@ namespace cameratest
                         //image.Scale = 4;
                         //DisplayAlert("Bildoptionen", "", "OK");
                         OnActionPictureOption(sender, e, 2);
-
+                        zoompicpath = picpath2;
+                        bild = 2;
+                        //ZoomPic(sender, e);
 
                     };
                     image2.GestureRecognizers.Add(tapGestureRecognizer);
@@ -314,7 +347,9 @@ namespace cameratest
                         //image.Scale = 4;
                         //DisplayAlert("Bildoptionen", "", "OK");
                         OnActionPictureOption(sender, e, 3);
-
+                        zoompicpath = picpath3;
+                        bild = 3;
+                        //ZoomPic(sender, e);
 
                     };
                     image3.GestureRecognizers.Add(tapGestureRecognizer);
@@ -385,7 +420,9 @@ namespace cameratest
                             //image.Scale = 4;
                             //DisplayAlert("Bildoptionen", "", "OK");
                             OnActionPictureOption(sender, e, 1);
-
+                            zoompicpath = picpath1;
+                            bild = 1;
+                            //ZoomPic(sender, e);
 
                         };
                         image.GestureRecognizers.Add(tapGestureRecognizer);
@@ -424,7 +461,9 @@ namespace cameratest
                             //image.Scale = 4;
                             //DisplayAlert("Bildoptionen", "", "OK");
                             OnActionPictureOption(sender, e, 2);
-
+                            zoompicpath = picpath2;
+                            bild = 2;
+                            //ZoomPic(sender, e);
 
                         };
                         image2.GestureRecognizers.Add(tapGestureRecognizer);
@@ -464,7 +503,9 @@ namespace cameratest
                             //image.Scale = 4;
                             //DisplayAlert("Bildoptionen", "", "OK");
                             OnActionPictureOption(sender, e, 3);
-
+                            zoompicpath = picpath3;
+                            bild = 3;
+                            //ZoomPic(sender, e);
 
                         };
                         image3.GestureRecognizers.Add(tapGestureRecognizer);
