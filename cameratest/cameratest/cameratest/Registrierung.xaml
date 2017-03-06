@@ -40,6 +40,7 @@
       <Label Text="{i18n:Translate str_passwordAgain}" />
       <Entry x:Name="passwordAgain" IsPassword="true" Completed="Completed_passwordAgain"/>
       <Button x:Name="register" Text="{i18n:Translate str_register}" IsEnabled="True" Clicked="registering" />
+
     </StackLayout>
    </ScrollView>
   </ContentPage.Content>

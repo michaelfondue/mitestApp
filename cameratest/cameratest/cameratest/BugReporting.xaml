@@ -22,7 +22,7 @@
             <StackLayout HorizontalOptions = "End" 
                          VerticalOptions="Fill"
                           Orientation="Horizontal"
-                          Spacing="1">
+                          Spacing="5">
              
                   <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
                   <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>              
@@ -62,8 +62,9 @@
         
           <!--</StackLayout>
         </ScrollView>-->
-        
+
         <Button x:Name="Picture" Text="{i18n:Translate str_addPicture}" IsEnabled="True" Clicked="OnActionChoosePhoto"/>
+
         <!--<Button x:Name="chosePicture" Text="Foto aus Galerie hinzufügen" IsEnabled="True" Clicked="pickPhoto"/>-->
         <!--<Image x:Name="image"/>-->
       <ScrollView
@@ -80,8 +81,9 @@
         
           </StackLayout>
       </ScrollView>
-      
+
        <Button x:Name="sendReport" Text="{i18n:Translate str_send}" IsEnabled="True" Clicked="sendingReport"/>
+
 
       </StackLayout>
     </ScrollView>
