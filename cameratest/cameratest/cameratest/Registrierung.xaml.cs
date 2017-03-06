@@ -31,7 +31,7 @@ namespace cameratest
                 }
                 else
                 {
-                    DisplayAlert("Fehler", "Bitte geben Sie eine gültige E-Mail Adresse ein", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_validMailAdress, "OK");
                     return;
                 }
             }
@@ -58,7 +58,7 @@ namespace cameratest
         {
             if (((Entry)sender).Text != password.Text)
             {
-                DisplayAlert("Fehler", "Die Passwörter stimmen nicht überein", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_nonMatchingPasswords, "OK");
                 return;
             }
         }
@@ -74,17 +74,17 @@ namespace cameratest
             //last check
             if (customerCompanyName.Text == "" || reporterName.Text == "" || eMail.Text == "" || password.Text == "" || passwordAgain.Text == "" || phoneNumber.Text == "")
             {
-                DisplayAlert("Fehler", "Bitte füllen Sie alle Felder aus", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_fillAll, "OK");
                 return;
             }
             else if (!(eMail.Text.Contains("@") && eMail.Text.Contains(".")))
             {
-                DisplayAlert("Fehler", "Bitte geben Sie eine gültige E-Mail Adresse an", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_validMailAdress, "OK");
                 return;
             }
             else if (password.Text != passwordAgain.Text)
             {
-                DisplayAlert("Fehler", "Die Passwörter stimmen nicht überein", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_nonMatchingPasswords, "OK");
                 return;
             }
             else
@@ -109,19 +109,19 @@ namespace cameratest
                 var answer = await response.Content.ReadAsStringAsync();
                 if (answer == "Connection established. Answer: 1")
                 {
-                    await DisplayAlert("Erfolgreich", "Ihre Registrierung war erfolgreich, Sie können sich jetzt einloggen", "OK");
+                    await DisplayAlert(AppResources.str_onSuccess, AppResources.str_registerSuccess, "OK");
                     await Navigation.PopAsync();
                 }
                 else if (answer == "Connection established. Answer: 0")
                 {
                     //show that wrong password or username
-                    DisplayAlert("Fehler", "Der Benutzername existiert bereits", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_alreadyExistingUserName, "OK");
                     return;
                 }
                 else
                 {
                     //no connection to the server
-                    DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_noConnection, "OK");
                     return;
                 }
             }

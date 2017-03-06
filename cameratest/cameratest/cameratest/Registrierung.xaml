@@ -2,15 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.Registrierung"
-                           BackgroundColor="White">
+             xmlns:i18n="clr-namespace:cameratest;assembly=cameratest"
+             BackgroundColor="White">
   <ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness"
                 iOS="20, 40, 20, 20"
-                Android="20, 5, 20, 20"
-                WinPhone="20, 20, 20, 20" />
+                Android="20, 5, 20, 20" />
   </ContentPage.Padding>
   <ContentPage.Content>
-    <ScrollView>
+   <ScrollView>
     <StackLayout VerticalOptions="FillAndExpand"
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
@@ -21,31 +21,26 @@
                     Orientation="Horizontal"
                     Spacing="1">
 
-        <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
-        <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>
+                  <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
+                  <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>
       </StackLayout>
       
       <Image Source="logo_hintergrund.jpg" />
       
       <Label Text="Name Ihrer Firma" />
-      <Entry x:Name="customerCompanyName" Text="{
-             
-      
-      
-      
-      }" />
+      <Entry x:Name="customerCompanyName" />
       <Label Text="Name Vorname" />
-      <Entry x:Name="reporterName" Text="{Binding}" />
+      <Entry x:Name="reporterName" />
       <Label Text="Telefonnummer" />
-      <Entry x:Name="phoneNumber" Text="{Binding}" Keyboard="Numeric"/>
+      <Entry x:Name="phoneNumber"  Keyboard="Numeric"/>
       <Label Text="E-Mail" />
-      <Entry x:Name="eMail" Text="{Binding}" TextChanged="Changed_eMail" Completed="Completed_eMail"/>
+      <Entry x:Name="eMail" TextChanged="Changed_eMail" Completed="Completed_eMail"/>
       <Label Text="Passwort" />
-      <Entry x:Name="password" IsPassword="true" Text="{Binding}" TextChanged="Changed_password" Completed="Completed_password"/>
+      <Entry x:Name="password" IsPassword="true" TextChanged="Changed_password" Completed="Completed_password"/>
       <Label Text="Passwort wiederholen" />
       <Entry x:Name="passwordAgain" IsPassword="true" TextChanged="Changed_passwordAgain" Completed="Completed_passwordAgain"/>
       <Button x:Name="register" Text="Registrieren" IsEnabled="True" Clicked="registering" />
     </StackLayout>
-    </ScrollView>
+   </ScrollView>
   </ContentPage.Content>
 </ContentPage>

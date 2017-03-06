@@ -126,11 +126,23 @@
   <data name="str_breakdown" xml:space="preserve">
     <value>mc:breakdown</value>
   </data>
+  <data name="str_changePassword" xml:space="preserve">
+    <value>Passwort ändern</value>
+  </data>
+  <data name="str_changePasswordSuccess" xml:space="preserve">
+    <value>Sie haben Ihr Passwort erfolgreich geändert</value>
+  </data>
   <data name="str_companyName" xml:space="preserve">
     <value>Name Ihrer Firma</value>
   </data>
+  <data name="str_deletePic" xml:space="preserve">
+    <value>Bild löschen?</value>
+  </data>
   <data name="str_enterUserData" xml:space="preserve">
     <value>Bitte geben Sie Ihre Benutzerdaten ein</value>
+  </data>
+  <data name="str_enterUsername" xml:space="preserve">
+    <value>Bitte geben Sie Ihren Benutzernamen ein</value>
   </data>
   <data name="str_error" xml:space="preserve">
     <value>Fehler</value>
@@ -145,22 +157,40 @@
     <value>Passwort vergessen</value>
   </data>
   <data name="str_login" xml:space="preserve">
-    <value>Bitte geben Sie Ihre Logindaten ein</value>
+    <value>Bitte geben Sie Ihre Logindaten ein:</value>
+  </data>
+  <data name="str_logout" xml:space="preserve">
+    <value>Ausloggen</value>
   </data>
   <data name="str_machineNumber" xml:space="preserve">
     <value>Maschinennummer</value>
   </data>
+  <data name="str_mailSent" xml:space="preserve">
+    <value>Es wurde eine E-Mail versendet</value>
+  </data>
   <data name="str_name" xml:space="preserve">
     <value>Name Vorname</value>
   </data>
+  <data name="str_newPassword" xml:space="preserve">
+    <value>Neues Passwort</value>
+  </data>
+  <data name="str_no" xml:space="preserve">
+    <value>Nein</value>
+  </data>
   <data name="str_noConnection" xml:space="preserve">
     <value>Keine Verbindung zum Server</value>
+  </data>
+  <data name="str_noMail" xml:space="preserve">
+    <value>Leider konnte die E-Mail mit Ihrem neuen Passwort nicht versendet werden, bitte versuchen Sie es später erneut</value>
   </data>
   <data name="str_nonMatchingPasswords" xml:space="preserve">
     <value>Die Passwörter stimmen nicht überein</value>
   </data>
   <data name="str_notRegistered" xml:space="preserve">
     <value>Nicht registrierte Benutzerdaten</value>
+  </data>
+  <data name="str_oldPassword" xml:space="preserve">
+    <value>Bisheriges Passwort</value>
   </data>
   <data name="str_onSuccess" xml:space="preserve">
     <value>Erfolgreich</value>
@@ -189,8 +219,20 @@
   <data name="str_registerSuccess" xml:space="preserve">
     <value>Ihre Registrierung war erfolgreich, Sie können sich jetzt einloggen</value>
   </data>
+  <data name="str_repeatNewPassword" xml:space="preserve">
+    <value>Neues Passwort (Wiederholung)</value>
+  </data>
   <data name="str_reportBug" xml:space="preserve">
     <value>Einen Fehler melden</value>
+  </data>
+  <data name="str_resetPassword" xml:space="preserve">
+    <value>Reset Passwort</value>
+  </data>
+  <data name="str_resetPasswordSuccess" xml:space="preserve">
+    <value>Die Passwortzurücksetzung war erfolgreich, Sie werden in Kürze ein neues Passwort per E-mail erhalten</value>
+  </data>
+  <data name="str_select" xml:space="preserve">
+    <value>Bitte auswählen:</value>
   </data>
   <data name="str_send" xml:space="preserve">
     <value>Senden</value>
@@ -200,6 +242,9 @@
   </data>
   <data name="str_spareParts" xml:space="preserve">
     <value>Ersatzteile</value>
+  </data>
+  <data name="str_tooLargeMachineNumber" xml:space="preserve">
+    <value>Die Maschinennummer ist zu hoch</value>
   </data>
   <data name="str_typeOfMachine" xml:space="preserve">
     <value>Art der Maschine</value>
@@ -212,5 +257,8 @@
   </data>
   <data name="str_wrongUserNameOrPassword" xml:space="preserve">
     <value>Der Benutzername oder das Passwort ist falsch</value>
+  </data>
+  <data name="str_yes" xml:space="preserve">
+    <value>Ja</value>
   </data>
 </root>

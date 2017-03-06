@@ -43,7 +43,7 @@ namespace cameratest
                 int number = Convert.ToInt32(stringNumber);
                 if (number > 2000)
                 {
-                    DisplayAlert("Fehler", "Die Maschinennummer ist zu gross", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_tooLargeMachineNumber, "OK");
                     return;
                 }
             }
@@ -56,7 +56,7 @@ namespace cameratest
                 int number = Convert.ToInt32(stringNumber);
                 if (number > 2000)
                 {
-                    DisplayAlert("Fehler", "Die Maschinennummer ist zu gross", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_tooLargeMachineNumber, "OK");
                     return;
                 }
             }
@@ -122,7 +122,7 @@ namespace cameratest
             Debug.WriteLine(answer);
 
 
-            await DisplayAlert("Fehlerbericht", "Es wurde eine E-Mail versendet", "OK");
+            await DisplayAlert(AppResources.str_onSuccess, AppResources.str_mailSent, "OK");
 
             await Navigation.PopAsync();
             //content.Add(new StreamImageSource(Image));

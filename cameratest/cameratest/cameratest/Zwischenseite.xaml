@@ -2,35 +2,35 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.Zwischenseite"
-                           BackgroundColor="White">
+             xmlns:i18n="clr-namespace:cameratest;assembly=cameratest"
+             BackgroundColor="White">
 <ContentPage.Padding>
   <OnPlatform x:TypeArguments="Thickness"
               iOS="20, 40, 20, 20"
-              Android="20, 5, 20, 20"
-              WinPhone="20, 20, 20, 20" />
-</ContentPage.Padding>
-<ContentPage.Content>
-  <ScrollView>
-  <StackLayout VerticalOptions="FillAndExpand"
-               HorizontalOptions="FillAndExpand"
-               Orientation="Vertical"
-               Spacing="15">
+              Android="20, 5, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+   <ScrollView>
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
 
-    <StackLayout HorizontalOptions = "End"
-                 VerticalOptions="Fill"
-                  Orientation="Horizontal"
-                  Spacing="1">
+      <StackLayout HorizontalOptions = "End"
+                   VerticalOptions="Fill"
+                    Orientation="Horizontal"
+                    Spacing="1">
 
-      <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
-      <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>
-    </StackLayout>
+                  <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
+                  <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>
+      </StackLayout>
 
-    <Image Source="logo_hintergrund.jpg" />
+      <Image Source="logo_hintergrund.jpg" />
     
-    <Button x:Name="reportBug" Text="Einen Fehler melden" IsEnabled="True" Clicked="reportingBug"/>
-    <Button x:Name="faq" Text="Häufig gestellte Fragen" IsEnabled="True"/>
-    <Button x:Name="videos" Text="Videos zur Problembehandlung" IsEnabled="True"/>
-  </StackLayout>
-    </ScrollView>
-</ContentPage.Content>
+      <Button x:Name="reportBug" Text="{i18n:Translate str_reportBug}" IsEnabled="True" Clicked="reportingBug"/>
+      <Button x:Name="faq" Text="{i18n:Translate str_faq}" IsEnabled="True"/>
+      <Button x:Name="videos" Text="{i18n:Translate str_videos}" IsEnabled="True"/>
+    </StackLayout>
+   </ScrollView>
+  </ContentPage.Content>
 </ContentPage>

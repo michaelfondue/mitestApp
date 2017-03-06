@@ -75,7 +75,8 @@ namespace cameratest.Properties {
         /// </summary>
         internal static string password {
             get {
-                return ResourceManager.GetString("password", resourceCulture);
+                return ResourceManager.GetString("password", resource
+                    );
             }
         }
         

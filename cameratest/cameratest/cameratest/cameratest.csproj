@@ -38,17 +38,13 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="ILocalize.cs" />
+    <Compile Include="PlatformCulture.cs" />
     <Compile Include="TranslateExtension.cs" />
-    <EmbeddedResource Include="AppResources.Designer.cs">
+    <Compile Include="AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AppResources.en.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AppResources.en.resx</DependentUpon>
-    </EmbeddedResource>
+    </Compile>
     <Compile Include="BugReporting.xaml.cs">
       <DependentUpon>BugReporting.xaml</DependentUpon>
     </Compile>
@@ -70,11 +66,6 @@
       <DependentUpon>ZoomPic.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Registrierung.xaml.cs">
       <DependentUpon>Registrierung.xaml</DependentUpon>
     </Compile>
@@ -133,20 +124,14 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AppResources.en.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>AppResources.en.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="AppResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

@@ -27,7 +27,7 @@ namespace cameratest
         {
             if (((Entry)sender).Text != newPassword.Text)
             {
-                DisplayAlert("Fehler", "Die Passwörter stimmen nicht überein", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_nonMatchingPasswords, "OK");
                 return;
             }
         }
@@ -36,17 +36,17 @@ namespace cameratest
         { //last check
             if (eMail.Text == "" || oldPassword.Text == "" || newPassword.Text == "" || newPasswordRepeat.Text == "")
             {
-                DisplayAlert("Fehler", "Bitte füllen Sie alle Felder aus", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_fillAll, "OK");
                 return;
             }
             else if (!(eMail.Text.Contains("@") && eMail.Text.Contains(".")))
             {
-                DisplayAlert("Fehler", "Bitte geben Sie eine gültige E-Mail Adresse an", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_validMailAdress, "OK");
                 return;
             }
             else if (newPassword.Text != newPasswordRepeat.Text)
             {
-                DisplayAlert("Fehler", "Die Passwörter stimmen nicht überein", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_nonMatchingPasswords, "OK");
                 return;
             }
             else
@@ -57,7 +57,7 @@ namespace cameratest
                 var client = new System.Net.Http.HttpClient();
 
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
+                
                 var postData = new List<KeyValuePair<string, string>>();
                 postData.Add(new KeyValuePair<string, string>("newPassword", newPassword.Text));
                 postData.Add(new KeyValuePair<string, string>("mail", eMail.Text));
@@ -70,31 +70,25 @@ namespace cameratest
                 var answer = await response.Content.ReadAsStringAsync();
                 if (answer == "Connection established. Answer: 1")
                 {
-                    DisplayAlert("Erfolgreich", "Sie haben Ihr Passwort erfolgreich geändert", "OK");
+                    DisplayAlert(AppResources.str_onSuccess, AppResources.str_changePasswordSuccess, "OK");
                     await Navigation.PushAsync(new MainPage());
                 }
                 else if (answer == "Connection established. Answer: 2")
                 {
                     //show that wrong password or username
-                    DisplayAlert("Fehler", "query failed, not registered yet", "OK");
-                    return;
-                }
-                else if (answer == "Connection established. Answer: 3")
-                {
-                    //show that wrong password or username
-                    DisplayAlert("Fehler", "zweite query failed", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_notRegistered, "OK");
                     return;
                 }
                 else if (answer == "Connection established. Answer: 4")
                 {
                     //show that wrong password or username
-                    DisplayAlert("Fehler", "pw falsch", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_wrongUserNameOrPassword, "OK");
                     return;
                 }
                 else
                 {
                     //no connection to the server
-                    DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_noConnection, "OK");
                     return;
                 }
 

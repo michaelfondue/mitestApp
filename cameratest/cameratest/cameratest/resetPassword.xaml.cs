@@ -6,7 +6,6 @@ using System.Net.Http.Headers;
 using System.Diagnostics;
 using System.Collections.Generic;
 
-using Xamarin.Forms;
 
 namespace cameratest
 {
@@ -21,12 +20,12 @@ namespace cameratest
         {
             if (eMail.Text == "E-Mail")
             {
-                DisplayAlert("Fehler", "Bitte geben Sie Ihren Benutzernamen ein", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_enterUsername, "OK");
                 return;
             }
             else if (!(eMail.Text.Contains("@") && eMail.Text.Contains(".")))
             {
-                DisplayAlert("Fehler", "Bitte geben Sie eine gültige E-Mail Adresse an", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_validMailAdress, "OK");
                 return;
             }
             else
@@ -47,38 +46,13 @@ namespace cameratest
                 //Debug.WriteLine("anser: "+answer);
                 if (answer == "Connection established. Answer: 6")
                 {
-                    DisplayAlert("Erfolgreich", "Die Passwortzurücksetzung war erfolgreich, Sie werden in Kürze ein neues Passwort per E-mail erhalten", "OK");
+                    DisplayAlert(AppResources.str_onSuccess, AppResources.str_resetPasswordSuccess, "OK");
                     await Navigation.PopAsync();
                 }
                 else if (answer == "Connection established. Answer: 0")
                 {
                     //show that wrong password or username
-                    Debug.WriteLine(answer);
-                    DisplayAlert("Fehler", "Der Benutzername ist falsch", "OK");
-                    
-                    return;
-                }
-                else if (answer == "Connection established. Answer: 1")
-                {
-                    // not registered yet
-                    Debug.WriteLine(answer);
-                    DisplayAlert("Fehler", "erste query gut", "OK");
-                    
-                    return;
-                }
-                else if (answer == "Connection established. Answer: 3")
-                {
-                    // not registered yet
-                    Debug.WriteLine(answer);
-                    DisplayAlert("Fehler", "Passwort Query failed", "OK");
-                    
-                    return;
-                }
-                else if (answer == "Connection established. Answer: 2")
-                {
-                    // not registered yet
-                    Debug.WriteLine(answer);
-                    DisplayAlert("Fehler", "Query failed", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_notRegistered, "OK");
                     
                     return;
                 }
@@ -86,15 +60,7 @@ namespace cameratest
                 {
                     // not registered yet
                     Debug.WriteLine(answer);
-                    DisplayAlert("Fehler", "E-ail nicht versandt", "OK");
-                    
-                    return;
-                }
-                else if (answer == "Connection established. Answer: 4")
-                {
-                    // not registered yet
-                    Debug.WriteLine(answer);
-                    DisplayAlert("Fehler", "erste query gut", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_noMail, "OK");
                     
                     return;
                 }
@@ -102,7 +68,7 @@ namespace cameratest
                 {
                     Debug.WriteLine(answer);
                     //no connection to the server
-                    DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_noConnection, "OK");
                    
                     return;
                 }

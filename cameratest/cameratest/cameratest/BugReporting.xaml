@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.BugReporting"
-                BackgroundColor="White">
+             xmlns:i18n="clr-namespace:cameratest;assembly=cameratest"
+             BackgroundColor="White">
   <ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness"
                 iOS="20, 40, 20, 20"
-                Android="20, 5, 20, 20"
-                WinPhone="20, 20, 20, 20" />
+                Android="20, 5, 20, 20" />
   </ContentPage.Padding>
   <ContentPage.Content>
     <ScrollView Orientation="Vertical" 
@@ -30,10 +30,10 @@
 
         <Image Source="logo_hintergrund.jpg" />
 
-        <Label Text="Maschinennummer" />
+        <Label Text="{i18n:Translate str_machineNumber}" />
         <Entry x:Name="machineNumber" Completed="Completed_MachineNumber" TextChanged="Changed_MachineNumber" Keyboard="Numeric"/>
 
-        <Label Text="Art der Maschine" />
+        <Label Text="{i18n:Translate str_typeOfMachine}" />
         <Picker x:Name="machineType" Title="Bitte auswählen" SelectedIndex="{Binding machine}" HorizontalOptions="FillAndExpand">
           <Picker.Items>
             <x:String>Winding</x:String>
@@ -42,15 +42,15 @@
           </Picker.Items>
         </Picker>
 
-        <Label Text="Art des Problems" />
-        <Picker x:Name="sortOfProblem" Title="Bitte auswählen" SelectedIndex="{Binding problem}" HorizontalOptions="FillAndExpand">
+        <Label Text="{i18n:Translate str_sortOfProblem}" />
+        <Picker x:Name="sortOfProblem" Title="{i18n:Translate str_select}" SelectedIndex="{Binding problem}" HorizontalOptions="FillAndExpand">
           <Picker.Items>
             <x:String>Frage</x:String>
             <x:String>Ersatzteile</x:String>
             <x:String>mc:breakdown</x:String>
           </Picker.Items>
         </Picker>
-        <Label Text="Problembeschreibung" />
+        <Label Text="{i18n:Translate str_problemDescription}" />
         
         <!--<ScrollView>
           <StackLayout
@@ -63,7 +63,7 @@
           <!--</StackLayout>
         </ScrollView>-->
         
-        <Button x:Name="Picture" Text="Foto hinzufügen" IsEnabled="True" Clicked="OnActionChoosePhoto"/>
+        <Button x:Name="Picture" Text="{i18n:Translate str_addPicture}" IsEnabled="True" Clicked="OnActionChoosePhoto"/>
         <!--<Button x:Name="chosePicture" Text="Foto aus Galerie hinzufügen" IsEnabled="True" Clicked="pickPhoto"/>-->
         <!--<Image x:Name="image"/>-->
       <ScrollView
@@ -81,7 +81,7 @@
           </StackLayout>
       </ScrollView>
       
-       <Button x:Name="sendReport" Text="Senden" IsEnabled="True" Clicked="sendingReport"/>
+       <Button x:Name="sendReport" Text="{i18n:Translate str_send}" IsEnabled="True" Clicked="sendingReport"/>
 
       </StackLayout>
     </ScrollView>

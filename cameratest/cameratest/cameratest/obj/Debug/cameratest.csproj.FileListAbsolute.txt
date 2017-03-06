@@ -25,41 +25,6 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\camera
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.pdb
 c:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.ChangePassword.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csproj.App.config
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Properties.Resources.resources
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csproj.GenerateResource.Cache
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.MainPage.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Zwischenseite.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.BugReporting.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Registrierung.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Settings.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.ChangePassword.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.config
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.pdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.Abstractions.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Extensions.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Primitives.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Platform.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.pdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.xml
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.Abstractions.pdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.Abstractions.xml
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Extensions.xml
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Primitives.xml
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Platform.pdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.pdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.infoPage.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Settings_loggedIn.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csprojResolveAssemblyReference.cache
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.config
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Extensions.dll
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Primitives.dll
@@ -71,24 +36,49 @@ C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\camera
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.ZoomPic.xaml.g.cs
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
 C:\Users\Michael\git\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.ZoomPic.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.resetPassword.xaml.g.cs
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\en\cameratest.resources.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\KeyChain.Net.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Settings.Abstractions.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Settings.dll
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Settings.xml
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Settings.Abstractions.xml
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\en\cameratest.resources.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csproj.App.config
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.AppResources.resources
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.AppResources.en.resources
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll.mdb
-C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.mdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csproj.GenerateResource.Cache
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.MainPage.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Zwischenseite.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.BugReporting.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Registrierung.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Settings.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.ChangePassword.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.infoPage.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.Settings_loggedIn.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.ZoomPic.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.resetPassword.xaml.g.cs
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll.config
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\cameratest.pdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\en\cameratest.resources.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\KeyChain.Net.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.Abstractions.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Settings.Abstractions.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Settings.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.pdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.Abstractions.pdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Media.Abstractions.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Settings.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Plugin.Settings.Abstractions.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\en\cameratest.resources.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.pdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\obj\Debug\cameratest.csprojResolveAssemblyReference.cache
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest\bin\Debug\AppResources.en.resx

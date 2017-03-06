@@ -2,16 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.Settings"
+             xmlns:i18n="clr-namespace:cameratest;assembly=cameratest"
              BackgroundColor="White">
   <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
   <ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness"
                 iOS="20, 40, 20, 20"
-                Android="20, 5, 20, 20"
-                WinPhone="20, 20, 20, 20" />
+                Android="20, 5, 20, 20" />
   </ContentPage.Padding>
   <ContentPage.Content>
-    <ScrollView>
+   <ScrollView>
     <StackLayout VerticalOptions="FillAndExpand"
                    HorizontalOptions="FillAndExpand"
                    Orientation="Vertical"
@@ -22,24 +22,23 @@
                       Orientation="Horizontal"
                       Spacing="1">
 
-          <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
-          <Button x:Name="settings" IsEnabled="False" Clicked="openSettings" Image="settings_greyed.png" BackgroundColor="White"/>
+                    <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
+                    <Button x:Name="settings" IsEnabled="False" Clicked="openSettings" Image="settings_greyed.png" BackgroundColor="White"/>
         </StackLayout>
 
         <Image Source="logo_hintergrund.jpg" />
 
-        <Label Text="Wählen Sie eine Sprache:" />
+        <!--<Label Text="Wählen Sie eine Sprache:" />
           <Picker x:Name="language" Title="Bitte auswählen" SelectedIndex="{Binding problem}" HorizontalOptions="FillAndExpand">
             <Picker.Items>
               <x:String>Deutsch</x:String>
               <x:String>Englisch</x:String>
-              <x:String>Französisch</x:String>
             </Picker.Items>
-          </Picker>
+          </Picker>-->
     
-        <Button x:Name="changePassword" Text="Passwort ändern" IsEnabled="True" Clicked="wantToChangePassword" />
+        <Button x:Name="changePassword" Text="{i18n:Translate str_changePassword}" IsEnabled="True" Clicked="wantToChangePassword" />
     
     </StackLayout>
-      </ScrollView>
+   </ScrollView>
   </ContentPage.Content>
 </ContentPage>

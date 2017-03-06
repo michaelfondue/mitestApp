@@ -23,7 +23,7 @@ namespace cameratest {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class AppResources {
+    public class AppResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -37,7 +37,7 @@ namespace cameratest {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("cameratest.AppResources", typeof(AppResources).GetTypeInfo().Assembly);
@@ -52,7 +52,7 @@ namespace cameratest {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -64,7 +64,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Foto hinzufügen.
         /// </summary>
-        internal static string str_addPicture {
+        public static string str_addPicture {
             get {
                 return ResourceManager.GetString("str_addPicture", resourceCulture);
             }
@@ -73,7 +73,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Der Benutzername existiert bereits.
         /// </summary>
-        internal static string str_alreadyExistingUserName {
+        public static string str_alreadyExistingUserName {
             get {
                 return ResourceManager.GetString("str_alreadyExistingUserName", resourceCulture);
             }
@@ -82,34 +82,70 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to mc:breakdown.
         /// </summary>
-        internal static string str_breakdown {
+        public static string str_breakdown {
             get {
                 return ResourceManager.GetString("str_breakdown", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Passwort ändern.
+        /// </summary>
+        public static string str_changePassword {
+            get {
+                return ResourceManager.GetString("str_changePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sie haben Ihr Passwort erfolgreich geändert.
+        /// </summary>
+        public static string str_changePasswordSuccess {
+            get {
+                return ResourceManager.GetString("str_changePasswordSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name Ihrer Firma.
         /// </summary>
-        internal static string str_companyName {
+        public static string str_companyName {
             get {
                 return ResourceManager.GetString("str_companyName", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bild löschen?.
+        /// </summary>
+        public static string str_deletePic {
+            get {
+                return ResourceManager.GetString("str_deletePic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bitte geben Sie Ihre Benutzerdaten ein.
         /// </summary>
-        internal static string str_enterUserData {
+        public static string str_enterUserData {
             get {
                 return ResourceManager.GetString("str_enterUserData", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bitte geben Sie Ihren Benutzernamen ein.
+        /// </summary>
+        public static string str_enterUsername {
+            get {
+                return ResourceManager.GetString("str_enterUsername", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fehler.
         /// </summary>
-        internal static string str_error {
+        public static string str_error {
             get {
                 return ResourceManager.GetString("str_error", resourceCulture);
             }
@@ -118,7 +154,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Häufig gestellte Fragen.
         /// </summary>
-        internal static string str_faq {
+        public static string str_faq {
             get {
                 return ResourceManager.GetString("str_faq", resourceCulture);
             }
@@ -127,7 +163,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Bitte füllen Sie alle Felder aus.
         /// </summary>
-        internal static string str_fillAll {
+        public static string str_fillAll {
             get {
                 return ResourceManager.GetString("str_fillAll", resourceCulture);
             }
@@ -136,52 +172,97 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Passwort vergessen.
         /// </summary>
-        internal static string str_forgotPassword {
+        public static string str_forgotPassword {
             get {
                 return ResourceManager.GetString("str_forgotPassword", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bitte geben Sie Ihre Logindaten ein.
+        ///   Looks up a localized string similar to Bitte geben Sie Ihre Logindaten ein:.
         /// </summary>
-        internal static string str_login {
+        public static string str_login {
             get {
                 return ResourceManager.GetString("str_login", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ausloggen.
+        /// </summary>
+        public static string str_logout {
+            get {
+                return ResourceManager.GetString("str_logout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Maschinennummer.
         /// </summary>
-        internal static string str_machineNumber {
+        public static string str_machineNumber {
             get {
                 return ResourceManager.GetString("str_machineNumber", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Es wurde eine E-Mail versendet.
+        /// </summary>
+        public static string str_mailSent {
+            get {
+                return ResourceManager.GetString("str_mailSent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name Vorname.
         /// </summary>
-        internal static string str_name {
+        public static string str_name {
             get {
                 return ResourceManager.GetString("str_name", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Neues Passwort.
+        /// </summary>
+        public static string str_newPassword {
+            get {
+                return ResourceManager.GetString("str_newPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nein.
+        /// </summary>
+        public static string str_no {
+            get {
+                return ResourceManager.GetString("str_no", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Keine Verbindung zum Server.
         /// </summary>
-        internal static string str_noConnection {
+        public static string str_noConnection {
             get {
                 return ResourceManager.GetString("str_noConnection", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Leider konnte die E-Mail mit Ihrem neuen Passwort nicht versendet werden, bitte versuchen Sie es später erneut.
+        /// </summary>
+        public static string str_noMail {
+            get {
+                return ResourceManager.GetString("str_noMail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Passwörter stimmen nicht überein.
         /// </summary>
-        internal static string str_nonMatchingPasswords {
+        public static string str_nonMatchingPasswords {
             get {
                 return ResourceManager.GetString("str_nonMatchingPasswords", resourceCulture);
             }
@@ -190,16 +271,25 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Nicht registrierte Benutzerdaten.
         /// </summary>
-        internal static string str_notRegistered {
+        public static string str_notRegistered {
             get {
                 return ResourceManager.GetString("str_notRegistered", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bisheriges Passwort.
+        /// </summary>
+        public static string str_oldPassword {
+            get {
+                return ResourceManager.GetString("str_oldPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Erfolgreich.
         /// </summary>
-        internal static string str_onSuccess {
+        public static string str_onSuccess {
             get {
                 return ResourceManager.GetString("str_onSuccess", resourceCulture);
             }
@@ -208,7 +298,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Andere.
         /// </summary>
-        internal static string str_other {
+        public static string str_other {
             get {
                 return ResourceManager.GetString("str_other", resourceCulture);
             }
@@ -217,7 +307,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Passwort.
         /// </summary>
-        internal static string str_password {
+        public static string str_password {
             get {
                 return ResourceManager.GetString("str_password", resourceCulture);
             }
@@ -226,7 +316,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Passwort wiederholen.
         /// </summary>
-        internal static string str_passwordAgain {
+        public static string str_passwordAgain {
             get {
                 return ResourceManager.GetString("str_passwordAgain", resourceCulture);
             }
@@ -235,7 +325,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Telefonnummer.
         /// </summary>
-        internal static string str_phoneNumber {
+        public static string str_phoneNumber {
             get {
                 return ResourceManager.GetString("str_phoneNumber", resourceCulture);
             }
@@ -244,7 +334,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Problembeschreibung.
         /// </summary>
-        internal static string str_problemDescription {
+        public static string str_problemDescription {
             get {
                 return ResourceManager.GetString("str_problemDescription", resourceCulture);
             }
@@ -253,7 +343,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Frage.
         /// </summary>
-        internal static string str_question {
+        public static string str_question {
             get {
                 return ResourceManager.GetString("str_question", resourceCulture);
             }
@@ -262,7 +352,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Registrierung.
         /// </summary>
-        internal static string str_register {
+        public static string str_register {
             get {
                 return ResourceManager.GetString("str_register", resourceCulture);
             }
@@ -271,25 +361,61 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Ihre Registrierung war erfolgreich, Sie können sich jetzt einloggen.
         /// </summary>
-        internal static string str_registerSuccess {
+        public static string str_registerSuccess {
             get {
                 return ResourceManager.GetString("str_registerSuccess", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Neues Passwort (Wiederholung).
+        /// </summary>
+        public static string str_repeatNewPassword {
+            get {
+                return ResourceManager.GetString("str_repeatNewPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Einen Fehler melden.
         /// </summary>
-        internal static string str_reportBug {
+        public static string str_reportBug {
             get {
                 return ResourceManager.GetString("str_reportBug", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reset Passwort.
+        /// </summary>
+        public static string str_resetPassword {
+            get {
+                return ResourceManager.GetString("str_resetPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Passwortzurücksetzung war erfolgreich, Sie werden in Kürze ein neues Passwort per E-mail erhalten.
+        /// </summary>
+        public static string str_resetPasswordSuccess {
+            get {
+                return ResourceManager.GetString("str_resetPasswordSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bitte auswählen:.
+        /// </summary>
+        public static string str_select {
+            get {
+                return ResourceManager.GetString("str_select", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Senden.
         /// </summary>
-        internal static string str_send {
+        public static string str_send {
             get {
                 return ResourceManager.GetString("str_send", resourceCulture);
             }
@@ -298,7 +424,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Art des Problems.
         /// </summary>
-        internal static string str_sortOfProblem {
+        public static string str_sortOfProblem {
             get {
                 return ResourceManager.GetString("str_sortOfProblem", resourceCulture);
             }
@@ -307,16 +433,25 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Ersatzteile.
         /// </summary>
-        internal static string str_spareParts {
+        public static string str_spareParts {
             get {
                 return ResourceManager.GetString("str_spareParts", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Maschinennummer ist zu hoch.
+        /// </summary>
+        public static string str_tooLargeMachineNumber {
+            get {
+                return ResourceManager.GetString("str_tooLargeMachineNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Art der Maschine.
         /// </summary>
-        internal static string str_typeOfMachine {
+        public static string str_typeOfMachine {
             get {
                 return ResourceManager.GetString("str_typeOfMachine", resourceCulture);
             }
@@ -325,7 +460,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Bitte geben Sie eine gültige E-Mail Adresse an.
         /// </summary>
-        internal static string str_validMailAdress {
+        public static string str_validMailAdress {
             get {
                 return ResourceManager.GetString("str_validMailAdress", resourceCulture);
             }
@@ -334,7 +469,7 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Videos zur Problembehandlung.
         /// </summary>
-        internal static string str_videos {
+        public static string str_videos {
             get {
                 return ResourceManager.GetString("str_videos", resourceCulture);
             }
@@ -343,9 +478,18 @@ namespace cameratest {
         /// <summary>
         ///   Looks up a localized string similar to Der Benutzername oder das Passwort ist falsch.
         /// </summary>
-        internal static string str_wrongUserNameOrPassword {
+        public static string str_wrongUserNameOrPassword {
             get {
                 return ResourceManager.GetString("str_wrongUserNameOrPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ja.
+        /// </summary>
+        public static string str_yes {
+            get {
+                return ResourceManager.GetString("str_yes", resourceCulture);
             }
         }
     }

@@ -14,27 +14,21 @@ namespace cameratest
         public MainPage()
         {
             InitializeComponent();
-            // ...
-            // NOTE: use for debugging, not in released app code!
-            var assembly = typeof(MainPage).GetTypeInfo().Assembly; // "EmbeddedImages" should be a class in your app
-            foreach (var res in assembly.GetManifestResourceNames())
-            {
-                System.Diagnostics.Debug.WriteLine("found resource: " + res);
-            }
+            
         }
         
 async void loggedIn(object sender, EventArgs e)
         {
             if (eMail.Text == "E-Mail" || password.Text == "Passwort" || eMail.Text == "" || password.Text == "" || eMail.Text == null || password.Text == null)
             {
-                DisplayAlert("Fehler", "Bitte geben Sie Ihre Benutzerdaten ein", "OK");
+                DisplayAlert(AppResources.str_error, AppResources.str_enterUserData, "OK");
                 return;
             }
-            else if (!(eMail.Text.Contains("@") && eMail.Text.Contains(".")))
-            {
-                DisplayAlert("Fehler", "Bitte geben Sie eine gültige E-Mail Adresse an", "OK");
-                return;
-            }
+            //else if (!(eMail.Text.Contains("@") && eMail.Text.Contains(".")))
+            //{
+            //    DisplayAlert("Fehler", "Bitte geben Sie eine gültige E-Mail Adresse an", "OK");
+            //    return;
+            //}
             else
             {
                 Uri uri = new Uri("http://app.tuboly-astronic.ch/app/login.php");
@@ -62,19 +56,19 @@ async void loggedIn(object sender, EventArgs e)
                 else if (answer == "Connection established. Answer: 0")
                 {
                     //show that wrong password or username
-                    DisplayAlert("Fehler", "Der Benutzername oder das Passwort ist falsch", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_wrongUserNameOrPassword, "OK");
                     return;
                 }
                 else if (answer == "Connection established. Answer: 2")
                 {
                     // not registered yet
-                    DisplayAlert("Fehler", "Nicht registrierte Benutzerdaten", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_notRegistered, "OK");
                     return;
                 }
                 else
                 {
                     //no connection to the server
-                    DisplayAlert("Fehler", "Keine Verbindung zum Server", "OK");
+                    DisplayAlert(AppResources.str_error, AppResources.str_noConnection, "OK");
                     return;
                 }
 

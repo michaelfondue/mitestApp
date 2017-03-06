@@ -60,5 +60,13 @@ C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\obj\iPhone\Debug\cameratest.iOS.csprojResolveAssemblyReference.cache
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\obj\iPhone\Debug\cameratestiOS.exe
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\obj\iPhone\Debug\cameratestiOS.pdb
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\bin\iPhone\Debug\AppResources.en.resx
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\bin\iPhone\Debug\KeyChain.Net.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\bin\iPhone\Debug\KeyChain.Net.XamarinIOS.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\bin\iPhone\Debug\Plugin.Settings.dll
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\bin\iPhone\Debug\Plugin.Settings.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.xml
+C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\bin\iPhone\Debug\en\cameratest.resources.dll
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\obj\iPhone\Debug\cameratestiOS.exe.mdb
 C:\Users\Melon Maara\Documents\Visual Studio 2015\Projects\ServiceApp\mitestApp\cameratest\cameratest\cameratest.iOS\bin\iPhone\Debug\cameratestiOS.exe.mdb

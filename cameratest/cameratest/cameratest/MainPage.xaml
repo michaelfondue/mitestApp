@@ -2,13 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="cameratest.MainPage"
-             xmlns:i18n="clr-namespace:cameratest;assembly=cameratest">
+             xmlns:i18n="clr-namespace:cameratest;assembly=cameratest"
               BackgroundColor="White">
      <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness"
                     iOS="20, 40, 20, 20"
-                    Android="20, 5, 20, 20"
-                    WinPhone="20, 20, 20, 20" />
+                    Android="20, 5, 20, 20" />
      </ContentPage.Padding>
     <ContentPage.Content>
       <ScrollView>
@@ -22,19 +21,19 @@
                           Orientation="Horizontal"
                           Spacing="1">
              
-                  <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
-                  <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>              
+                        <Button x:Name="about" IsEnabled="True" Clicked="openInfoPage" Image="info.png" BackgroundColor="White"/>
+                        <Button x:Name="settings" IsEnabled="True" Clicked="openSettings" Image="settings.png" BackgroundColor="White"/>              
             </StackLayout>
 
             <Image Source="logo_hintergrund.jpg" />
           
             <Label Text="{i18n:Translate str_login}" />
             <Entry x:Name="eMail" Placeholder="E-Mail" />
-            <Entry x:Name="password" Placeholder="Passwort" IsPassword="true"/>
-            <Button x:Name="forgottenPassword" Text="Passwort vergessen" Clicked="forgotPassword" FontSize="Small"/>
+            <Entry x:Name="password" Placeholder="{i18n:Translate str_password}" IsPassword="true"/>
+            <Button x:Name="forgottenPassword" Text="{i18n:Translate str_forgotPassword}" Clicked="forgotPassword" FontSize="Small"/>
             <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="loggedIn" />
-            <Button x:Name="machRegistrierig" Text="Registrierung" IsEnabled="True" Clicked="OnCallRegistrierung" />
+            <Button x:Name="machRegistrierig" Text="{i18n:Translate str_register}" IsEnabled="True" Clicked="OnCallRegistrierung" />
         </StackLayout>
-        </ScrollView>
+       </ScrollView>
     </ContentPage.Content>
 </ContentPage>

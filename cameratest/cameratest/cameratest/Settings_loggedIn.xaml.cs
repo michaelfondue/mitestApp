@@ -32,7 +32,6 @@ namespace cameratest
         {
             App.Current.MainPage = new NavigationPage(new MainPage());
             await Navigation.PushAsync(new MainPage());
-            //TODO: Nach dem Ausloggen sollte der User nirgends zurück können!!!
             
         }
     }
