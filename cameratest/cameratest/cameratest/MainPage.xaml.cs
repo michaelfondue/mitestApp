@@ -34,11 +34,11 @@ namespace cameratest
                 return;
             }
             // Befindet sich im E-Mail Feld eine gültige E-Mailadresse
-            //else if (!(eMail.Text.Contains("@") && eMail.Text.Contains(".")))
-            //{
-            //    DisplayAlert("Fehler", "Bitte geben Sie eine gültige E-Mail Adresse an", "OK");
-            //    return;
-            //}
+            else if (!(eMail.Text.Contains("@") && eMail.Text.Contains(".")))
+            {
+                DisplayAlert("Fehler", "Bitte geben Sie eine gültige E-Mail Adresse an", "OK");
+                return;
+            }
             else
             {
                 // Alle Checks wurden durchgeführt, es folgt die Verbindung zum Server

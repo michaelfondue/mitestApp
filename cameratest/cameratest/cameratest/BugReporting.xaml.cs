@@ -21,7 +21,7 @@ namespace cameratest
         // Die Klasse ist für die Seite der Fehlermeldung zuständig sowie für den Versand der Dateien an den Server.
 
         // Definition der globalen Variablen
-        public static int numPic; // Number of Pictures added
+        public static int numPic = 0; // Number of Pictures added
         public static int Picnum = 1; // Number of Picturecontainer
         public static int bild; // Bildwahl für Tapauswahl
         public static string zoompicpath; // Pfad für ZoomedPic (für Bild vergrössern)
@@ -72,6 +72,19 @@ namespace cameratest
         {
             // Diese Methode wird beim Versenden des Fehlerberichts aufgerufen. Es beinhaltet den Versand der Felder und der Bilder
             // mittels HTTP-Requests und speziell Multipartform-Requests für den Versand der Bilder.
+
+            // Wurde eines der Felder nie ausgefüllt
+            if (machineNumber.Text == null || machineType == null || sortOfProblem == null || problembeschreibung.Text == null || numPic == 0)
+            {
+                DisplayAlert(AppResources.str_error, AppResources.str_fillAll, "OK");
+                return;
+            }
+            // Wurde eines der Felder ausgefüllt, Ok gedrückt, der Eintrag dann aber wieder gelöscht
+            else if (machineNumber.Text == "" || problembeschreibung.Text == "")
+            {
+                DisplayAlert(AppResources.str_error, AppResources.str_fillAll, "OK");
+                return;
+            }
 
             // URIs für die Übertragung der Daten
             Uri uri = new Uri("http://app.tuboly-astronic.ch/app/email.php");
