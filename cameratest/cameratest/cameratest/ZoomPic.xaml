@@ -9,13 +9,13 @@
                 AbsoluteLayout.LayoutBounds="0, 0, 1, 0.9"
                 AbsoluteLayout.LayoutFlags="All" />
     
-    <Button    x:Name="Del" Text="Löschen" IsEnabled="True" Clicked="OnDel"
+    <!--<Button    x:Name="Del" Text="Löschen" IsEnabled="True" Clicked="OnDel"
                AbsoluteLayout.LayoutBounds="0, 1, 0.5, 0.1"
-               AbsoluteLayout.LayoutFlags="All" />
+               AbsoluteLayout.LayoutFlags="All" />-->
               
 
-    <Button    x:Name="Ok" Text="Ok" IsEnabled="True" Clicked="OnDel"
-               AbsoluteLayout.LayoutBounds="1, 1, 0.5, 0.1"
+    <Button    x:Name="Ok" Text="Ok" IsEnabled="True" Clicked="OnOk"
+               AbsoluteLayout.LayoutBounds="0, 1, 1, 0.1"
                AbsoluteLayout.LayoutFlags="All" />
 
   </AbsoluteLayout>

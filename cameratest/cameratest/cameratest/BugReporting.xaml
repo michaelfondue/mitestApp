@@ -74,10 +74,12 @@
             Orientation="Horizontal"
             Spacing="1">
         
-            <Image x:Name="image" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
+            <Image x:Name="image"  WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
             <Image x:Name="image2" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
             <Image x:Name="image3" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
-        
+            <!--<Image WidthRequest="140" HeightRequest="200" Aspect="AspectFill" Source = "{Binding picpath1}"/>
+            <--><!--Image WidthRequest="140" HeightRequest="200" Aspect="AspectFill" Source="/storage/emulated/0/Android/data/cameratest.Droid/files/Pictures/temp/20170214_164418_27.jpg" />-->
+           
           </StackLayout>
       </ScrollView>
       
