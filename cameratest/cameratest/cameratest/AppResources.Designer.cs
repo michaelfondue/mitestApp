@@ -89,6 +89,15 @@ namespace cameratest {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kamera.
+        /// </summary>
+        public static string str_camera {
+            get {
+                return ResourceManager.GetString("str_camera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Passwort ändern.
         /// </summary>
         public static string str_changePassword {
@@ -107,6 +116,15 @@ namespace cameratest {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Wählen Sie:.
+        /// </summary>
+        public static string str_choose {
+            get {
+                return ResourceManager.GetString("str_choose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name Ihrer Firma.
         /// </summary>
         public static string str_companyName {
@@ -116,7 +134,7 @@ namespace cameratest {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bild löschen?.
+        ///   Looks up a localized string similar to Bild löschen.
         /// </summary>
         public static string str_deletePic {
             get {
@@ -175,6 +193,24 @@ namespace cameratest {
         public static string str_forgotPassword {
             get {
                 return ResourceManager.GetString("str_forgotPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Galerie.
+        /// </summary>
+        public static string str_gallery {
+            get {
+                return ResourceManager.GetString("str_gallery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bild vergrössern.
+        /// </summary>
+        public static string str_increaseSizeOfPic {
+            get {
+                return ResourceManager.GetString("str_increaseSizeOfPic", resourceCulture);
             }
         }
         
@@ -260,11 +296,38 @@ namespace cameratest {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to E-Mail konnte nicht versendet werden.
+        /// </summary>
+        public static string str_noMailSent {
+            get {
+                return ResourceManager.GetString("str_noMailSent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Passwörter stimmen nicht überein.
         /// </summary>
         public static string str_nonMatchingPasswords {
             get {
                 return ResourceManager.GetString("str_nonMatchingPasswords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Erlaubnis für Fotos nicht gestattet.
+        /// </summary>
+        public static string str_noPermission {
+            get {
+                return ResourceManager.GetString("str_noPermission", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bilder nicht unterstützt.
+        /// </summary>
+        public static string str_noPhotoSupport {
+            get {
+                return ResourceManager.GetString("str_noPhotoSupport", resourceCulture);
             }
         }
         
@@ -328,6 +391,15 @@ namespace cameratest {
         public static string str_phoneNumber {
             get {
                 return ResourceManager.GetString("str_phoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Es sind bereits 3 Bilder ausgewählt.
+        /// </summary>
+        public static string str_picNumMax {
+            get {
+                return ResourceManager.GetString("str_picNumMax", resourceCulture);
             }
         }
         
@@ -472,6 +544,15 @@ namespace cameratest {
         public static string str_videos {
             get {
                 return ResourceManager.GetString("str_videos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Was möchten Sie tun?.
+        /// </summary>
+        public static string str_wish {
+            get {
+                return ResourceManager.GetString("str_wish", resourceCulture);
             }
         }
         
