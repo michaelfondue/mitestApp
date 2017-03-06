@@ -50,42 +50,27 @@
             <x:String>mc:breakdown</x:String>
           </Picker.Items>
         </Picker>
+        
         <Label Text="{i18n:Translate str_problemDescription}" />
-        
-        <!--<ScrollView>
-          <StackLayout
-               VerticalOptions="FillAndExpand"
-               Orientation="Vertical">-->
-        
-            <!--Nicht gut-->
-            <Editor x:Name="problembeschreibung"  HeightRequest = "120"/>
-        
-          <!--</StackLayout>
-        </ScrollView>-->
-
+        <Editor x:Name="problembeschreibung"  HeightRequest = "120"/>
         <Button x:Name="Picture" Text="{i18n:Translate str_addPicture}" IsEnabled="True" Clicked="OnActionChoosePhoto"/>
 
-        <!--<Button x:Name="chosePicture" Text="Foto aus Galerie hinzufügen" IsEnabled="True" Clicked="pickPhoto"/>-->
-        <!--<Image x:Name="image"/>-->
-      <ScrollView
-        Orientation="Horizontal">
-          <StackLayout 
-            HorizontalOptions = "Fill"
-            VerticalOptions="FillAndExpand"
-            Orientation="Horizontal"
-            Spacing="1">
+        <ScrollView
+          Orientation="Horizontal">
+            <StackLayout 
+              HorizontalOptions = "Fill"
+              VerticalOptions="FillAndExpand"
+              Orientation="Horizontal"
+              Spacing="1">
         
-            <Image x:Name="image"  WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
-            <Image x:Name="image2" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
-            <Image x:Name="image3" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
-            <!--<Image WidthRequest="140" HeightRequest="200" Aspect="AspectFill" Source = "{Binding picpath1}"/>
-            <--><!--Image WidthRequest="140" HeightRequest="200" Aspect="AspectFill" Source="/storage/emulated/0/Android/data/cameratest.Droid/files/Pictures/temp/20170214_164418_27.jpg" />-->
+              <Image x:Name="image"  WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
+              <Image x:Name="image2" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
+              <Image x:Name="image3" WidthRequest="140" HeightRequest="200" Aspect="AspectFill"/>
            
-          </StackLayout>
-      </ScrollView>
+            </StackLayout>
+        </ScrollView>
 
        <Button x:Name="sendReport" Text="{i18n:Translate str_send}" IsEnabled="True" Clicked="sendingReport"/>
-
 
       </StackLayout>
     </ScrollView>

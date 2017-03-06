@@ -126,11 +126,17 @@
   <data name="str_breakdown" xml:space="preserve">
     <value>mc:breakdown</value>
   </data>
+  <data name="str_camera" xml:space="preserve">
+    <value>Camera</value>
+  </data>
   <data name="str_changePassword" xml:space="preserve">
     <value>Change password</value>
   </data>
   <data name="str_changePasswordSuccess" xml:space="preserve">
     <value>You have successfully changed your password</value>
+  </data>
+  <data name="str_choose" xml:space="preserve">
+    <value>Please choose:</value>
   </data>
   <data name="str_companyName" xml:space="preserve">
     <value>Company name</value>
@@ -155,6 +161,12 @@
   </data>
   <data name="str_forgotPassword" xml:space="preserve">
     <value>Password forgotten</value>
+  </data>
+  <data name="str_gallery" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="str_increaseSizeOfPic" xml:space="preserve">
+    <value>Enlarge picture</value>
   </data>
   <data name="str_login" xml:space="preserve">
     <value>Please enter your log in data:</value>
@@ -183,8 +195,17 @@
   <data name="str_noMail" xml:space="preserve">
     <value>The e-mail with your newly requested password could not be sent, please try again later</value>
   </data>
+  <data name="str_noMailSent" xml:space="preserve">
+    <value>The e-mail was not sent</value>
+  </data>
   <data name="str_nonMatchingPasswords" xml:space="preserve">
     <value>The passwords don't match</value>
+  </data>
+  <data name="str_noPermission" xml:space="preserve">
+    <value>Permission not granted for photos</value>
+  </data>
+  <data name="str_noPhotoSupport" xml:space="preserve">
+    <value>Photos Not Supported</value>
   </data>
   <data name="str_notRegistered" xml:space="preserve">
     <value>Not registered user data</value>
@@ -206,6 +227,9 @@
   </data>
   <data name="str_phoneNumber" xml:space="preserve">
     <value>Phone number</value>
+  </data>
+  <data name="str_picNumMax" xml:space="preserve">
+    <value>There are already 3 pictures chosen</value>
   </data>
   <data name="str_problemDescription" xml:space="preserve">
     <value>Description of your problem</value>
@@ -254,6 +278,9 @@
   </data>
   <data name="str_videos" xml:space="preserve">
     <value>Troubleshooting Videos</value>
+  </data>
+  <data name="str_wish" xml:space="preserve">
+    <value>What would you like to do?</value>
   </data>
   <data name="str_wrongUserNameOrPassword" xml:space="preserve">
     <value>Your user name or your password is wrong</value>

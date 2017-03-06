@@ -126,17 +126,23 @@
   <data name="str_breakdown" xml:space="preserve">
     <value>mc:breakdown</value>
   </data>
+  <data name="str_camera" xml:space="preserve">
+    <value>Kamera</value>
+  </data>
   <data name="str_changePassword" xml:space="preserve">
     <value>Passwort ändern</value>
   </data>
   <data name="str_changePasswordSuccess" xml:space="preserve">
     <value>Sie haben Ihr Passwort erfolgreich geändert</value>
   </data>
+  <data name="str_choose" xml:space="preserve">
+    <value>Wählen Sie:</value>
+  </data>
   <data name="str_companyName" xml:space="preserve">
     <value>Name Ihrer Firma</value>
   </data>
   <data name="str_deletePic" xml:space="preserve">
-    <value>Bild löschen?</value>
+    <value>Bild löschen</value>
   </data>
   <data name="str_enterUserData" xml:space="preserve">
     <value>Bitte geben Sie Ihre Benutzerdaten ein</value>
@@ -155,6 +161,12 @@
   </data>
   <data name="str_forgotPassword" xml:space="preserve">
     <value>Passwort vergessen</value>
+  </data>
+  <data name="str_gallery" xml:space="preserve">
+    <value>Galerie</value>
+  </data>
+  <data name="str_increaseSizeOfPic" xml:space="preserve">
+    <value>Bild vergrössern</value>
   </data>
   <data name="str_login" xml:space="preserve">
     <value>Bitte geben Sie Ihre Logindaten ein:</value>
@@ -183,8 +195,17 @@
   <data name="str_noMail" xml:space="preserve">
     <value>Leider konnte die E-Mail mit Ihrem neuen Passwort nicht versendet werden, bitte versuchen Sie es später erneut</value>
   </data>
+  <data name="str_noMailSent" xml:space="preserve">
+    <value>E-Mail konnte nicht versendet werden</value>
+  </data>
   <data name="str_nonMatchingPasswords" xml:space="preserve">
     <value>Die Passwörter stimmen nicht überein</value>
+  </data>
+  <data name="str_noPermission" xml:space="preserve">
+    <value>Erlaubnis für Fotos nicht gestattet</value>
+  </data>
+  <data name="str_noPhotoSupport" xml:space="preserve">
+    <value>Bilder nicht unterstützt</value>
   </data>
   <data name="str_notRegistered" xml:space="preserve">
     <value>Nicht registrierte Benutzerdaten</value>
@@ -206,6 +227,9 @@
   </data>
   <data name="str_phoneNumber" xml:space="preserve">
     <value>Telefonnummer</value>
+  </data>
+  <data name="str_picNumMax" xml:space="preserve">
+    <value>Es sind bereits 3 Bilder ausgewählt</value>
   </data>
   <data name="str_problemDescription" xml:space="preserve">
     <value>Problembeschreibung</value>
@@ -254,6 +278,9 @@
   </data>
   <data name="str_videos" xml:space="preserve">
     <value>Videos zur Problembehandlung</value>
+  </data>
+  <data name="str_wish" xml:space="preserve">
+    <value>Was möchten Sie tun?</value>
   </data>
   <data name="str_wrongUserNameOrPassword" xml:space="preserve">
     <value>Der Benutzername oder das Passwort ist falsch</value>
