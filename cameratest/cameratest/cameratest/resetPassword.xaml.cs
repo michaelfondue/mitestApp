@@ -11,6 +11,7 @@ namespace cameratest
 {
     public partial class resetPassword : ContentPage
     {
+        // Diese Klasse/Seite ist für den Erhalt eines neues Passwortes zuständig, wenn man sein altes vergessen hat
         public resetPassword()
         {
             InitializeComponent();
@@ -18,11 +19,14 @@ namespace cameratest
 
         async void getNewPassword(object sender, EventArgs e)
         {
+            // Checks des Formulars
+            // Wurde eine E-Mailadresse angegeben
             if (eMail.Text == "E-Mail")
             {
                 DisplayAlert(AppResources.str_error, AppResources.str_enterUsername, "OK");
                 return;
             }
+            // Ist es eine gültige E-Mailadresse
             else if (!(eMail.Text.Contains("@") && eMail.Text.Contains(".")))
             {
                 DisplayAlert(AppResources.str_error, AppResources.str_validMailAdress, "OK");
@@ -30,50 +34,50 @@ namespace cameratest
             }
             else
             {
+                // Alles war richtig, es folt die Verbindung zum Server
                 Uri uri = new Uri("http://app.tuboly-astronic.ch/app/forgotPassword.php");
 
                 var client = new System.Net.Http.HttpClient();
 
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
+                // Daten, die dem Server gesendet werden
                 var postData = new List<KeyValuePair<string, string>>();
                 postData.Add(new KeyValuePair<string, string>("mail", eMail.Text));
 
                 var content = new System.Net.Http.FormUrlEncodedContent(postData);
                 var response = await client.PostAsync(uri, content);
 
+                // Die Antwort des Servers und seine Auswertung
                 var answer = await response.Content.ReadAsStringAsync();
-                //Debug.WriteLine("anser: "+answer);
+
                 if (answer == "Connection established. Answer: 6")
                 {
+                    // Das Passwort wurde zurückgesetzt und der User erhält ein neues Passwort per E-Mail
                     DisplayAlert(AppResources.str_onSuccess, AppResources.str_resetPasswordSuccess, "OK");
                     await Navigation.PopAsync();
                 }
                 else if (answer == "Connection established. Answer: 0")
                 {
-                    //show that wrong password or username
+                    // Der Benutzername war noch gar nicht registriert
                     DisplayAlert(AppResources.str_error, AppResources.str_notRegistered, "OK");
                     
                     return;
                 }
                 else if (answer == "Connection established. Answer: 5")
                 {
-                    // not registered yet
-                    Debug.WriteLine(answer);
+                    // Es gab ein Fehler auf dem Server und die E-Mail mit dem neuen Passwort konnte nicht versendet werden
                     DisplayAlert(AppResources.str_error, AppResources.str_noMail, "OK");
                     
                     return;
                 }
                 else
                 {
-                    Debug.WriteLine(answer);
-                    //no connection to the server
+                    // Keine Verbindung zum Server
                     DisplayAlert(AppResources.str_error, AppResources.str_noConnection, "OK");
                    
                     return;
                 }
-
-                //});
             }
         }
 

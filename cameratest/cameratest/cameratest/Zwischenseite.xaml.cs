@@ -9,6 +9,8 @@ namespace cameratest
 {
     public partial class Zwischenseite : ContentPage
     {
+        // Diese Klasse/Seite stellt die verlinkende Seite nach dem Login dar. Man kann über Sie einen Fehler melden und später
+        // Häufig gestellte Fragen nachlesen und Videos zur Problembehandlung anschauen
         public Zwischenseite()
         {
             InitializeComponent();
@@ -25,6 +27,14 @@ namespace cameratest
         async void openInfoPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new infoPage());
+        }
+        async void openFAQ(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FAQ());
+        }
+        async void openVideos(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Videos());
         }
     }
 }

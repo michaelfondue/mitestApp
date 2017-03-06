@@ -10,6 +10,7 @@ namespace cameratest
 {
     public partial class infoPage : ContentPage
     {
+        // Diese Klasse/Seite ist zur reinen Information da
         public infoPage()
         {
             InitializeComponent();

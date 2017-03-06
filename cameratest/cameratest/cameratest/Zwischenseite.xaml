@@ -28,8 +28,8 @@
       <Image Source="logo_hintergrund.jpg" />
     
       <Button x:Name="reportBug" Text="{i18n:Translate str_reportBug}" IsEnabled="True" Clicked="reportingBug"/>
-      <Button x:Name="faq" Text="{i18n:Translate str_faq}" IsEnabled="True"/>
-      <Button x:Name="videos" Text="{i18n:Translate str_videos}" IsEnabled="True"/>
+      <Button x:Name="faq" Text="{i18n:Translate str_faq}" IsEnabled="True" Clicked="openFAQ"/>
+      <Button x:Name="videos" Text="{i18n:Translate str_videos}" IsEnabled="True" Clicked="openVideos"/>
     </StackLayout>
    </ScrollView>
   </ContentPage.Content>

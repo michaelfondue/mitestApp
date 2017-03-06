@@ -10,15 +10,16 @@ namespace cameratest
 {
     public partial class Settings_loggedIn : ContentPage
     {
+        // Diese Klasse/Seite stellt die Einstellung dar, wenn man eingeloggt ist
         public Settings_loggedIn()
         {
             InitializeComponent();
         }
 
+        // Die zusätzliche Funktion ist das Ändern des Passwortes
         async void wantToChangePassword(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ChangePassword());
-
         }
         async void openSettings(object sender, EventArgs e)
         {

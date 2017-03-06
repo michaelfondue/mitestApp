@@ -30,7 +30,7 @@
             <Label Text="{i18n:Translate str_login}" />
             <Entry x:Name="eMail" Placeholder="E-Mail" />
             <Entry x:Name="password" Placeholder="{i18n:Translate str_password}" IsPassword="true"/>
-            <Button x:Name="forgottenPassword" Text="{i18n:Translate str_forgotPassword}" Clicked="forgotPassword" FontSize="Small"/>
+            <Button x:Name="forgottenPassword" Text="{i18n:Translate str_forgotPassword}" Clicked="forgotPassword" FontSize="Small" HorizontalOptions="Start" BackgroundColor="White" />
             <Button x:Name="machLogin" Text="Login" IsEnabled="True" Clicked="loggedIn" />
             <Button x:Name="machRegistrierig" Text="{i18n:Translate str_register}" IsEnabled="True" Clicked="OnCallRegistrierung" />
         </StackLayout>

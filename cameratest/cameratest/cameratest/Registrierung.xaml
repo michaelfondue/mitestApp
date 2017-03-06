@@ -27,19 +27,19 @@
       
       <Image Source="logo_hintergrund.jpg" />
       
-      <Label Text="Name Ihrer Firma" />
+      <Label Text="{i18n:Translate str_companyName}" />
       <Entry x:Name="customerCompanyName" />
-      <Label Text="Name Vorname" />
+      <Label Text="{i18n:Translate str_name}" />
       <Entry x:Name="reporterName" />
-      <Label Text="Telefonnummer" />
+      <Label Text="{i18n:Translate str_phoneNumber}" />
       <Entry x:Name="phoneNumber"  Keyboard="Numeric"/>
       <Label Text="E-Mail" />
-      <Entry x:Name="eMail" TextChanged="Changed_eMail" Completed="Completed_eMail"/>
-      <Label Text="Passwort" />
-      <Entry x:Name="password" IsPassword="true" TextChanged="Changed_password" Completed="Completed_password"/>
-      <Label Text="Passwort wiederholen" />
-      <Entry x:Name="passwordAgain" IsPassword="true" TextChanged="Changed_passwordAgain" Completed="Completed_passwordAgain"/>
-      <Button x:Name="register" Text="Registrieren" IsEnabled="True" Clicked="registering" />
+      <Entry x:Name="eMail" Completed="Completed_eMail"/>
+      <Label Text="{i18n:Translate str_password}" />
+      <Entry x:Name="password" IsPassword="true" />
+      <Label Text="{i18n:Translate str_passwordAgain}" />
+      <Entry x:Name="passwordAgain" IsPassword="true" Completed="Completed_passwordAgain"/>
+      <Button x:Name="register" Text="{i18n:Translate str_register}" IsEnabled="True" Clicked="registering" />
     </StackLayout>
    </ScrollView>
   </ContentPage.Content>

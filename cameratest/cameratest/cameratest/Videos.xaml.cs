@@ -8,21 +8,15 @@ using Xamarin.Forms;
 
 namespace cameratest
 {
-    public partial class Settings : ContentPage
+    public partial class Videos : ContentPage
     {
-        // Diese Klasse/Seite stellt die Einstellung dar
-        public Settings()
+        public Videos()
         {
             InitializeComponent();
         }
-
-        async void wantToChangePassword(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ChangePassword());
-        }
         async void openSettings(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Settings());
+            await Navigation.PushAsync(new Settings_loggedIn());
         }
         async void openInfoPage(object sender, EventArgs e)
         {
