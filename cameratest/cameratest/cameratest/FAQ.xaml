@@ -30,7 +30,38 @@
 
         <Image Source="logo_hintergrund.jpg" />
 
-        <Label Text="Coming soon!" FontSize="Large" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Button x:Name="question1" Text="Do i have to install parameters on Beckhoff AX5000 Drives if  I want to exchange one?" IsEnabled="True" Clicked="openQuestion1"/>
+        <Label x:Name="answer1" Text="No. The parameters are send by the control system at start up" IsVisible="False" FontSize="Medium" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        
+        <Button x:Name="question2" Text="Do i have to install parameters on Beckhoff AX2000 Drives if i want to exchange one" IsEnabled="True" Clicked="openQuestion2"/>
+        <Label x:Name="answer2" Text="Yes. The correct parameter set has to be loaded to the drive. The software 'Drive', a serial cable and an adapter is needed to load the parameter set. 
+        Contact Tuboly-Astronic service department." IsVisible="False"
+               FontSize="Medium" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        
+        <Button x:Name="question3" Text="Can i just exchange the hard disk of the machine PC if i take an image of the original one?" IsEnabled="True" Clicked="openQuestion3"/>
+        <Label x:Name="answer3" Text="Yes, but the TwinCat licence won't be valid anymore so the licence has to be renewed by Beckhoff." IsVisible="False"
+               FontSize="Medium" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        
+        <Button x:Name="question4" Text="The 'valves not initialized' Message remains on the screen" IsEnabled="True" Clicked="openQuestion4"/>
+        <Label x:Name="answer4" Text="1. Check if the air supply is 6 bars and stable (check if the pressure sensor is working according to the electrical shema&#x0a;2. Check if the enable signal of the foot pedal is false/0 in case that the foot pedal is released" IsVisible="False"
+               FontSize="Medium" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        
+        <Button x:Name="question5" Text="The CP6xxx Panel is not working anymore" IsEnabled="True" Clicked="openQuestion5"/>
+        <Label x:Name="answer5" Text="1. Check the status of the CP90xx-Link card at the computer&#x0a;2. Check the 2 cables&#x0a;3. Replace panel by a new one or make a test with a panel of another machine (if possible)" IsVisible="False"
+               FontSize="Medium" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        
+        <Button x:Name="question6" Text="Foot pedal adjustment and checks" IsEnabled="True" Clicked="openQuestion6"/>
+        <Label x:Name="answer6" Text="See video ('link to video')" IsVisible="False"
+               FontSize="Medium" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        
+        <Button x:Name="question7" Text="Drive error appears on the operator panel" IsEnabled="True" Clicked="openQuestion7"/>
+        <Label x:Name="answer7" Text="1. Open control cabinet and check the status of the drivers&#x0a;2. Open manual book and search for driver error message&#x0a;3. If no success contact service@tuboly-astronic.ch" IsVisible="False"
+               FontSize="Medium" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        
+        <Button x:Name="question8" Text="Ethercat error appears on the operator panel" IsEnabled="True" Clicked="openQuestion8"/>
+        <Label x:Name="answer8" Text="1. Perform System Restart ('link to procedur')&#x0a;2. Open System Manager and check the Ethercat circuit ('link to procedure')&#x0a; 3. Contact service@tuboly-astronic.ch" IsVisible="False"
+               FontSize="Medium" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
 
       </StackLayout>
     </ScrollView>
