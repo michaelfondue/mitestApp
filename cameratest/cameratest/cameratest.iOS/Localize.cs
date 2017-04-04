@@ -37,37 +37,44 @@ namespace cameratest.iOS
             {
                 // iOS locale not valid .NET culture (eg. "en-ES" : English in Spain)
                 // fallback to first characters, in this case "en"
-                try
+                /*try
                 {
                     var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));
                     ci = new System.Globalization.CultureInfo(fallback);
                 }
                 catch (CultureNotFoundException e2)
-                {
+                {*/
                     // iOS language not valid .NET culture, falling back to English
                     ci = new System.Globalization.CultureInfo("en");
-                }
+                //}
             }
             return ci;
         }
         string iOSToDotnetLanguage(string iOSLanguage)
         {
             var netLanguage = iOSLanguage;
-            //certain languages need to be converted to CultureInfo equivalent
-            switch (iOSLanguage)
+			//certain languages need to be converted to CultureInfo equivalent
+			/*switch (iOSLanguage)
             {
                 case "ms-MY":   // "Malaysian (Malaysia)" not supported .NET culture
                 case "ms-SG":   // "Malaysian (Singapore)" not supported .NET culture
                     netLanguage = "ms"; // closest supported
                     break;
-                case "gsw-CH":  // "Schwiizertüütsch (Swiss German)" not supported .NET culture
+                case "gsw-CH":  // "Schwiizert?tsch (Swiss German)" not supported .NET culture
                     netLanguage = "de-CH"; // closest supported
                     break;
                     // add more application-specific cases here (if required)
                     // ONLY use cultures that have been tested and known to work
-            }
-            return netLanguage;
-        }
+            }*/
+			if (netLanguage.Contains("de"))
+			{
+				return "de";
+			}
+			else
+			{
+				return "en";
+			}
+        }/*
         string ToDotnetFallbackLanguage(PlatformCulture platCulture)
         {
             var netLanguage = platCulture.LanguageCode; // use the first part of the identifier (two chars, usually);
@@ -83,6 +90,6 @@ namespace cameratest.iOS
                     // ONLY use cultures that have been tested and known to work
             }
             return netLanguage;
-        }
+        }*/
     }
 }
